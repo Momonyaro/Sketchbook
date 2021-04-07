@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DevRoomConf
   m_EditorClassIdentifier: 
   flyCam: 0
-  lockYToSpline: 1
+  lockYToSpline: 0
   disconnectAi: 0
