@@ -20,15 +20,12 @@ namespace Movement
             Z
         }
         
-        [Range(0, 1)]
-        public float debugSpeed = 0.5f;
         public bool assignSplineAtAwake = true;
         public PathCreator currentSpline;
         public bool rotateWithSpline = true;
         public float rotOffset = 90;
         public RotAxis rotAxis = RotAxis.Y;
 
-        private Vector2 lastDelta = Vector2.zero;
         private new Rigidbody rigidbody;
 
         private void Awake()
@@ -48,10 +45,6 @@ namespace Movement
 
         private void Update()
         {
-            //Oh god, oh fuck this is terrible but the new input system made me do it...
-            if (Mathf.Abs(lastDelta.x) > 0.001f || Mathf.Abs(lastDelta.y) > 0.001f)
-                MoveAlongSplineHor(lastDelta.x);
-            
             AnchorXZToSpline();
             
             if (rotateWithSpline)
@@ -60,7 +53,7 @@ namespace Movement
 
 
         //Detta teleporterar objektet till den närmsta positionen längst med splinen.
-        private void AnchorXZToSpline()
+        public void AnchorXZToSpline()
         {
             var position = rigidbody.position;
             Vector3 splinePos = currentSpline.path.GetClosestPointOnPath(position);
@@ -71,7 +64,7 @@ namespace Movement
             rigidbody.MovePosition(splinePos);
         }
 
-        private void AnchorRotToSpline()
+        public void AnchorRotToSpline()
         {
             float rot = rotOffset;
             var position = transform.position;
@@ -95,37 +88,6 @@ namespace Movement
             splineRot += offset;
             
             transform.rotation = Quaternion.Euler(splineRot);
-        }
-
-        
-        
-        
-        
-        //Flytta detta till ett externt script
-        
-        //Här tar vi den (horizontella riktningen * hastigheten) och flyttar spelaren längst splinen beroende på det.
-        public void MoveAlongSplineHor(float horSpeed)
-        {
-            //Varför ska vi röra oss?
-            if (horSpeed == 0) return;
-
-            horSpeed *= Time.deltaTime * 10.0f;
-            
-            var position = rigidbody.position;
-            float splineDist = currentSpline.path.GetClosestDistanceAlongPath(position);
-            Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist + horSpeed, EndOfPathInstruction.Stop);
-            
-            //This is garbage but ok for testing
-            if (!MapSettings.Instance.configScriptable.lockYToSpline) splinePos.y = position.y;
-            
-            rigidbody.MovePosition(splinePos);
-        }
-
-        //This is working kinda weird, you can't hold the button down?
-        public void DebugTestMoveHor(InputAction.CallbackContext action)
-        {
-            Vector2 delta = action.ReadValue<Vector2>();
-            lastDelta = delta;
         }
     }
 }
