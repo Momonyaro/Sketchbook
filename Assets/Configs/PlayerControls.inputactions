@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "AimUp",
+                    "name": "Flashlight",
                     "type": "Button",
                     "id": "319f86f6-9f78-4928-9720-a1a6da76a787",
                     "expectedControlType": "Button",
@@ -93,7 +93,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AimUp",
+                    "action": "Flashlight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
