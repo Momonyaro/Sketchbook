@@ -128,6 +128,9 @@
             <e p="MapConfigScriptable.cs" t="Include" />
             <e p="MapSettings.cs" t="Include" />
           </e>
+          <e p="Flashlight" t="Include">
+            <e p="FlashlightAim.cs" t="Include" />
+          </e>
           <e p="Movement" t="Include">
             <e p="PlayerController.cs" t="Include" />
             <e p="SplineWalker.cs" t="Include" />
