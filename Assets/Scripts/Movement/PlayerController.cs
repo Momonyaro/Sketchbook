@@ -92,7 +92,7 @@ namespace Movement
         private bool IsGrounded()
         {
             var position = rigidbody.position;
-            RaycastHit[] hits = Physics.RaycastAll(position + new Vector3(0, -0.01f, 0), Vector3.down * groundedRayLength);
+            RaycastHit[] hits = Physics.RaycastAll(position + new Vector3(0, -0.1f, 0), Vector3.down * groundedRayLength);
 
             if (hits.Length == 0)
                 return false;
@@ -125,6 +125,7 @@ namespace Movement
 
         public void InputActionJump(InputAction.CallbackContext action)
         {
+            if (action.canceled) return;
             JumpUsingForce();
         }
         

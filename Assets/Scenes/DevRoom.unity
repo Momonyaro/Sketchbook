@@ -699,7 +699,7 @@ MonoBehaviour:
     m_ActionId: 319f86f6-9f78-4928-9720-a1a6da76a787
     m_ActionName: Platformer/AimUp[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard & Mouse
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Platformer
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -738,7 +738,7 @@ MonoBehaviour:
   assignSplineAtAwake: 0
   splineWalker: {fileID: 854491794}
   drawGizmos: 1
-  groundedRayLength: 0.235
+  groundedRayLength: 1
 --- !u!1 &922710332
 GameObject:
   m_ObjectHideFlags: 0

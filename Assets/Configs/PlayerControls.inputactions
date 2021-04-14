@@ -88,8 +88,30 @@
                 },
                 {
                     "name": "",
+                    "id": "5edadb1c-7716-4e71-8d45-35f4d107c1f1",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2d339a51-7ffc-4813-9d3a-6d1b3752e536",
                     "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flashlight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d089bf51-a6be-4e55-b910-35081b83a066",
+                    "path": "<Joystick>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -105,6 +127,39 @@
                     "processors": "",
                     "groups": "Keyboard & Mouse",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c5092590-162b-43b5-8f2b-ba9e2cee1196",
+                    "path": "<Joystick>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller1",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "604f67a1-29bd-423f-9d9a-46327eb1bfc8",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "HorVer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6f41a962-dbda-4df2-8a23-5bb5add2b85e",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "InvertVector2(invertY=false)",
+                    "groups": "Joystick;Controller1",
+                    "action": "HorVer",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -123,6 +178,28 @@
                 },
                 {
                     "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Controller1",
+            "bindingGroup": "Controller1",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Controller2",
+            "bindingGroup": "Controller2",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }
