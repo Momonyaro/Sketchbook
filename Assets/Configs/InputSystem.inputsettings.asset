@@ -16,7 +16,7 @@ MonoBehaviour:
   - Keyboard
   - Mouse
   - Gamepad
-  - HID::Twin USB Joystick
+  - Joystick
   m_UpdateMode: 1
   m_CompensateForScreenOrientation: 1
   m_FilterNoiseOnCurrent: 0

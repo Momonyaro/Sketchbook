@@ -43,7 +43,7 @@ namespace Movement
             AnchorXZToSpline();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             AnchorXZToSpline();
             

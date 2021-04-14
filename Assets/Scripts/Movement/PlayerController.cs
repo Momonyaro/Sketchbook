@@ -8,16 +8,18 @@ namespace Movement
 {
     public class PlayerController : MonoBehaviour
     {
-        [Range(0, 1)]
-        public float moveSpeed = 0.833f;
+        [Range(0, 5)] public float moveSpeed = 0.833f;
+
+        public float pushOffForce = 50.0f;
+        [Min(1.0f)] public float jumpSpeed = 2.0f;
+        [Min(1.0f)] public float fallSpeed = 2.7f;
 
         [Header("Spline Walker Settings")] 
         public bool assignSplineAtAwake = false;
         public SplineWalker splineWalker;
         [Header("Debug Settings")] 
         public bool drawGizmos = false;
-        [Range(-1, 1)]
-        public float groundedRayLength = 1.0f;
+        [Range(-1, 1)] public float groundedRayLength = 1.0f;
         
         private new Rigidbody rigidbody;
         private Vector2 lastDelta = Vector2.zero;
@@ -41,6 +43,19 @@ namespace Movement
             if (Mathf.Abs(lastDelta.x) > 0.001f)
             {
                 MoveAlongSplineHor(lastDelta.x);
+            }
+
+            if (rigidbody.velocity.y < 0) // Falling
+            {
+                Vector3 velocity = rigidbody.velocity;
+                velocity.y += Physics.gravity.y * (fallSpeed - 1.0f);
+                rigidbody.velocity = velocity;
+            }
+            else if (rigidbody.velocity.y > 0) // Jumping
+            {
+                Vector3 velocity = rigidbody.velocity;
+                velocity.y += Physics.gravity.y * (jumpSpeed - 1.0f);
+                rigidbody.velocity = velocity;
             }
         }
 
@@ -69,7 +84,7 @@ namespace Movement
         public void JumpUsingForce()
         {
             if (IsGrounded()) return;
-            rigidbody.AddForce(new Vector3(0.0f, 500.0f, 0.0f));
+            rigidbody.AddForce(new Vector3(0.0f, pushOffForce, 0.0f), ForceMode.Impulse);
             splineWalker.AnchorXZToSpline();
         }
 
@@ -77,7 +92,7 @@ namespace Movement
         private bool IsGrounded()
         {
             var position = rigidbody.position;
-            RaycastHit[] hits = Physics.RaycastAll(position + new Vector3(0, -0.01f, 0), Vector3.down * groundedRayLength);
+            RaycastHit[] hits = Physics.RaycastAll(position + new Vector3(0, -0.1f, 0), Vector3.down * groundedRayLength);
 
             if (hits.Length == 0)
                 return false;
@@ -110,6 +125,7 @@ namespace Movement
 
         public void InputActionJump(InputAction.CallbackContext action)
         {
+            if (action.canceled) return;
             JumpUsingForce();
         }
         
