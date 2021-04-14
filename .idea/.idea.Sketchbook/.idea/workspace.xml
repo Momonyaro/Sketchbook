@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71def8a-c1a6-43ce-9efa-d263f66f5956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/InputSystem.inputsettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/InputSystem.inputsettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/PlayerControls.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +40,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SplineWalker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/MapSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/MapConfigScriptable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" />
       </list>
     </option>
   </component>
@@ -92,7 +88,7 @@
       <workItem from="1617818493008" duration="3319000" />
       <workItem from="1617957459362" duration="3983000" />
       <workItem from="1618214159739" duration="2191000" />
-      <workItem from="1618390515964" duration="2116000" />
+      <workItem from="1618390515964" duration="2916000" />
     </task>
     <servers />
   </component>
