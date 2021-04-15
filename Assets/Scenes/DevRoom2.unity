@@ -487,6 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aimForwardRotation: 90
   aimUpRotation: 45
+  playerController: {fileID: 697320484}
 --- !u!114 &285593657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,6 +692,7 @@ GameObject:
   - component: {fileID: 697320485}
   - component: {fileID: 697320484}
   - component: {fileID: 697320483}
+  - component: {fileID: 697320488}
   - component: {fileID: 697320482}
   - component: {fileID: 697320481}
   m_Layer: 0
@@ -856,8 +858,8 @@ MonoBehaviour:
     m_ActionName: Platformer/AimUp[/Keyboard/leftShift]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 967363396}
-        m_TargetAssemblyTypeName: Movement.PushBlock, Assembly-CSharp
+      - m_Target: {fileID: 697320488}
+        m_TargetAssemblyTypeName: PlayerPush, Assembly-CSharp
         m_MethodName: InputActionGrab
         m_Mode: 0
         m_Arguments:
@@ -895,6 +897,7 @@ MonoBehaviour:
   splineWalker: {fileID: 697320485}
   drawGizmos: 1
   groundedRayLength: 0.235
+  lastDelta: {x: 0, y: 0}
 --- !u!114 &697320485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,6 +964,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697320479}
   m_Mesh: {fileID: -8302102485596996044, guid: 2d2cd634a4e59004494b10a3bdfba983, type: 3}
+--- !u!114 &697320488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697320479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015209f60a19c5b43841ae6251a7f8b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushing: 0
+  lastDelta: {x: 0, y: 0}
 --- !u!1 &829244163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1288,6 @@ GameObject:
   - component: {fileID: 967363395}
   - component: {fileID: 967363396}
   - component: {fileID: 967363397}
-  - component: {fileID: 967363398}
   m_Layer: 0
   m_Name: Push Block
   m_TagString: Untagged
@@ -1416,76 +1432,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5000001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &967363398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967363389}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: aa584eede72e086428e1e3c22a5f0f70, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 967363396}
-        m_TargetAssemblyTypeName: Movement.PushBlock, Assembly-CSharp
-        m_MethodName: InputActionMoveHor
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: fd11df3b-89b6-4a1c-a520-68ebd63ab5bd
-    m_ActionName: Platformer/HorVer[/Keyboard/w,/Keyboard/s,/Keyboard/d,/Keyboard/a,/XInputControllerWindows/leftStick]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c46f5728-eae2-4f54-a3e6-7f3e5ce3cba0
-    m_ActionName: Platformer/Jump[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 319f86f6-9f78-4928-9720-a1a6da76a787
-    m_ActionName: Platformer/Flashlight[/Keyboard/leftShift]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 967363396}
-        m_TargetAssemblyTypeName: Movement.PushBlock, Assembly-CSharp
-        m_MethodName: InputActionGrab
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: d0176d30-02d5-4735-bfbc-5dc6c04410ee
-    m_ActionName: Platformer/Interact[/Keyboard/e]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard & Mouse
-  m_DefaultActionMap: Platformer
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &981156356
 GameObject:
   m_ObjectHideFlags: 0
