@@ -22,7 +22,8 @@ namespace Movement
         [Range(-1, 1)] public float groundedRayLength = 1.0f;
         
         private new Rigidbody rigidbody;
-        private Vector2 lastDelta = Vector2.zero;
+        [HideInInspector]
+        public Vector2 lastDelta = Vector2.zero;
 
         private void OnValidate()
         {
