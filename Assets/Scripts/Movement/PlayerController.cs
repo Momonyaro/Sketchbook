@@ -60,8 +60,6 @@ namespace Movement
                 velocity.y += Physics.gravity.y * (jumpSpeed - 1.0f);
                 rigidbody.velocity = velocity;
             }
-
-            print(IsGrounded());
         }
 
 
