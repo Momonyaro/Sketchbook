@@ -16,6 +16,9 @@ namespace Movement
         [Min(1.0f)] public float jumpSpeed = 2.0f;
         [Min(1.0f)] public float fallSpeed = 2.7f;
 
+        [Tooltip("If these objects intersect with the ground, the player will be able to perform a jump")]
+        public Transform GroundCheckLeft = null, GroundCheckRight = null;
+
         [Header("Spline Walker Settings")] 
         public bool assignSplineAtAwake = false;
         public SplineWalker splineWalker;
@@ -86,21 +89,23 @@ namespace Movement
         //Här så gör vi så att karaktären kan hoppa. (ska vi använda AddForce?)
         public void JumpUsingForce()
         {
-            if (IsGrounded()) return;
+            if (!IsGrounded()) return;
             rigidbody.AddForce(new Vector3(0.0f, pushOffForce, 0.0f), ForceMode.Impulse);
             splineWalker.AnchorXZToSpline();
         }
 
         //Kolla om vi står på marken med ray casting
-        private bool IsGrounded()
+        public bool IsGrounded()
         {
-            var position = rigidbody.position;
-            RaycastHit[] hits = Physics.RaycastAll(position + new Vector3(0, -0.1f, 0), Vector3.down * groundedRayLength);
+            if (GroundCheckLeft != null && GroundCheckRight != null)
+            {
+                var position = rigidbody.position + new Vector3(0.0f, 0.25f, 0.0f);
+                if (Physics.Linecast(position, GroundCheckLeft.position, 1 << LayerMask.NameToLayer("Ground"))
+                    || Physics.Linecast(position, GroundCheckRight.position, 1 << LayerMask.NameToLayer("Ground")))
+                    return true;
+            }
 
-            if (hits.Length == 0)
-                return false;
-            
-            return true;
+            return false;
         }
 
 
@@ -110,9 +115,13 @@ namespace Movement
         {
             if (!drawGizmos) return;
             Gizmos.color = Color.green;
-            
-            var position = rigidbody.position;
-            Gizmos.DrawRay(position + new Vector3(0, -0.01f, 0), Vector3.down * groundedRayLength);
+
+            if (GroundCheckLeft != null && GroundCheckRight != null)
+            {
+                var position = rigidbody.position + new Vector3(0.0f, 0.25f, 0.0f);
+                Gizmos.DrawLine(position, GroundCheckLeft.position);
+                Gizmos.DrawLine(position, GroundCheckRight.position);
+            }
         }
 
         #endregion
