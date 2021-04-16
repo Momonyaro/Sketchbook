@@ -13,6 +13,8 @@ namespace Movement
             "SHOULD BE THE SAME AS THE MOVEMENT SPEED OF THE PLAYER WHILE THEY ARE PUSHING/PULLING (default movement speed right now)")]
         public float blockSpeed;
 
+        [HideInInspector]
+        public bool atEdge;
         bool canBePushed, tooClose, pushing;
         Rigidbody rb;
         SplineWalker splineWalker;
@@ -31,8 +33,8 @@ namespace Movement
         void Update()
         {
             // Matchar spelarens movement, dålig lösning men det fungerar antar jag...
-            if (canBePushed && pushing)
-                MoveAlongSplineHor(lastDelta.x);
+            if (atEdge && pushing)
+                MoveAlongSplineHor(lastDelta.x, canBePushed);
 
             if (playerPush != null)
             {
@@ -42,27 +44,42 @@ namespace Movement
         }
 
         // Just nu verkar inte spelarens speed påverkas av en public speed variabel, så den är basically identisk till player controller
-        public void MoveAlongSplineHor(float horSpeed)
+        public void MoveAlongSplineHor(float horSpeed, bool inRange)
         {
             if (horSpeed == 0) return;
-            
 
-            horSpeed *= Time.deltaTime * 10.0f;
+            float playerSpeedMultiplier = 1.0f;
+            float blockSpeedMultiplier = 0.5f;
+            
 
             var position = rb.position;
 
             PathCreator currentSpline = splineWalker.currentSpline;
             float splineDist = currentSpline.path.GetClosestDistanceAlongPath(position);
 
-            if (currentSpline.path.GetClosestDistanceAlongPath(player.transform.position) > splineDist){
-                if (horSpeed > 0.001f && tooClose) return;
+            // If city 2
+            if (currentSpline.path.GetClosestDistanceAlongPath(player.transform.position) > splineDist) {
+                if (horSpeed > 0.001f) {
+                    if (tooClose) return;
+                    playerSpeedMultiplier = 0.5f;
+                    blockSpeedMultiplier = 1.0f; }
+                if (horSpeed < -0.001f && !inRange) return;
             }
-            else if (horSpeed < 0.001f && tooClose) return;
+            else {
+                if (horSpeed < -0.001f) {
+                    if (tooClose) return;
+                    playerSpeedMultiplier = 0.5f;
+                    blockSpeedMultiplier = 1.0f; }
+                if (horSpeed > 0.001f && !inRange) return;
+            }
 
+            horSpeed *= Time.deltaTime * 10.0f * blockSpeedMultiplier;
             Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist + horSpeed, EndOfPathInstruction.Stop);
 
             //This is garbage but ok for testing - Sebastian
             if (!MapSettings.Instance.configScriptable.lockYToSpline) splinePos.y = position.y;
+
+            playerPush.Pushing(playerSpeedMultiplier);
 
             rb.MovePosition(splinePos);
         }

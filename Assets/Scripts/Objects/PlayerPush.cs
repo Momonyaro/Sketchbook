@@ -17,12 +17,18 @@ public class PlayerPush : MonoBehaviour
     void Start()
     {
         playerController = GetComponent<PlayerController>();
+        Pushing(1.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
         lastDelta = playerController.lastDelta;
+    }
+
+    public void Pushing(float speed)
+    {
+        playerController.pushSpeedMultiplier = speed;
     }
 
     #region InputCalls

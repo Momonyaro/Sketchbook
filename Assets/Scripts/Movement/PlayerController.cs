@@ -9,6 +9,8 @@ namespace Movement
     public class PlayerController : MonoBehaviour
     {
         [Range(0, 5)] public float moveSpeed = 0.833f;
+        [HideInInspector]
+        public float pushSpeedMultiplier = 1.0f;
 
         public float pushOffForce = 50.0f;
         [Min(1.0f)] public float jumpSpeed = 2.0f;
@@ -58,6 +60,8 @@ namespace Movement
                 velocity.y += Physics.gravity.y * (jumpSpeed - 1.0f);
                 rigidbody.velocity = velocity;
             }
+
+            print(IsGrounded());
         }
 
 
@@ -67,7 +71,7 @@ namespace Movement
             //Varför ska vi röra oss?
             if (horSpeed == 0) return;
 
-            horSpeed *= Time.deltaTime * 10.0f;
+            horSpeed *= Time.deltaTime * 10.0f * pushSpeedMultiplier;
             
             var position = rigidbody.position;
 
