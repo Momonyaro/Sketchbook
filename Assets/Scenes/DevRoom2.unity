@@ -1137,6 +1137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushing: 0
+  pushLastFrame: 0
   lastDelta: {x: 0, y: 0}
 --- !u!1 &829244163
 GameObject:

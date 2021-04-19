@@ -22,6 +22,9 @@ public class OuterBoxTrigger : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<PlayerPush>() != null)
+        {
             block.atEdge = false;
+            other.gameObject.GetComponent<PlayerPush>().Pushing(1.0f);
+        }
     }
 }

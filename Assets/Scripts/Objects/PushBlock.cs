@@ -32,15 +32,15 @@ namespace Movement
         // Update is called once per frame
         void Update()
         {
-            // Matchar spelarens movement, dålig lösning men det fungerar antar jag...
-            if (atEdge && pushing)
-                MoveAlongSplineHor(lastDelta.x, canBePushed);
-
             if (playerPush != null)
             {
                 pushing = playerPush.pushing;
                 lastDelta = playerPush.lastDelta;
             }
+
+            // Matchar spelarens movement, dålig lösning men det fungerar antar jag...
+            if (atEdge && pushing)
+                MoveAlongSplineHor(lastDelta.x, canBePushed);
         }
 
         // Just nu verkar inte spelarens speed påverkas av en public speed variabel, så den är basically identisk till player controller

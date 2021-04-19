@@ -7,7 +7,7 @@ using Movement;
 public class PlayerPush : MonoBehaviour
 {
     [HideInInspector]
-    public bool pushing;
+    public bool pushing, pushLastFrame;
     [HideInInspector]
     public Vector2 lastDelta = Vector2.zero;
 
@@ -24,6 +24,10 @@ public class PlayerPush : MonoBehaviour
     void Update()
     {
         lastDelta = playerController.lastDelta;
+
+        if (!pushing && pushLastFrame)
+            Pushing(1.0f);
+        pushLastFrame = pushing;
     }
 
     public void Pushing(float speed)
