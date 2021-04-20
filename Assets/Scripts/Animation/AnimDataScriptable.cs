@@ -11,6 +11,7 @@ namespace Animation
         public string animName = "New Animation";
         [Tooltip("This is for when you for example have a 'Walk Left' animation and want to make it 'Walk Right' by flipping the animation.")]
         public bool invertAnimXAxis = false;
+        public bool loop = true;
         
         [Header("Transition Settings")]
         [Tooltip("Enabling this will cause this anim to transition into the other one after a loop.")]
@@ -39,7 +40,11 @@ namespace Animation
             frameTimer -= Time.deltaTime;
             if (frameTimer <= 0)
             {
-                frameIndex = (frameIndex + 1) % animFrames.Count; // Clamp that shit so that it loops back to 0 if it goes beyond the frame count.
+                if (loop)
+                    frameIndex = (frameIndex + 1) % animFrames.Count; // Clamp that shit so that it loops back to 0 if it goes beyond the frame count.
+                else
+                    frameIndex = Mathf.Min(frameIndex + 1, animFrames.Count - 1); // Limit it to repeat the last frame
+                
                 frameTimer = animFrames[frameIndex].frameDuration;
             }
 

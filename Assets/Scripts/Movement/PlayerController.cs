@@ -1,4 +1,5 @@
 ﻿using System;
+using Animation;
 using Config;
 using PathCreation;
 using UnityEngine;
@@ -15,6 +16,7 @@ namespace Movement
         public float pushOffForce = 50.0f;
         [Min(1.0f)] public float jumpSpeed = 2.0f;
         [Min(1.0f)] public float fallSpeed = 2.7f;
+        public MeshAnimator meshAnimator;
 
         [Tooltip("If these objects intersect with the ground, the player will be able to perform a jump")]
         public Transform GroundCheckLeft = null, GroundCheckRight = null;
@@ -22,11 +24,14 @@ namespace Movement
         [Header("Spline Walker Settings")] 
         public bool assignSplineAtAwake = false;
         public SplineWalker splineWalker;
+        
         [Header("Debug Settings")] 
         public bool drawGizmos = false;
         [Range(-1, 1)] public float groundedRayLength = 1.0f;
         
         private new Rigidbody rigidbody;
+        private bool hasAnimator = false;
+        private bool lastFacedRight = true;
         [HideInInspector]
         public Vector2 lastDelta = Vector2.zero;
 
@@ -41,12 +46,13 @@ namespace Movement
                 splineWalker = GetComponent<SplineWalker>();
             
             rigidbody = GetComponent<Rigidbody>();
+            hasAnimator = !(meshAnimator == null);
         }
 
         private void FixedUpdate()
         {
             //Kolla om movement deltan är större än en liten gräns
-            if (Mathf.Abs(lastDelta.x) > 0.001f)
+            if (Mathf.Abs(lastDelta.x) > 0.08f)
             {
                 MoveAlongSplineHor(lastDelta.x);
             }
@@ -63,6 +69,8 @@ namespace Movement
                 velocity.y += Physics.gravity.y * (jumpSpeed - 1.0f);
                 rigidbody.velocity = velocity;
             }
+            
+            PlayAnimations(lastDelta);
         }
 
 
@@ -76,14 +84,42 @@ namespace Movement
             
             var position = rigidbody.position;
 
+            //Animations Go Here
+            
             PathCreator currentSpline = splineWalker.currentSpline;
             float splineDist = currentSpline.path.GetClosestDistanceAlongPath(position);
-            Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist + horSpeed, EndOfPathInstruction.Stop);
+            Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist - horSpeed, EndOfPathInstruction.Stop);
             
             //This is garbage but ok for testing
             if (!MapSettings.Instance.configScriptable.lockYToSpline) splinePos.y = position.y;
             
             rigidbody.MovePosition(splinePos);
+        }
+
+        private void PlayAnimations(Vector2 mvmtDelta)
+        {
+            if (!hasAnimator) return;
+            
+            // RUN/WALK ANIMS
+            if (Mathf.Abs(mvmtDelta.x) > 0.08f)
+            {
+                if (mvmtDelta.x > 0.08f) //Running Right
+                {
+                    meshAnimator.StartAnimFromName("_playerWalkRight");
+                    lastFacedRight = true;
+                }
+                else                     //Running Left
+                {
+                    meshAnimator.StartAnimFromName("_playerWalkLeft");
+                    lastFacedRight = false;
+                }
+                return;
+            }
+            
+            if (lastFacedRight)
+                meshAnimator.StartAnimFromName("_playerIdleRight");
+            else
+                meshAnimator.StartAnimFromName("_playerIdleLeft");
         }
         
         //Här så gör vi så att karaktären kan hoppa. (ska vi använda AddForce?)

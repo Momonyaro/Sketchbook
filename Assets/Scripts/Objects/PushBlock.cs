@@ -74,7 +74,7 @@ namespace Movement
             }
 
             horSpeed *= Time.deltaTime * 10.0f * blockSpeedMultiplier;
-            Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist + horSpeed, EndOfPathInstruction.Stop);
+            Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist - horSpeed, EndOfPathInstruction.Stop);
 
             //This is garbage but ok for testing - Sebastian
             if (!MapSettings.Instance.configScriptable.lockYToSpline) splinePos.y = position.y;
