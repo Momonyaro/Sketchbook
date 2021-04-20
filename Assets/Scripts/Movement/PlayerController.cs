@@ -137,7 +137,8 @@ namespace Movement
             {
                 var position = rigidbody.position + new Vector3(0.0f, 0.25f, 0.0f);
                 if (Physics.Linecast(position, GroundCheckLeft.position, 1 << LayerMask.NameToLayer("Ground"))
-                    || Physics.Linecast(position, GroundCheckRight.position, 1 << LayerMask.NameToLayer("Ground")))
+                    || Physics.Linecast(position, GroundCheckRight.position, 1 << LayerMask.NameToLayer("Ground"))
+                    || Physics.Linecast(GroundCheckLeft.position, GroundCheckRight.position, 1 << LayerMask.NameToLayer("Ground")))
                     return true;
             }
 
@@ -157,6 +158,7 @@ namespace Movement
                 var position = rigidbody.position + new Vector3(0.0f, 0.25f, 0.0f);
                 Gizmos.DrawLine(position, GroundCheckLeft.position);
                 Gizmos.DrawLine(position, GroundCheckRight.position);
+                Gizmos.DrawLine(GroundCheckLeft.position, GroundCheckRight.position);
             }
         }
 

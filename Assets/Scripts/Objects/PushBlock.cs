@@ -46,6 +46,7 @@ namespace Movement
         // Just nu verkar inte spelarens speed påverkas av en public speed variabel, så den är basically identisk till player controller
         public void MoveAlongSplineHor(float horSpeed, bool inRange)
         {
+            print("test");
             if (horSpeed == 0) return;
 
             float playerSpeedMultiplier = 1.0f;
@@ -59,18 +60,18 @@ namespace Movement
 
             // If city 2
             if (currentSpline.path.GetClosestDistanceAlongPath(player.transform.position) > splineDist) {
-                if (horSpeed > 0.001f) {
-                    if (tooClose) return;
-                    playerSpeedMultiplier = 0.5f;
-                    blockSpeedMultiplier = 1.0f; }
-                if (horSpeed < -0.001f && !inRange) return;
-            }
-            else {
                 if (horSpeed < -0.001f) {
                     if (tooClose) return;
                     playerSpeedMultiplier = 0.5f;
                     blockSpeedMultiplier = 1.0f; }
                 if (horSpeed > 0.001f && !inRange) return;
+            }
+            else {
+                if (horSpeed > 0.001f) {
+                    if (tooClose) return;
+                    playerSpeedMultiplier = 0.5f;
+                    blockSpeedMultiplier = 1.0f; }
+                if (horSpeed < -0.001f && !inRange) return;
             }
 
             horSpeed *= Time.deltaTime * 10.0f * blockSpeedMultiplier;
