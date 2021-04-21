@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using PathCreation;
 using Config;
 
@@ -46,7 +45,6 @@ namespace Movement
         // Just nu verkar inte spelarens speed påverkas av en public speed variabel, så den är basically identisk till player controller
         public void MoveAlongSplineHor(float horSpeed, bool inRange)
         {
-            print("test");
             if (horSpeed == 0) return;
 
             float playerSpeedMultiplier = 1.0f;
