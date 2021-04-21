@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 240b04b714c4d764f9963a544f8448f4
+guid: 4810f88a1246fb44c92d21af4a74220a
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,18 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Bricks
-    second: {fileID: 2100000, guid: d5be575c0d791ab4482043ffb1c89311, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mark
-    second: {fileID: 2100000, guid: 0643309c4c1f3fa458024f2e5619e6bb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: SakerOutside
-    second: {fileID: 2100000, guid: 3a4661e3c954fd64fa363dec5b308c2b, type: 2}
+    second: {fileID: 2100000, guid: 5f1e17534432e2844b822ccb81ced764, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
