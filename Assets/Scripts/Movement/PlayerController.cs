@@ -1,4 +1,5 @@
 ﻿using System;
+using Animation;
 using Config;
 using PathCreation;
 using UnityEngine;
@@ -9,20 +10,30 @@ namespace Movement
     public class PlayerController : MonoBehaviour
     {
         [Range(0, 5)] public float moveSpeed = 0.833f;
+        [HideInInspector]
+        public float pushSpeedMultiplier = 1.0f;
 
         public float pushOffForce = 50.0f;
         [Min(1.0f)] public float jumpSpeed = 2.0f;
         [Min(1.0f)] public float fallSpeed = 2.7f;
+        public MeshAnimator meshAnimator;
+
+        [Tooltip("If these objects intersect with the ground, the player will be able to perform a jump")]
+        public Transform GroundCheckLeft = null, GroundCheckRight = null;
 
         [Header("Spline Walker Settings")] 
         public bool assignSplineAtAwake = false;
         public SplineWalker splineWalker;
+        
         [Header("Debug Settings")] 
         public bool drawGizmos = false;
         [Range(-1, 1)] public float groundedRayLength = 1.0f;
         
         private new Rigidbody rigidbody;
-        private Vector2 lastDelta = Vector2.zero;
+        private bool hasAnimator = false;
+        private bool lastFacedRight = true;
+        [HideInInspector]
+        public Vector2 lastDelta = Vector2.zero;
 
         private void OnValidate()
         {
@@ -35,12 +46,13 @@ namespace Movement
                 splineWalker = GetComponent<SplineWalker>();
             
             rigidbody = GetComponent<Rigidbody>();
+            hasAnimator = !(meshAnimator == null);
         }
 
         private void FixedUpdate()
         {
             //Kolla om movement deltan är större än en liten gräns
-            if (Mathf.Abs(lastDelta.x) > 0.001f)
+            if (Mathf.Abs(lastDelta.x) > 0.08f)
             {
                 MoveAlongSplineHor(lastDelta.x);
             }
@@ -57,6 +69,8 @@ namespace Movement
                 velocity.y += Physics.gravity.y * (jumpSpeed - 1.0f);
                 rigidbody.velocity = velocity;
             }
+            
+            PlayAnimations(lastDelta);
         }
 
 
@@ -66,38 +80,69 @@ namespace Movement
             //Varför ska vi röra oss?
             if (horSpeed == 0) return;
 
-            horSpeed *= Time.deltaTime * 10.0f;
+            horSpeed *= Time.deltaTime * 10.0f * pushSpeedMultiplier;
             
             var position = rigidbody.position;
 
+            //Animations Go Here
+            
             PathCreator currentSpline = splineWalker.currentSpline;
             float splineDist = currentSpline.path.GetClosestDistanceAlongPath(position);
-            Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist + horSpeed, EndOfPathInstruction.Stop);
+            Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist - horSpeed, EndOfPathInstruction.Stop);
             
             //This is garbage but ok for testing
             if (!MapSettings.Instance.configScriptable.lockYToSpline) splinePos.y = position.y;
             
             rigidbody.MovePosition(splinePos);
         }
+
+        private void PlayAnimations(Vector2 mvmtDelta)
+        {
+            if (!hasAnimator) return;
+            
+            // RUN/WALK ANIMS
+            if (Mathf.Abs(mvmtDelta.x) > 0.08f)
+            {
+                if (mvmtDelta.x > 0.08f) //Running Right
+                {
+                    meshAnimator.StartAnimFromName("_playerWalkRight");
+                    lastFacedRight = true;
+                }
+                else                     //Running Left
+                {
+                    meshAnimator.StartAnimFromName("_playerWalkLeft");
+                    lastFacedRight = false;
+                }
+                return;
+            }
+            
+            if (lastFacedRight)
+                meshAnimator.StartAnimFromName("_playerIdleRight");
+            else
+                meshAnimator.StartAnimFromName("_playerIdleLeft");
+        }
         
         //Här så gör vi så att karaktären kan hoppa. (ska vi använda AddForce?)
         public void JumpUsingForce()
         {
-            if (IsGrounded()) return;
+            if (!IsGrounded()) return;
             rigidbody.AddForce(new Vector3(0.0f, pushOffForce, 0.0f), ForceMode.Impulse);
             splineWalker.AnchorXZToSpline();
         }
 
         //Kolla om vi står på marken med ray casting
-        private bool IsGrounded()
+        public bool IsGrounded()
         {
-            var position = rigidbody.position;
-            RaycastHit[] hits = Physics.RaycastAll(position + new Vector3(0, -0.1f, 0), Vector3.down * groundedRayLength);
+            if (GroundCheckLeft != null && GroundCheckRight != null)
+            {
+                var position = rigidbody.position + new Vector3(0.0f, 0.25f, 0.0f);
+                if (Physics.Linecast(position, GroundCheckLeft.position, 1 << LayerMask.NameToLayer("Ground"))
+                    || Physics.Linecast(position, GroundCheckRight.position, 1 << LayerMask.NameToLayer("Ground"))
+                    || Physics.Linecast(GroundCheckLeft.position, GroundCheckRight.position, 1 << LayerMask.NameToLayer("Ground")))
+                    return true;
+            }
 
-            if (hits.Length == 0)
-                return false;
-            
-            return true;
+            return false;
         }
 
 
@@ -107,9 +152,14 @@ namespace Movement
         {
             if (!drawGizmos) return;
             Gizmos.color = Color.green;
-            
-            var position = rigidbody.position;
-            Gizmos.DrawRay(position + new Vector3(0, -0.01f, 0), Vector3.down * groundedRayLength);
+
+            if (GroundCheckLeft != null && GroundCheckRight != null)
+            {
+                var position = rigidbody.position + new Vector3(0.0f, 0.25f, 0.0f);
+                Gizmos.DrawLine(position, GroundCheckLeft.position);
+                Gizmos.DrawLine(position, GroundCheckRight.position);
+                Gizmos.DrawLine(GroundCheckLeft.position, GroundCheckRight.position);
+            }
         }
 
         #endregion
