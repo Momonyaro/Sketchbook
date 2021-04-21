@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Movement;
 
 public class FlashlightAim : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class FlashlightAim : MonoBehaviour
     public float aimForwardRotation = 90.0f;
     [Tooltip("Rotation of the flashlight while the player is aiming up (in degrees)")]
     public float aimUpRotation = 45.0f;
+    [Tooltip("The player object that has the PlayerController script attached to it")]
+    public PlayerController playerController = null;
 
     bool aimingUp;
     float horDirection = -1.0f;
@@ -20,29 +23,22 @@ public class FlashlightAim : MonoBehaviour
         if (transform.parent != null)
             yRotation = transform.parent.eulerAngles.y;
 
+        if (playerController != null)
+        {
+            if (playerController.lastDelta.x > 0.001f)
+                horDirection = 1.0f;
+            else if (playerController.lastDelta.x < -0.001f)
+                horDirection = -1.0f;
+
+            if (playerController.lastDelta.y > 0.001f)
+                aimingUp = true;
+            else
+                aimingUp = false;
+        }
+
         if (!aimingUp)
             transform.rotation = Quaternion.Euler(new Vector3(0.0f, yRotation, aimForwardRotation * horDirection));
         else
             transform.rotation = Quaternion.Euler(new Vector3(0.0f, yRotation, aimUpRotation * horDirection));
     }
-
-    #region InputCalls
-
-    public void InputActionAimUp(InputAction.CallbackContext action)
-    {
-        if (action.ReadValue<Vector2>().y > 0.001f)
-            aimingUp = true;
-        else
-            aimingUp = false;
-    }
-
-    public void InputActionChangeHorDirection(InputAction.CallbackContext action)
-    {
-        if (action.ReadValue<Vector2>().x > 0.001f)
-            horDirection = 1.0f;
-        else if (action.ReadValue<Vector2>().x < -0.001f)
-            horDirection = -1.0f;
-    }
-
-    #endregion
 }
