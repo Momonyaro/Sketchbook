@@ -43,6 +43,7 @@ namespace Animation
             {
                 if (animationBranches[i].animName == animName)
                 {
+                    if (currentBranchIndex == i) return; //This would just reset the already playing animation.
                     currentBranchIndex = i;
                     meshFilter.mesh = animationBranches[i].StartAnim(); //Plays the anim from a beginning state.
                     return;

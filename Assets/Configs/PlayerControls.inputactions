@@ -10,7 +10,7 @@
                     "type": "PassThrough",
                     "id": "fd11df3b-89b6-4a1c-a520-68ebd63ab5bd",
                     "expectedControlType": "Vector2",
-                    "processors": "",
+                    "processors": "InvertVector2(invertY=false)",
                     "interactions": ""
                 },
                 {
@@ -165,7 +165,7 @@
                     "id": "6f41a962-dbda-4df2-8a23-5bb5add2b85e",
                     "path": "<Joystick>/stick",
                     "interactions": "",
-                    "processors": "InvertVector2(invertY=false)",
+                    "processors": "",
                     "groups": "Joystick;Controller1",
                     "action": "HorVer",
                     "isComposite": false,

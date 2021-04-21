@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71def8a-c1a6-43ce-9efa-d263f66f5956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Player/Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Player/Walk.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/PlayerControls.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +47,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SplineWalker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/MapSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/MapConfigScriptable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -101,6 +99,7 @@
       <workItem from="1618214159739" duration="2191000" />
       <workItem from="1618390515964" duration="2916000" />
       <workItem from="1618832942685" duration="5363000" />
+      <workItem from="1618913407667" duration="1097000" />
     </task>
     <servers />
   </component>
