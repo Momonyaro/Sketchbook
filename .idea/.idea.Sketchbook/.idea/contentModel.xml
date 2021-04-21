@@ -6,6 +6,11 @@
     <e p="C:\Users\Sebastian\Documents\GitHub\Kraken\Sketchbook" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Models" t="Include">
+          <e p="Player" t="Include">
+            <e p="SpriteAnim.cs" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="FMOD" t="Include">
             <e p="addons" t="Include">
@@ -124,16 +129,26 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Animation" t="Include">
+            <e p="AnimDataScriptable.cs" t="Include" />
+            <e p="MeshAnimator.cs" t="Include" />
+          </e>
           <e p="Config" t="Include">
             <e p="MapConfigScriptable.cs" t="Include" />
             <e p="MapSettings.cs" t="Include" />
           </e>
           <e p="Flashlight" t="Include">
+            <e p="FlashlighFlash.cs" t="Include" />
             <e p="FlashlightAim.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
             <e p="PlayerController.cs" t="Include" />
             <e p="SplineWalker.cs" t="Include" />
+          </e>
+          <e p="Objects" t="Include">
+            <e p="OuterBoxTrigger.cs" t="Include" />
+            <e p="PlayerPush.cs" t="Include" />
+            <e p="PushBlock.cs" t="Include" />
           </e>
           <e p="Spline" t="Include">
             <e p="Editor" t="Include">

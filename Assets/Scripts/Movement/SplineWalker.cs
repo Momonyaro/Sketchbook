@@ -13,18 +13,11 @@ namespace Movement
     
     public class SplineWalker : MonoBehaviour
     {
-        public enum RotAxis
-        {
-            X,
-            Y,
-            Z
-        }
         
         public bool assignSplineAtAwake = true;
         public PathCreator currentSpline;
         public bool rotateWithSpline = true;
-        public float rotOffset = 90;
-        public RotAxis rotAxis = RotAxis.Y;
+        public Vector3 rotOffset = Vector3.zero;
 
         private new Rigidbody rigidbody;
 
@@ -66,24 +59,12 @@ namespace Movement
 
         public void AnchorRotToSpline()
         {
-            float rot = rotOffset;
+            Vector3 rot = rotOffset;
             var position = transform.position;
             float splineDist = currentSpline.path.GetClosestDistanceAlongPath(position);
             Vector3 splineRot = currentSpline.path.GetRotationAtDistance(splineDist).eulerAngles;
             
-            Vector3 offset = Vector3.zero;
-            switch (rotAxis)
-            {
-                case RotAxis.X:
-                    offset.x = rot;
-                    break;
-                case RotAxis.Y:
-                    offset.y = rot;
-                    break;
-                case RotAxis.Z:
-                    offset.z = rot;
-                    break;
-            }
+            Vector3 offset = rot;
 
             splineRot += offset;
             

@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71def8a-c1a6-43ce-9efa-d263f66f5956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/PlayerControls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +36,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Config/MapConfigScriptable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Config/MapSettings.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -40,8 +47,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SplineWalker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/MapSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/MapConfigScriptable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -89,6 +98,8 @@
       <workItem from="1617957459362" duration="3983000" />
       <workItem from="1618214159739" duration="2191000" />
       <workItem from="1618390515964" duration="2916000" />
+      <workItem from="1618832942685" duration="5363000" />
+      <workItem from="1618913407667" duration="1097000" />
     </task>
     <servers />
   </component>
@@ -111,5 +122,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="943" y="347" width="672" height="678" key="search.everywhere.popup" timestamp="1618833242753">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state x="943" y="347" width="672" height="678" key="search.everywhere.popup/0.30.2560.1410/-2560.30.2560.1410/-4480.30.1920.1050@0.30.2560.1410" timestamp="1618833242753" />
   </component>
 </project>
