@@ -99,6 +99,21 @@ namespace Movement
         private void PlayAnimations(Vector2 mvmtDelta)
         {
             if (!hasAnimator) return;
+
+            if (!IsGrounded())
+            {
+                // JUMP/FALL ANIMS
+                if (rigidbody.velocity.y < 0.1f) // Falling
+                {
+                    meshAnimator.StartAnimFromName(lastFacedRight ? "_playerFallRight" : "_playerFallLeft");
+                    return;
+                }
+                else if (rigidbody.velocity.y > 0.1f) // Jumping
+                {
+                    meshAnimator.StartAnimFromName(lastFacedRight ? "_playerJumpRight" : "_playerJumpLeft");
+                    return;
+                }
+            }
             
             // RUN/WALK ANIMS
             if (Mathf.Abs(mvmtDelta.x) > 0.08f)
