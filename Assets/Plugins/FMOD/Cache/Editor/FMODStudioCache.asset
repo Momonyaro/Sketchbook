@@ -16,10 +16,14 @@ MonoBehaviour:
   Name: Master.strings
   StudioPath: bank:/Master.strings
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastModified: 637539096317219691
 =======
   lastModified: 637539029270373628
 >>>>>>> dev-graphics
+=======
+  lastModified: 637538204784082017
+>>>>>>> dev-prog
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -49,10 +53,14 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -1709610952204746368}
 <<<<<<< HEAD
+<<<<<<< HEAD
   stringsBankWriteTime: 637539096317219691
 =======
   stringsBankWriteTime: 637539029270373628
 >>>>>>> dev-graphics
+=======
+  stringsBankWriteTime: 637538204784082017
+>>>>>>> dev-prog
   cacheVersion: 6
 --- !u!114 &130140285757335117
 MonoBehaviour:
@@ -116,10 +124,14 @@ MonoBehaviour:
   Name: Master
   StudioPath: bank:/Master
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastModified: 637539096317229668
 =======
   lastModified: 637539029270323635
 >>>>>>> dev-graphics
+=======
+  lastModified: 637538204784141863
+>>>>>>> dev-prog
   LoadResult: 0
   FileSizes: []
   Exists: 1

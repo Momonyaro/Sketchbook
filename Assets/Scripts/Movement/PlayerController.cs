@@ -145,6 +145,14 @@ namespace Movement
             splineWalker.AnchorXZToSpline();
         }
 
+        //När spelaren studsar på något, som en fiende. Behöver alltså inte vara grounded
+        public void BounceUsingForce(float force)
+        {
+            rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0.0f, rigidbody.velocity.z);
+            rigidbody.AddForce(new Vector3(0.0f, force, 0.0f), ForceMode.Impulse);
+            splineWalker.AnchorXZToSpline();
+        }
+
         //Kolla om vi står på marken med ray casting
         public bool IsGrounded()
         {
