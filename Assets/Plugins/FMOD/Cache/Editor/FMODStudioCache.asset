@@ -15,7 +15,11 @@ MonoBehaviour:
   Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 637539096317219691
+=======
+  lastModified: 637539029270373628
+>>>>>>> dev-graphics
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -44,7 +48,11 @@ MonoBehaviour:
   - {fileID: 7244654707244728257}
   StringsBanks:
   - {fileID: -1709610952204746368}
+<<<<<<< HEAD
   stringsBankWriteTime: 637539096317219691
+=======
+  stringsBankWriteTime: 637539029270373628
+>>>>>>> dev-graphics
   cacheVersion: 6
 --- !u!114 &130140285757335117
 MonoBehaviour:
@@ -107,7 +115,11 @@ MonoBehaviour:
   Path: FMOD_Scrapper/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 637539096317229668
+=======
+  lastModified: 637539029270323635
+>>>>>>> dev-graphics
   LoadResult: 0
   FileSizes: []
   Exists: 1
