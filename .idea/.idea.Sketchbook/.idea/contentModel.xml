@@ -155,6 +155,10 @@
             <e p="PlayerPush.cs" t="Include" />
             <e p="PushBlock.cs" t="Include" />
           </e>
+          <e p="Shaders" t="Include">
+            <e p="DepthSample.shader" t="Include" />
+            <e p="RenderShaderToScreen.cs" t="Include" />
+          </e>
           <e p="Spline" t="Include">
             <e p="Editor" t="Include">
               <e p="Helper" t="Include">
