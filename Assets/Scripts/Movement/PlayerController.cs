@@ -9,7 +9,8 @@ namespace Movement
 {
     public class PlayerController : MonoBehaviour
     {
-        [Range(0, 5)] public float moveSpeed = 0.833f;
+        //[Range(0, 5)] public float moveSpeed = 0.833f;
+        public float moveSpeed = 10.0f;
         [HideInInspector]
         public float pushSpeedMultiplier = 1.0f;
 
@@ -80,7 +81,7 @@ namespace Movement
             //Varför ska vi röra oss?
             if (horSpeed == 0) return;
 
-            horSpeed *= Time.deltaTime * 10.0f * pushSpeedMultiplier;
+            horSpeed *= Time.deltaTime * moveSpeed * pushSpeedMultiplier;
             
             var position = rigidbody.position;
 
@@ -142,6 +143,14 @@ namespace Movement
         {
             if (!IsGrounded()) return;
             rigidbody.AddForce(new Vector3(0.0f, pushOffForce, 0.0f), ForceMode.Impulse);
+            splineWalker.AnchorXZToSpline();
+        }
+
+        //När spelaren studsar på något, som en fiende. Behöver alltså inte vara grounded
+        public void BounceUsingForce(float force)
+        {
+            rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0.0f, rigidbody.velocity.z);
+            rigidbody.AddForce(new Vector3(0.0f, force, 0.0f), ForceMode.Impulse);
             splineWalker.AnchorXZToSpline();
         }
 

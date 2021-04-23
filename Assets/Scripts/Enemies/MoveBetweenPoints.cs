@@ -20,6 +20,8 @@ namespace Movement
         SplineWalker splineWalker;
         float moveHor1 = -1.0f, moveHor2 = 1.0f;
         float point1Pos, point2Pos;
+        [HideInInspector]
+        public float stunnedMultiplier = 1.0f;
 
         // Start is called before the first frame update
         void Start()
@@ -72,7 +74,7 @@ namespace Movement
 
         public void MoveAlongSplineHor(float movingDir, float splineDist, PathCreator currentSpline, Vector3 position)
         {
-            movingDir *= Time.deltaTime * movementSpeed;
+            movingDir *= Time.deltaTime * movementSpeed * stunnedMultiplier;
             Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist - movingDir, EndOfPathInstruction.Stop);
 
             //This is garbage but ok for testing - Sebastian
