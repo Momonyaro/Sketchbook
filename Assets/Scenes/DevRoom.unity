@@ -918,6 +918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315781995}
   - component: {fileID: 315781994}
+  - component: {fileID: 315781996}
   m_Layer: 0
   m_Name: --MAP SETTINGS--
   m_TagString: Untagged
@@ -952,6 +953,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &315781996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315781993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80928616fab726d40ab9844e66d3682a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &322636658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,6 +3693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggleLight: 1
   lightCone: {fileID: 1431396721}
+  flashHitBox: {fileID: 0}
+  flashLocation: {fileID: 0}
 --- !u!114 &1681113633
 MonoBehaviour:
   m_ObjectHideFlags: 0
