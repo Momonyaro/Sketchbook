@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e71def8a-c1a6-43ce-9efa-d263f66f5956" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimLeech.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Config/MapSettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RenderShaderToScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RenderShaderToScreen.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -46,13 +47,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/MapSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/MapConfigScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/SplineWalker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/MannequinEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimLeech.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RenderShaderToScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthSample.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
       </list>
     </option>
   </component>
@@ -104,6 +105,7 @@
       <workItem from="1618913407667" duration="1097000" />
       <workItem from="1619082403101" duration="2720000" />
       <workItem from="1619091737089" duration="3556000" />
+      <workItem from="1619445433617" duration="849000" />
     </task>
     <servers />
   </component>
