@@ -139,6 +139,7 @@
             <e p="MapSettings.cs" t="Include" />
           </e>
           <e p="Enemies" t="Include">
+            <e p="EnemyHurt.cs" t="Include" />
             <e p="MoveBetweenPoints.cs" t="Include" />
           </e>
           <e p="Flashlight" t="Include">
@@ -150,6 +151,7 @@
             <e p="SplineWalker.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
+            <e p="Destroy.cs" t="Include" />
             <e p="MannequinEntity.cs" t="Include" />
             <e p="OuterBoxTrigger.cs" t="Include" />
             <e p="PlayerPush.cs" t="Include" />
