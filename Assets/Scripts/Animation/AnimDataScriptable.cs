@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -7,6 +8,7 @@ namespace Animation
     [CreateAssetMenu(fileName = "New Animation", menuName = "Animation Data", order = 0)]
     public class AnimDataScriptable : ScriptableObject
     {
+        
         [Header("General Settings")]
         public string animName = "New Animation";
         [Tooltip("This is for when you for example have a 'Walk Left' animation and want to make it 'Walk Right' by flipping the animation.")]
@@ -45,23 +47,56 @@ namespace Animation
                 else
                     frameIndex = Mathf.Min(frameIndex + 1, animFrames.Count - 1); // Limit it to repeat the last frame
                 
+                //New frame, let's parse the frames audio action
+                ParseAudioAction();
+                
                 frameTimer = animFrames[frameIndex].frameDuration;
             }
 
             return animFrames[frameIndex].frameMesh;
         }
+
+        private void ParseAudioAction()
+        {
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            //    Plan of attack: Fetch the wanted clip from the AudioManager, set it as the clip to play &    //
+            //                 finally signalling the audio source to play it's sound.                         //
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            
+            AnimFrame.AudioActions action = animFrames[frameIndex].audioAction;
+            switch (action)
+            {
+                case AnimFrame.AudioActions.PlayerStep:
+                    return;
+                
+                case AnimFrame.AudioActions.PlayerJump:
+                    return;
+                
+                default:
+                    return;
+            }
+        }
     }
 
-    [System.Serializable]
+    [Serializable]
     public struct AnimFrame
     {
+        public enum AudioActions
+        {
+            None,
+            PlayerStep,
+            PlayerJump,
+        }
+
         public Mesh frameMesh;
         public float frameDuration;
+        public AudioActions audioAction;
 
         public AnimFrame(Mesh frameMesh, float frameDuration)
         {
             this.frameMesh = frameMesh;
             this.frameDuration = frameDuration;
+            this.audioAction = AudioActions.None;
         }
     }
 }
