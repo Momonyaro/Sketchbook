@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-6525392349022721446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,6 +31,9 @@ MonoBehaviour:
     Value: 1020
   Exists: 1
 --- !u!114 &-2004060166283765778
+=======
+--- !u!114 &-6163644279627203844
+>>>>>>> dev-prog
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,6 +49,7 @@ MonoBehaviour:
   Name: Master
   StudioPath: bank:/Master
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastModified: 637539096317229668
 =======
 <<<<<<< HEAD
@@ -53,10 +58,13 @@ MonoBehaviour:
   lastModified: 637525243977844221
 >>>>>>> dev-prog
 >>>>>>> dev
+=======
+  lastModified: 637538204784141863
+>>>>>>> dev-prog
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &11400000
+--- !u!114 &-6123239885970319355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,9 +73,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   EditorBanks:
   - {fileID: -6525392349022721446}
   - {fileID: -2004060166283765778}
@@ -90,6 +99,18 @@ MonoBehaviour:
 >>>>>>> dev
   cacheVersion: 6
 --- !u!114 &4813258001087920648
+=======
+  Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637538204784082017
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1020
+  Exists: 1
+--- !u!114 &-3345696442905603112
+>>>>>>> dev-prog
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,7 +125,7 @@ MonoBehaviour:
   Path: event:/Ambience/Ambiance
   guid: 2c4fc34cd3a0c24db912067f81a1536f
   Banks:
-  - {fileID: -2004060166283765778}
+  - {fileID: -6163644279627203844}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -112,7 +133,32 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 24961
---- !u!114 &6476192517492093245
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -6123239885970319355}
+  - {fileID: -6163644279627203844}
+  EditorEvents:
+  - {fileID: -3345696442905603112}
+  - {fileID: 5109763517818359980}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -6163644279627203844}
+  StringsBanks:
+  - {fileID: -6123239885970319355}
+  stringsBankWriteTime: 637538204784082017
+  cacheVersion: 6
+--- !u!114 &5109763517818359980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +173,7 @@ MonoBehaviour:
   Path: event:/Ambience/Outdoor
   guid: 4d713c4ab6d79a4bbe0cbecd612b6b43
   Banks:
-  - {fileID: -2004060166283765778}
+  - {fileID: -6163644279627203844}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
