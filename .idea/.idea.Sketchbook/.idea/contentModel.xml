@@ -134,6 +134,9 @@
             <e p="MeshAnimator.cs" t="Include" />
             <e p="MeshAnimLeech.cs" t="Include" />
           </e>
+          <e p="Camera" t="Include">
+            <e p="CameraMan.cs" t="Include" />
+          </e>
           <e p="Config" t="Include">
             <e p="MapConfigScriptable.cs" t="Include" />
             <e p="MapSettings.cs" t="Include" />

@@ -165,7 +165,7 @@
                     "id": "6f41a962-dbda-4df2-8a23-5bb5add2b85e",
                     "path": "<Joystick>/stick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "InvertVector2(invertY=false)",
                     "groups": "Joystick;Controller1",
                     "action": "HorVer",
                     "isComposite": false,
