@@ -15,7 +15,10 @@ public class BouncePad : MonoBehaviour
         if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<PlayerController>() != null)
         {
             playerController = other.gameObject.GetComponent<PlayerController>();
-            playerController.BounceUsingForce(playerBounceDistance);
+            if (!playerController.IsGrounded())
+            {
+                playerController.BounceUsingForce(playerBounceDistance);
+            }
         }
     }
 }
