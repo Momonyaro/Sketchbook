@@ -4,7 +4,7 @@ using PathCreation;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Camera
+namespace Kamera
 {
     public class CameraMan : MonoBehaviour
     {
