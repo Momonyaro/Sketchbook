@@ -1,116 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
---- !u!114 &-6525392349022721446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< HEAD
-  lastModified: 637539096317219691
-=======
-<<<<<<< HEAD
-  lastModified: 637538204784082017
-=======
-  lastModified: 637525243978114132
->>>>>>> dev-prog
->>>>>>> dev
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1020
-  Exists: 1
---- !u!114 &-2004060166283765778
-=======
---- !u!114 &-6163644279627203844
->>>>>>> dev-prog
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_Scrapper/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-<<<<<<< HEAD
-<<<<<<< HEAD
-  lastModified: 637539096317229668
-=======
-<<<<<<< HEAD
-  lastModified: 637538204784141863
-=======
-  lastModified: 637525243977844221
->>>>>>> dev-prog
->>>>>>> dev
-=======
-  lastModified: 637538204784141863
->>>>>>> dev-prog
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-6123239885970319355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  EditorBanks:
-  - {fileID: -6525392349022721446}
-  - {fileID: -2004060166283765778}
-  EditorEvents:
-  - {fileID: 4813258001087920648}
-  - {fileID: 6476192517492093245}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -2004060166283765778}
-  StringsBanks:
-  - {fileID: -6525392349022721446}
-<<<<<<< HEAD
-  stringsBankWriteTime: 637539096317219691
-=======
-<<<<<<< HEAD
-  stringsBankWriteTime: 637538204784082017
-=======
-  stringsBankWriteTime: 637525243978114132
->>>>>>> dev-prog
->>>>>>> dev
-  cacheVersion: 6
---- !u!114 &4813258001087920648
-=======
-  Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637538204784082017
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1020
-  Exists: 1
---- !u!114 &-3345696442905603112
->>>>>>> dev-prog
+--- !u!114 &-9097443752431447993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,7 +15,7 @@ MonoBehaviour:
   Path: event:/Ambience/Ambiance
   guid: 2c4fc34cd3a0c24db912067f81a1536f
   Banks:
-  - {fileID: -6163644279627203844}
+  - {fileID: 7208071291088100622}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -133,32 +23,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 24961
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -6123239885970319355}
-  - {fileID: -6163644279627203844}
-  EditorEvents:
-  - {fileID: -3345696442905603112}
-  - {fileID: 5109763517818359980}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -6163644279627203844}
-  StringsBanks:
-  - {fileID: -6123239885970319355}
-  stringsBankWriteTime: 637538204784082017
-  cacheVersion: 6
---- !u!114 &5109763517818359980
+--- !u!114 &-6449117729105142835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,7 +38,7 @@ MonoBehaviour:
   Path: event:/Ambience/Outdoor
   guid: 4d713c4ab6d79a4bbe0cbecd612b6b43
   Banks:
-  - {fileID: -6163644279627203844}
+  - {fileID: 7208071291088100622}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -181,3 +46,68 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 15
   Length: 36500
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 412254548945761681}
+  - {fileID: 7208071291088100622}
+  EditorEvents:
+  - {fileID: -9097443752431447993}
+  - {fileID: -6449117729105142835}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 7208071291088100622}
+  StringsBanks:
+  - {fileID: 412254548945761681}
+  stringsBankWriteTime: 637539096317219691
+  cacheVersion: 6
+--- !u!114 &412254548945761681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637539096317219691
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1020
+  Exists: 1
+--- !u!114 &7208071291088100622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Scrapper/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637539096317229668
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
