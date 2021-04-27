@@ -132,26 +132,43 @@
           <e p="Animation" t="Include">
             <e p="AnimDataScriptable.cs" t="Include" />
             <e p="MeshAnimator.cs" t="Include" />
+            <e p="MeshAnimLeech.cs" t="Include" />
+          </e>
+          <e p="Camera" t="Include">
+            <e p="CameraMan.cs" t="Include" />
           </e>
           <e p="Config" t="Include">
             <e p="MapConfigScriptable.cs" t="Include" />
             <e p="MapSettings.cs" t="Include" />
           </e>
+          <e p="Dialogue" t="Include">
+            <e p="DialogueTrigger.cs" t="Include" />
+          </e>
           <e p="Enemies" t="Include">
+            <e p="EnemyHurt.cs" t="Include" />
             <e p="MoveBetweenPoints.cs" t="Include" />
           </e>
           <e p="Flashlight" t="Include">
             <e p="FlashlighFlash.cs" t="Include" />
             <e p="FlashlightAim.cs" t="Include" />
           </e>
+          <e p="Managers" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+          </e>
           <e p="Movement" t="Include">
             <e p="PlayerController.cs" t="Include" />
             <e p="SplineWalker.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
+            <e p="Destroy.cs" t="Include" />
+            <e p="MannequinEntity.cs" t="Include" />
             <e p="OuterBoxTrigger.cs" t="Include" />
             <e p="PlayerPush.cs" t="Include" />
             <e p="PushBlock.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="DepthSample.shader" t="Include" />
+            <e p="RenderShaderToScreen.cs" t="Include" />
           </e>
           <e p="Spline" t="Include">
             <e p="Editor" t="Include">

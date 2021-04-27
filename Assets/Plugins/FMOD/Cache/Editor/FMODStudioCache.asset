@@ -9,16 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Outdoor
   m_EditorClassIdentifier: 
-  Path: FMOD_Scrapper/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637538204784141863
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
+  Path: event:/Ambience/Outdoor
+  guid: 4d713c4ab6d79a4bbe0cbecd612b6b43
+  Banks:
+  - {fileID: 0}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 36500
 --- !u!114 &-6123239885970319355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +59,7 @@ MonoBehaviour:
   Path: event:/Ambience/Ambiance
   guid: 2c4fc34cd3a0c24db912067f81a1536f
   Banks:
-  - {fileID: -6163644279627203844}
+  - {fileID: 0}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -63,6 +67,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 24961
+--- !u!114 &-110659420359705064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637525243978114132
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1020
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,18 +101,83 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -6123239885970319355}
-  - {fileID: -6163644279627203844}
+  - {fileID: -110659420359705064}
+  - {fileID: 4315202026468538158}
   EditorEvents:
-  - {fileID: -3345696442905603112}
-  - {fileID: 5109763517818359980}
+  - {fileID: 2515514035620480896}
+  - {fileID: 1537356178473643629}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6163644279627203844}
+  - {fileID: 4315202026468538158}
   StringsBanks:
-  - {fileID: -6123239885970319355}
-  stringsBankWriteTime: 637538204784082017
+  - {fileID: -110659420359705064}
+  stringsBankWriteTime: 637525243978114132
   cacheVersion: 6
+--- !u!114 &1537356178473643629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Outdoor
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Outdoor
+  guid: 4d713c4ab6d79a4bbe0cbecd612b6b43
+  Banks:
+  - {fileID: 4315202026468538158}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 36500
+--- !u!114 &2515514035620480896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Ambiance
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Ambiance
+  guid: 2c4fc34cd3a0c24db912067f81a1536f
+  Banks:
+  - {fileID: 4315202026468538158}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 24961
+--- !u!114 &4315202026468538158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Scrapper/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637525243977844221
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5109763517818359980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +193,7 @@ MonoBehaviour:
   Path: event:/Ambience/Outdoor
   guid: 4d713c4ab6d79a4bbe0cbecd612b6b43
   Banks:
-  - {fileID: -6163644279627203844}
+  - {fileID: 0}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -111,3 +201,22 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 15
   Length: 36500
+--- !u!114 &5276757085095199945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Scrapper/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637538204784141863
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
