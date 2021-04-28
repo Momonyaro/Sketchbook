@@ -10,7 +10,7 @@ namespace Movement
     {
         [Tooltip("The speed the block gets pushed or pulled a\n" +
             "SHOULD BE THE SAME AS THE MOVEMENT SPEED OF THE PLAYER WHILE THEY ARE PUSHING/PULLING (default movement speed right now)")]
-        public float blockSpeed = 10.0f;
+        float blockSpeed = 10.0f;
 
         [HideInInspector]
         public bool atEdge;
@@ -90,6 +90,7 @@ namespace Movement
                 canBePushed = true;
                 player = other.gameObject;
                 playerPush = other.gameObject.GetComponent<PlayerPush>();
+                blockSpeed = playerPush.playerSpeed;
             }
         }
 

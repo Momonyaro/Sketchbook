@@ -13,6 +13,8 @@ namespace Movement
         public float moveSpeed = 10.0f;
         [HideInInspector]
         public float pushSpeedMultiplier = 1.0f;
+        [HideInInspector]
+        public float hurtSpeedMultiplier = 1.0f; // Namnet passar inte riktigt vad den gör...
 
         public float pushOffForce = 50.0f;
         [Min(1.0f)] public float jumpSpeed = 2.0f;
@@ -81,7 +83,7 @@ namespace Movement
             //Varför ska vi röra oss?
             if (horSpeed == 0) return;
 
-            horSpeed *= Time.deltaTime * moveSpeed * pushSpeedMultiplier;
+            horSpeed *= Time.deltaTime * moveSpeed * pushSpeedMultiplier * hurtSpeedMultiplier;
             
             var position = rigidbody.position;
 

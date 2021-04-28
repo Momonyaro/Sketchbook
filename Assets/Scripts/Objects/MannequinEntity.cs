@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Objects
 {
@@ -63,6 +64,12 @@ namespace Objects
 
             if (copyRotation)
                 transform.rotation = objectToCopy.transform.rotation;
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.black;
+            Gizmos.DrawLine(transform.position, objectToCopy.transform.position);
         }
     }
 }
