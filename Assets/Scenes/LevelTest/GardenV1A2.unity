@@ -2531,6 +2531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   pushSpeedMultiplier: 0
+  hurtSpeedMultiplier: 1
   pushOffForce: 2
   jumpSpeed: 1
   fallSpeed: 1.1
@@ -3565,6 +3566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hP: 1
   damage: 1
+  horizontalKnockbackSpeed: 10
+  verticalKnockbackForce: 75
   stunnedTime: 5
   playerBounceDistance: 5
 --- !u!114 &1848040538
@@ -3579,10 +3582,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 3
+  movementSpeed: 2
   point1: {fileID: 568740310}
   point2: {fileID: 1239656793}
   moveTo1: 1
+  moveWhenTouched: 0
   stunnedMultiplier: 1
 --- !u!135 &1848040539
 SphereCollider:
@@ -3637,11 +3641,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848040536}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.9187536, z: 1}
-  m_Center: {x: -3.991183e-17, y: 0.040623188, z: -2.8609084e-18}
+  m_Size: {x: 3.678181, y: 1.5374659, z: 1}
+  m_Center: {x: -0.003158089, y: 0.34997892, z: 0}
 --- !u!23 &1848040543
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3699,7 +3703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848040536}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -73.79, y: 1.92, z: 2.55}
+  m_LocalPosition: {x: -72, y: 1.92, z: 0}
   m_LocalScale: {x: 1.1919838, y: 1.1919838, z: 1.1919838}
   m_Children:
   - {fileID: 1199611352}
