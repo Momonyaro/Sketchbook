@@ -8,10 +8,17 @@ namespace Kamera
 {
     public class CameraMan : MonoBehaviour
     {
+        public enum UpdateMethod
+        {
+            Update, 
+            FixedUpdate
+        }
+    
         [Header("Camera Settings")]
         public Vector3 positionOffset = Vector3.zero;
         public Vector3 rotationOffset = Vector3.zero;
         public bool usePlayerRotation = true;
+        public UpdateMethod updateMethod = UpdateMethod.Update;
         [Space]
         public float lookAheadMultiplier = 1.0f;
         public AnimationCurve lookAheadSpeed = new AnimationCurve();
@@ -51,6 +58,21 @@ namespace Kamera
 
         private void Update()
         {
+            if (updateMethod != UpdateMethod.Update) return;
+            
+            lastDelta = player.lastDelta;
+            CameraBuildup();
+            
+            LookAheadOfPlayer();
+
+            if (!usePlayerRotation) return;
+            transform.rotation = player.transform.rotation;
+        }
+        
+        private void FixedUpdate()
+        {
+            if (updateMethod != UpdateMethod.FixedUpdate) return;
+            
             lastDelta = player.lastDelta;
             CameraBuildup();
             
