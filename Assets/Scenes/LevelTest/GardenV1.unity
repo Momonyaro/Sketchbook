@@ -20951,6 +20951,7 @@ MonoBehaviour:
   splineWalker: {fileID: 0}
   player: {fileID: 0}
   minLookAheadThreshold: 0
+  debugSquareSize: 0.69
 --- !u!114 &2128590939
 MonoBehaviour:
   m_ObjectHideFlags: 0
