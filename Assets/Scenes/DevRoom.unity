@@ -1702,6 +1702,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  lerpY: 1
+  lerpYSpeed: 0.2
+  lerpUsingDistance: 0
   splineWalker: {fileID: 0}
   player: {fileID: 0}
   minLookAheadThreshold: 0.01
@@ -2397,6 +2400,7 @@ MonoBehaviour:
   pushing: 0
   pushLastFrame: 0
   lastDelta: {x: 0, y: 0}
+  playerSpeed: 0
 --- !u!1 &1048466055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,7 +4337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 091c879fb3f30be40b4d9fe4f50497da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockSpeed: 0
   atEdge: 0
 --- !u!114 &1906142733
 MonoBehaviour:
