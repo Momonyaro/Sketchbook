@@ -4372,8 +4372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5967b096768f44cb3011650e4047de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 5
   pushSpeedMultiplier: 0
+  hurtSpeedMultiplier: 1
   pushOffForce: 2
   jumpSpeed: 1
   fallSpeed: 1.1
@@ -9013,6 +9014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hP: 1
   damage: 1
+  horizontalKnockbackSpeed: 10
+  verticalKnockbackForce: 75
   stunnedTime: 5
   playerBounceDistance: 1.2
 --- !u!114 &1013969662
@@ -9031,6 +9034,7 @@ MonoBehaviour:
   point1: {fileID: 1490296616}
   point2: {fileID: 1719998802}
   moveTo1: 1
+  moveWhenTouched: 0
   stunnedMultiplier: 1
 --- !u!135 &1013969663
 SphereCollider:
@@ -11621,6 +11625,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hP: 1
   damage: 1
+  horizontalKnockbackSpeed: 10
+  verticalKnockbackForce: 75
   stunnedTime: 5
   playerBounceDistance: 1.2
 --- !u!114 &1272379450
@@ -11639,6 +11645,7 @@ MonoBehaviour:
   point1: {fileID: 1490296616}
   point2: {fileID: 1719998802}
   moveTo1: 1
+  moveWhenTouched: 0
   stunnedMultiplier: 1
 --- !u!135 &1272379451
 SphereCollider:
@@ -20912,6 +20919,7 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0.45, z: -0.41}
   rotationOffset: {x: 0, y: 0, z: 0}
   usePlayerRotation: 1
+  updateMethod: 1
   lookAheadMultiplier: 0.6
   lookAheadSpeed:
     serializedVersion: 2
@@ -20937,6 +20945,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  lerpY: 1
+  lerpYSpeed: 0.5
+  lerpUsingDistance: 0
   splineWalker: {fileID: 0}
   player: {fileID: 0}
   minLookAheadThreshold: 0
