@@ -12,11 +12,14 @@ namespace Camera
         public Vector3 positionOffset = Vector3.zero;
         public Vector3 rotationOffset = Vector3.zero;
         public bool usePlayerRotation = true;
-
+        [Space]
         public float lookAheadMultiplier = 1.0f;
         public AnimationCurve lookAheadSpeed = new AnimationCurve();
         private float lookAheadBuildup = 0;
-        
+        [Space] 
+        public bool lerpY = true;
+        public float lerpYSpeed = 0.5f;
+        public bool lerpUsingDistance = false;
         [Space]
         public SplineWalker splineWalker;
         public PlayerController player;
@@ -25,6 +28,7 @@ namespace Camera
         private Vector2 lastDelta = Vector2.zero;
         private float lastSign = 0;
         private float currentLookAhead = 0.0f;
+        private float lastY = 0.0f;
 
         #region Unity Events
         
@@ -42,6 +46,7 @@ namespace Camera
         private void Start()
         {
             CenterCameraOnPlayer();
+            lastY = transform.position.y;
         }
 
         private void Update()
@@ -77,7 +82,25 @@ namespace Camera
             
             float dist = splineWalker.currentSpline.path.GetClosestDistanceAlongPath(player.transform.position);
             Vector3 splinePos = splineWalker.currentSpline.path.GetPointAtDistance(dist + lookAheadAmount, EndOfPathInstruction.Stop);
+            if (lerpY) splinePos = LerpToPlayerY(splinePos, player.transform.position.y);
             transform.position = splinePos;
+        }
+
+        private Vector3 LerpToPlayerY(Vector3 splinePos, float playerY)
+        {
+            float lerp = 0;
+            if (!lerpUsingDistance)
+            {
+                lerp = Mathf.Lerp(lastY, playerY, lerpYSpeed);
+            }
+            else
+            {
+                lerp = Mathf.Lerp(lastY, playerY, (1 + lastY) / (1 + playerY));
+            }
+
+            lastY = lerp;
+            splinePos.y = lerp;
+            return splinePos;
         }
 
         private void CameraBuildup()

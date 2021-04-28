@@ -160,11 +160,17 @@
             <e p="SplineWalker.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
+            <e p="BouncePad.cs" t="Include" />
             <e p="Destroy.cs" t="Include" />
+            <e p="DestroyWhenFlashed.cs" t="Include" />
             <e p="MannequinEntity.cs" t="Include" />
             <e p="OuterBoxTrigger.cs" t="Include" />
             <e p="PlayerPush.cs" t="Include" />
             <e p="PushBlock.cs" t="Include" />
+          </e>
+          <e p="Scene Change" t="Include">
+            <e p="ChangeScene.cs" t="Include" />
+            <e p="Transition.cs" t="Include" />
           </e>
           <e p="Shaders" t="Include">
             <e p="DepthSample.shader" t="Include" />
