@@ -57,5 +57,15 @@ namespace Animation
             transform.localScale = current.invertAnimXAxis ? originalScale + new Vector3(-originalScale.x * 2, 0, 0): originalScale;
             meshFilter.mesh = current.TickAnimation();
         }
+
+        public Mesh GetCurrentPlayingMesh()
+        {
+            return meshFilter.mesh;
+        }
+
+        public Vector3 GetCurrentAnimScale()
+        {
+            return transform.localScale;
+        }
     }
 }

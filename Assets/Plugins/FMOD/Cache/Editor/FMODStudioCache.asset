@@ -1,6 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1709610952204746368
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 1500399148034035738}
+  - {fileID: 6200618135401865682}
+  EditorEvents:
+  - {fileID: 5029083820320178707}
+  - {fileID: 7472492904856647108}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 6200618135401865682}
+  StringsBanks:
+  - {fileID: 1500399148034035738}
+  stringsBankWriteTime: 637539096317219691
+  cacheVersion: 6
+--- !u!114 &1500399148034035738
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15,61 +40,13 @@ MonoBehaviour:
   Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637539029270373628
+  lastModified: 637539096317219691
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 1020
   Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -1709610952204746368}
-  - {fileID: 7244654707244728257}
-  EditorEvents:
-  - {fileID: 130140285757335117}
-  - {fileID: 2325844730141420223}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 7244654707244728257}
-  StringsBanks:
-  - {fileID: -1709610952204746368}
-  stringsBankWriteTime: 637539029270373628
-  cacheVersion: 6
---- !u!114 &130140285757335117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Ambiance
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Ambiance
-  guid: 2c4fc34cd3a0c24db912067f81a1536f
-  Banks:
-  - {fileID: 7244654707244728257}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 24961
---- !u!114 &2325844730141420223
+--- !u!114 &5029083820320178707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,7 +61,7 @@ MonoBehaviour:
   Path: event:/Ambience/Outdoor
   guid: 4d713c4ab6d79a4bbe0cbecd612b6b43
   Banks:
-  - {fileID: 7244654707244728257}
+  - {fileID: 6200618135401865682}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -92,7 +69,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 15
   Length: 36500
---- !u!114 &7244654707244728257
+--- !u!114 &6200618135401865682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,7 +84,30 @@ MonoBehaviour:
   Path: FMOD_Scrapper/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637539029270323635
+  lastModified: 637539096317229668
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &7472492904856647108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Ambiance
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Ambiance
+  guid: 2c4fc34cd3a0c24db912067f81a1536f
+  Banks:
+  - {fileID: 6200618135401865682}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 24961

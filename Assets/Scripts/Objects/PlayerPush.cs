@@ -10,6 +10,8 @@ public class PlayerPush : MonoBehaviour
     public bool pushing, pushLastFrame;
     [HideInInspector]
     public Vector2 lastDelta = Vector2.zero;
+    [HideInInspector]
+    public float playerSpeed;
 
     PlayerController playerController;
 
@@ -18,6 +20,7 @@ public class PlayerPush : MonoBehaviour
     {
         playerController = GetComponent<PlayerController>();
         Pushing(1.0f);
+        playerSpeed = playerController.moveSpeed;
     }
 
     // Update is called once per frame
