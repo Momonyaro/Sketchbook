@@ -222,6 +222,7 @@ MonoBehaviour:
   point1: {fileID: 219866108}
   point2: {fileID: 1320910148}
   moveTo1: 1
+  moveWhenTouched: 0
   stunnedMultiplier: 1
 --- !u!135 &84791921
 SphereCollider:
