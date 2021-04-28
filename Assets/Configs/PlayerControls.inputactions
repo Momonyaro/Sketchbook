@@ -42,7 +42,7 @@
                 {
                     "name": "WASD",
                     "id": "e896a1d9-9270-42b2-bd75-90e7c3e17bb1",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=1)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -155,7 +155,7 @@
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Gamepad",
+                    "groups": "Gamepad;Controller2",
                     "action": "HorVer",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -165,7 +165,7 @@
                     "id": "6f41a962-dbda-4df2-8a23-5bb5add2b85e",
                     "path": "<Joystick>/stick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "InvertVector2(invertY=false)",
                     "groups": "Joystick;Controller1",
                     "action": "HorVer",
                     "isComposite": false,

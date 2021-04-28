@@ -10,7 +10,7 @@ namespace Movement
     {
         [Tooltip("The speed the block gets pushed or pulled a\n" +
             "SHOULD BE THE SAME AS THE MOVEMENT SPEED OF THE PLAYER WHILE THEY ARE PUSHING/PULLING (default movement speed right now)")]
-        public float blockSpeed;
+        float blockSpeed = 10.0f;
 
         [HideInInspector]
         public bool atEdge;
@@ -72,7 +72,7 @@ namespace Movement
                 if (horSpeed < -0.001f && !inRange) return;
             }
 
-            horSpeed *= Time.deltaTime * 10.0f * blockSpeedMultiplier;
+            horSpeed *= Time.deltaTime * blockSpeed * blockSpeedMultiplier;
             Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist - horSpeed, EndOfPathInstruction.Stop);
 
             //This is garbage but ok for testing - Sebastian
@@ -90,6 +90,7 @@ namespace Movement
                 canBePushed = true;
                 player = other.gameObject;
                 playerPush = other.gameObject.GetComponent<PlayerPush>();
+                blockSpeed = playerPush.playerSpeed;
             }
         }
 

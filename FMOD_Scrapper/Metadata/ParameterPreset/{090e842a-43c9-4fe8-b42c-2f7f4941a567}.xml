@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{090e842a-43c9-4fe8-b42c-2f7f4941a567}">
+		<property name="name">
+			<value>Using ficklampa</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ad145f72-511a-4bd7-9591-9b4740d45e8d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{040782dc-3095-425e-892f-424eda01c188}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{040782dc-3095-425e-892f-424eda01c188}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.70999997854232788</value>
+		</property>
+	</object>
+</objects>
