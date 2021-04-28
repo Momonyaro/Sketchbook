@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    [Tooltip("The canvas with the transition object that gets spawned when a scene transition is triggered (i.e. the white fade-in)")]
     public GameObject blackScreenCanvas;
     public string scene;
     bool triggered;

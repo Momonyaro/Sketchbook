@@ -15,6 +15,11 @@ namespace Movement
         [Tooltip("TRUE: Will start off moving towards Point 1\n" +
             "FALSE: Will start off moving towards Point 2")]
         public bool moveTo1 = true;
+        [Tooltip("TRUE: Will only start moving once the player has touched the object\n" +
+            "FALSE: Will start moving as soon as the scene loads")]
+        public bool moveWhenTouched = false;
+
+        bool touched;
 
         Rigidbody rb;
         SplineWalker splineWalker;
@@ -28,6 +33,7 @@ namespace Movement
         {
             rb = GetComponent<Rigidbody>();
             splineWalker = GetComponent<SplineWalker>();
+            touched = false;
 
             var position = rb.position;
 
@@ -56,19 +62,22 @@ namespace Movement
             PathCreator currentSpline = splineWalker.currentSpline;
             float splineDist = currentSpline.path.GetClosestDistanceAlongPath(position);
 
-            if (moveTo1)
+            if ((moveWhenTouched && touched) || !moveWhenTouched)
             {
-                if ((moveHor1 < 0.0f && point1Pos <= splineDist) || (moveHor1 > 0.0f && point1Pos >= splineDist))
-                    moveTo1 = false;
+                if (moveTo1)
+                {
+                    if ((moveHor1 < 0.0f && point1Pos <= splineDist) || (moveHor1 > 0.0f && point1Pos >= splineDist))
+                        moveTo1 = false;
+                    else
+                        MoveAlongSplineHor(moveHor1, splineDist, currentSpline, position);
+                }
                 else
-                    MoveAlongSplineHor(moveHor1, splineDist, currentSpline, position);
-            }
-            else
-            {
-                if ((moveHor2 < 0.0f && point2Pos <= splineDist) || (moveHor2 > 0.0f && point2Pos >= splineDist))
-                    moveTo1 = true;
-                else
-                    MoveAlongSplineHor(moveHor2, splineDist, currentSpline, position);
+                {
+                    if ((moveHor2 < 0.0f && point2Pos <= splineDist) || (moveHor2 > 0.0f && point2Pos >= splineDist))
+                        moveTo1 = true;
+                    else
+                        MoveAlongSplineHor(moveHor2, splineDist, currentSpline, position);
+                }
             }
         }
 
@@ -81,6 +90,14 @@ namespace Movement
             if (!MapSettings.Instance.configScriptable.lockYToSpline) splinePos.y = position.y;
 
             rb.MovePosition(splinePos);
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "Player")
+            {
+                touched = true;
+            }
         }
     }
 }
