@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Movement;
+using PathCreation;
 
 //Märkte nu i efterhand att EnemyHurt kanske inte var det bästa nämnet, men eh så kan det gå
 public class EnemyHurt : MonoBehaviour
@@ -10,12 +11,17 @@ public class EnemyHurt : MonoBehaviour
     public int hP = 1;
     [Tooltip("The amount of damage the enemy will deal to the player upon touch")]
     public int damage = 1;
+    [Tooltip("Determines how fast the player will be knocked back when hurt")]
+    public float horizontalKnockbackSpeed = 10.0f;
+    [Tooltip("The force the pushes the player up when they get hurt")]
+    public float verticalKnockbackForce = 75.0f;
     [Tooltip("Time (in seconds) the enemy will be stunned after being flashed")]
     public float stunnedTime = 5.0f;
     [Tooltip("The force that will launch the player upwards after bouncing on the enemy")]
     public float playerBounceDistance = 170.0f;
 
     PlayerController playerController;
+    PlayerHurt playerHurt;
 
     MoveBetweenPoints moveBetweenPoints;
     bool stunned = false;
@@ -42,14 +48,28 @@ public class EnemyHurt : MonoBehaviour
                 playerController.BounceUsingForce(playerBounceDistance);
                 TakeDamage();
             }
-            else
-                HurtPlayer(damage);
+            else if (other.gameObject.GetComponent<PlayerHurt>() != null)
+            {
+                int direction = 1;
+
+                PathCreator currentSpline = GetComponent<SplineWalker>().currentSpline;
+                float splineDist = currentSpline.path.GetClosestDistanceAlongPath(transform.position);
+                float playerPos = currentSpline.path.GetClosestDistanceAlongPath(other.gameObject.transform.position);
+
+                if (playerPos > splineDist)
+                    direction = -1;
+
+                playerHurt = other.gameObject.GetComponent<PlayerHurt>();
+                HurtPlayer(damage, direction);
+            }
         }
     }
 
-    void HurtPlayer(int damage)
+    void HurtPlayer(int damage, int direction)
     {
         //Player gets hurt like a little bitch
+        //Why did I write that - Albin 5 days or so later
+        playerHurt.GettingHurt(damage, direction, horizontalKnockbackSpeed, verticalKnockbackForce);
     }
 
     void TakeDamage()
