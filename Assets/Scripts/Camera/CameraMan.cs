@@ -31,6 +31,7 @@ namespace Camera
         public SplineWalker splineWalker;
         public PlayerController player;
         [Range(0, 1)] public float minLookAheadThreshold = 0.01f;
+        public float debugSquareSize = 2.0f;
         private Transform camTransform;
         private Vector2 lastDelta = Vector2.zero;
         private float lastSign = 0;
@@ -151,10 +152,10 @@ namespace Camera
             
             Gizmos.DrawLine(camPos, flatPos);
             Gizmos.DrawLine(myPos, flatPos);
-            Gizmos.DrawLine(myPos + new Vector3(2, 0, -2), myPos + new Vector3(-2, 0, -2));
-            Gizmos.DrawLine(myPos + new Vector3(-2, 0, 2), myPos + new Vector3( 2, 0,  2));
-            Gizmos.DrawLine(myPos + new Vector3(2, 0, -2), myPos + new Vector3( 2, 0,  2));
-            Gizmos.DrawLine(myPos + new Vector3(-2, 0, -2), myPos + new Vector3(-2, 0, 2));
+            Gizmos.DrawLine(myPos + new Vector3(debugSquareSize, 0, -debugSquareSize), myPos + new Vector3(-debugSquareSize, 0, -debugSquareSize));
+            Gizmos.DrawLine(myPos + new Vector3(-debugSquareSize, 0, debugSquareSize), myPos + new Vector3( debugSquareSize, 0,  debugSquareSize));
+            Gizmos.DrawLine(myPos + new Vector3(debugSquareSize, 0, -debugSquareSize), myPos + new Vector3( debugSquareSize, 0,  debugSquareSize));
+            Gizmos.DrawLine(myPos + new Vector3(-debugSquareSize, 0, -debugSquareSize), myPos + new Vector3(-debugSquareSize, 0, debugSquareSize));
         }
 
         #endregion
