@@ -10,12 +10,12 @@ namespace Movement
     public class PlayerHurt : MonoBehaviour
     {
         // Having the max HP be scene-dependent is kinda whack, but eh it's probably fine, we're not planning on ever changing the max HP of the player anyways
-        [Tooltip("The maximum amount of HP the player can have (in this scene)")]
-        public int maxHP = 3;
+        [HideInInspector]
+        public int maxHP = 12;
         [Tooltip("The canvas with the transition object that gets spawned when a scene transition is triggered (i.e. the white fade-in)")]
         public GameObject deathScreenCanvas;
         [HideInInspector]
-        public int currentHP;
+        static public int currentHP = 12; //endast static public int just nu för att det blir en enkel lösning tills speltestningen
 
         float knockbackSpeed = 0.0f;
         int direction = 1;
@@ -23,9 +23,10 @@ namespace Movement
         PlayerController playerController;
         Rigidbody rb;
         SplineWalker splineWalker;
+        HPUI hpUI;
 
         bool isHurt;
-        bool invulnerable; //Used to keep the player of getting hurt while they're already hurt. Basically this means that if hurt, the player can't be hurt again. If they were already hurt, of course. As in, the player can't get gurt while they are already hurt.
+        bool invulnerable; //Used to keep the player of getting hurt while they're already hurt. Basically this means that if hurt, the player can't be hurt again. If they were already hurt, of course. As in, the player can't get hurt while they are already hurt.
         //To put it more simply, the player can only get hurt if they are not currently hurt. This gives our depressed players an advantage, to make them feel better. Basically this means that the player CANNOT be hurt by an enemy or anything else as long as they
         //are already hurt, you feel me? It might make more sense if you think of it like this: I was very bored. Also please don't cancel me on twitter dot com if the depressed joke was made in poor taste, which it probably was. I'm bored, yo. That's not
         //an excuse for being rude though, I am very sorry. I've made a severe lapse in my judgement, and I don't expect to be forgiven. I'm simply here to apologize. I'm ashamed of myself. I’m disappointed in myself. And I promise to be better. I will be better.
@@ -34,12 +35,17 @@ namespace Movement
         // Start is called before the first frame update
         void Start()
         {
-            // Om vi sedan vill att man inte ska helas mellan scener får vi ändra på detta
-            currentHP = maxHP;
+            if (currentHP <= 0)
+                currentHP = maxHP;
 
             playerController = GetComponent<PlayerController>();
             rb = GetComponent<Rigidbody>();
             splineWalker = GetComponent<SplineWalker>();
+            if (FindObjectOfType<HPUI>() != null)
+            {
+                hpUI = FindObjectOfType<HPUI>();
+                hpUI.UpdateUI(currentHP, maxHP, false);
+            }
         }
 
         // Update is called once per frame
@@ -79,10 +85,9 @@ namespace Movement
                 playerController.BounceUsingForce(verKnbck);
                 currentHP -= damage;
                 StartCoroutine(HurtKnockback());
+                hpUI.UpdateUI(currentHP, maxHP, true);
             }
         }
-
-        
 
         IEnumerator HurtKnockback()
         {

@@ -10,7 +10,7 @@ public class EnemyHurt : MonoBehaviour
     [Tooltip("The amount of times the player needs to jump on the enemy before it dies")]
     public int hP = 1;
     [Tooltip("The amount of damage the enemy will deal to the player upon touch")]
-    public int damage = 1;
+    public int damage = 4;
     [Tooltip("Determines how fast the player will be knocked back when hurt")]
     public float horizontalKnockbackSpeed = 10.0f;
     [Tooltip("The force the pushes the player up when they get hurt")]
