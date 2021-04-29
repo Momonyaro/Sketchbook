@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DevRoom.unity
     guid: de4dee3870433dc4c915c2bdfd9e4ab5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DevRoom2.unity
     guid: 720232abc9346d64ba0a82565e6c5763
   - enabled: 1

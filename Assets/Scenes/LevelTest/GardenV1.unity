@@ -628,7 +628,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &55806648
 PrefabInstance:
@@ -834,7 +834,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &81551611 stripped
 Transform:
@@ -2167,7 +2167,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2397,7 +2397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &186257602
 GameObject:
@@ -2445,7 +2445,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 1, g: 0.9764706, b: 0.43137255, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2490,7 +2490,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 80.252, y: 120.675, z: 121.942}
 --- !u!1001 &187229884
 PrefabInstance:
@@ -3594,7 +3594,7 @@ Transform:
   - {fileID: 1875360255}
   - {fileID: 1282095128}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &308634244 stripped
 Transform:
@@ -4924,6 +4924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435509648}
   - component: {fileID: 435509647}
+  - component: {fileID: 435509649}
   m_Layer: 0
   m_Name: ForestAmb
   m_TagString: Untagged
@@ -4966,8 +4967,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435509649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435509646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Music/Garden
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &441200024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7049,7 +7073,7 @@ Transform:
   m_Children:
   - {fileID: 507240171}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!4 &714656029 stripped
 Transform:
@@ -9285,8 +9309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hP: 1
   damage: 1
-  horizontalKnockbackSpeed: 10
-  verticalKnockbackForce: 75
+  horizontalKnockbackSpeed: 0.001
+  verticalKnockbackForce: 0.001
   stunnedTime: 5
   playerBounceDistance: 1.2
 --- !u!114 &1013969662
@@ -9428,7 +9452,7 @@ Transform:
   - {fileID: 1715133499}
   - {fileID: 574204898}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1014431449
 PrefabInstance:
@@ -9706,7 +9730,7 @@ Transform:
   - {fileID: 1851396740}
   - {fileID: 1705745718}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -46.098, z: -90}
 --- !u!4 &1030225473 stripped
 Transform:
@@ -11867,10 +11891,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hP: 1
   damage: 1
-  horizontalKnockbackSpeed: 10
-  verticalKnockbackForce: 75
+  horizontalKnockbackSpeed: 1.5
+  verticalKnockbackForce: 3.5
   stunnedTime: 5
-  playerBounceDistance: 1.2
+  playerBounceDistance: 2
 --- !u!114 &1272379450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12008,9 +12032,8 @@ Transform:
   m_LocalScale: {x: 1.1919838, y: 1.1919838, z: 1.1919838}
   m_Children:
   - {fileID: 346401878}
-  - {fileID: 2146434774}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1282095128 stripped
 Transform:
@@ -13263,7 +13286,7 @@ Transform:
   m_Children:
   - {fileID: 996427022}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1402093065 stripped
 Transform:
@@ -14576,6 +14599,7 @@ GameObject:
   - component: {fileID: 1554048633}
   - component: {fileID: 1554048632}
   - component: {fileID: 1554048631}
+  - component: {fileID: 1554048636}
   m_Layer: 0
   m_Name: Scene Boy
   m_TagString: Untagged
@@ -14671,8 +14695,31 @@ Transform:
   m_LocalScale: {x: 0.43740916, y: 0.43740916, z: 0.43740916}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1554048636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554048630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  Event: event:/SFX/Miscellaneous/SFX_Misc_NextLevel
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &1557874062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21109,7 +21156,7 @@ Transform:
   m_Children:
   - {fileID: 1324649130}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2128590937
 Rigidbody:
@@ -21296,11 +21343,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146434773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.08, y: 0.40101275, z: -0.18}
-  m_LocalScale: {x: 2.5168128, y: 2.5168128, z: 2.5168128}
+  m_LocalPosition: {x: -18.53, y: 0.83, z: -3.2245572}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
-  m_Father: {fileID: 1272379457}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2146434775
 MonoBehaviour:
