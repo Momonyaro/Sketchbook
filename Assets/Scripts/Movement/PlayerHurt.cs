@@ -11,7 +11,7 @@ namespace Movement
     {
         // Having the max HP be scene-dependent is kinda whack, but eh it's probably fine, we're not planning on ever changing the max HP of the player anyways
         [HideInInspector]
-        public int maxHP = 12;
+        public int maximumHP = 12;
         [Tooltip("The canvas with the transition object that gets spawned when a scene transition is triggered (i.e. the white fade-in)")]
         public GameObject deathScreenCanvas;
         [HideInInspector]
@@ -36,7 +36,7 @@ namespace Movement
         void Start()
         {
             if (currentHP <= 0)
-                currentHP = maxHP;
+                currentHP = maximumHP;
 
             playerController = GetComponent<PlayerController>();
             rb = GetComponent<Rigidbody>();
@@ -44,7 +44,7 @@ namespace Movement
             if (FindObjectOfType<HPUI>() != null)
             {
                 hpUI = FindObjectOfType<HPUI>();
-                hpUI.UpdateUI(currentHP, maxHP, false);
+                hpUI.UpdateUI(currentHP, maximumHP, false);
             }
         }
 
@@ -85,7 +85,7 @@ namespace Movement
                 playerController.BounceUsingForce(verKnbck);
                 currentHP -= damage;
                 StartCoroutine(HurtKnockback());
-                hpUI.UpdateUI(currentHP, maxHP, true);
+                hpUI.UpdateUI(currentHP, maximumHP, true);
             }
         }
 
