@@ -1,6 +1,8 @@
 ﻿using System;
 using Animation;
 using Config;
+using FMOD;
+using FMODUnity;
 using PathCreation;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -35,6 +37,7 @@ namespace Movement
         private new Rigidbody rigidbody;
         private bool hasAnimator = false;
         private bool lastFacedRight = true;
+        private bool falling = false;
         [HideInInspector]
         public Vector2 lastDelta = Vector2.zero;
 
@@ -47,7 +50,7 @@ namespace Movement
         {
             if (assignSplineAtAwake)
                 splineWalker = GetComponent<SplineWalker>();
-            
+
             rigidbody = GetComponent<Rigidbody>();
             hasAnimator = !(meshAnimator == null);
         }
@@ -68,6 +71,7 @@ namespace Movement
             }
             else if (rigidbody.velocity.y > 0) // Jumping
             {
+                //airCurrentTimer = airTimer;
                 Vector3 velocity = rigidbody.velocity;
                 velocity.y += Physics.gravity.y * (jumpSpeed - 1.0f);
                 rigidbody.velocity = velocity;
@@ -119,14 +123,28 @@ namespace Movement
             }
             
             // RUN/WALK ANIMS
-            if (Mathf.Abs(mvmtDelta.x) > 0.08f)
+            if (Mathf.Abs(mvmtDelta.x) > 0.5f)
             {
-                if (mvmtDelta.x > 0.08f) //Running Right
+                if (mvmtDelta.x > 0.5f) //Running Right
+                {
+                    meshAnimator.StartAnimFromName("_playerRunRight");
+                    lastFacedRight = true;
+                }
+                else                     //Running Left
+                {
+                    meshAnimator.StartAnimFromName("_playerRunLeft");
+                    lastFacedRight = false;
+                }
+                return;
+            }
+            else if (Mathf.Abs(mvmtDelta.x) > 0.08f)
+            {
+                if (mvmtDelta.x > 0.08f) //Walking Right
                 {
                     meshAnimator.StartAnimFromName("_playerWalkRight");
                     lastFacedRight = true;
                 }
-                else                     //Running Left
+                else                     //Walking Left
                 {
                     meshAnimator.StartAnimFromName("_playerWalkLeft");
                     lastFacedRight = false;
