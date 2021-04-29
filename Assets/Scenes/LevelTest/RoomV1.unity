@@ -3032,6 +3032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HP Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 817659605532902026, guid: 6f46703e98e20ea4090a8857b99d18a1, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 817659605532902028, guid: 6f46703e98e20ea4090a8857b99d18a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
