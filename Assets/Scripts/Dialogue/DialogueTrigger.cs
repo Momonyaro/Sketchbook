@@ -11,6 +11,8 @@ public class DialogueTrigger : MonoBehaviour
     public float timeBetweenCharacters = 0.05f;
     [Tooltip("The TextMeshPro object that displays the dialogue text")]
     public TMP_Text dialogueText;
+    [Tooltip("Determines how long (in seconds) the text stays on screen. If set to 0, the text never disappears.")]
+    public float lifeTime = 0.0f;
 
     // Use this for initialization
     void Start()
@@ -32,6 +34,8 @@ public class DialogueTrigger : MonoBehaviour
         if (other.gameObject.tag == "Player" && dialogueText.text == "")
         {
             StartCoroutine(TypeScentence(dialogue));
+            if (lifeTime > 0.0f)
+                Destroy(gameObject, lifeTime);
         }
     }
 }
