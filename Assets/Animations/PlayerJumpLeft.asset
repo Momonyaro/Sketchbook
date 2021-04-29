@@ -19,6 +19,12 @@ MonoBehaviour:
   leadsInto: 
   animFrames:
   - frameMesh: {fileID: -489416983923058841, guid: c50c4fc1debd29c4c86504d3bfab28ed, type: 3}
-    frameDuration: 0.16
+    frameDuration: 0.01
+    audioAction: 0
+  - frameMesh: {fileID: -489416983923058841, guid: c50c4fc1debd29c4c86504d3bfab28ed, type: 3}
+    frameDuration: 0.15
+    audioAction: 2
   - frameMesh: {fileID: -4089572972919042428, guid: c50c4fc1debd29c4c86504d3bfab28ed, type: 3}
     frameDuration: 0.16
+    audioAction: 0
+  firstFrame: 0
