@@ -134,9 +134,6 @@
             <e p="MeshAnimator.cs" t="Include" />
             <e p="MeshAnimLeech.cs" t="Include" />
           </e>
-          <e p="Camera" t="Include">
-            <e p="CameraMan.cs" t="Include" />
-          </e>
           <e p="Config" t="Include">
             <e p="MapConfigScriptable.cs" t="Include" />
             <e p="MapSettings.cs" t="Include" />
@@ -146,23 +143,28 @@
           </e>
           <e p="Enemies" t="Include">
             <e p="EnemyHurt.cs" t="Include" />
-            <e p="MoveBetweenPoints.cs" t="Include" />
           </e>
           <e p="Flashlight" t="Include">
             <e p="FlashlighFlash.cs" t="Include" />
             <e p="FlashlightAim.cs" t="Include" />
           </e>
+          <e p="Kamera" t="Include">
+            <e p="CameraMan.cs" t="Include" />
+          </e>
           <e p="Managers" t="Include">
             <e p="AudioManager.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
+            <e p="MoveBetweenPoints.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerHurt.cs" t="Include" />
             <e p="SplineWalker.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
             <e p="BouncePad.cs" t="Include" />
             <e p="Destroy.cs" t="Include" />
             <e p="DestroyWhenFlashed.cs" t="Include" />
+            <e p="InstaKillPlayer.cs" t="Include" />
             <e p="MannequinEntity.cs" t="Include" />
             <e p="OuterBoxTrigger.cs" t="Include" />
             <e p="PlayerPush.cs" t="Include" />
