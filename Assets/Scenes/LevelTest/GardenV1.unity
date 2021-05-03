@@ -6989,6 +6989,7 @@ MonoBehaviour:
   dialogue: I have to jump up into the tree with the trampoline!
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 1869234582}
+  dialogueTextDuplicate: {fileID: 1892796041}
   lifeTime: 100
 --- !u!65 &334770047
 BoxCollider:
@@ -7630,6 +7631,7 @@ GameObject:
   - component: {fileID: 354205062}
   - component: {fileID: 354205064}
   - component: {fileID: 354205063}
+  - component: {fileID: 354205065}
   m_Layer: 9
   m_Name: Textmesh
   m_TagString: Untagged
@@ -7645,15 +7647,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354205061}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.51}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalPosition: {x: 0, y: 0, z: -1.5999978}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1009646454}
-  m_RootOrder: 0
+  m_Father: {fileID: 1548670174}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.07, y: -0.51}
+  m_AnchoredPosition: {x: 9.518001, y: -0.65}
   m_SizeDelta: {x: 9, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354205063
@@ -7788,6 +7790,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &354205065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354205061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d527281102d74a14e9ab83cafa3eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCopy: {fileID: 996427019}
+  copyPosition: 1
+  copyRotation: 1
+  yOffset: -31.7
+  callDuring: 1
+  applyOffsetInEditor: 0
 --- !u!1001 &355319495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10491,119 +10511,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1bb1c146b4ba7f41923d7331afaf6a2, type: 3}
---- !u!1 &495092018
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 495092019}
-  - component: {fileID: 495092023}
-  - component: {fileID: 495092022}
-  - component: {fileID: 495092021}
-  - component: {fileID: 495092020}
-  m_Layer: 9
-  m_Name: Dialogue Trigger Cube (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &495092019
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495092018}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.398, y: 0, z: 0.73000145}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children:
-  - {fileID: 1635169997}
-  m_Father: {fileID: 1548670174}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &495092020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495092018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c155817981609e342833faee2a347453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: Use LSHIFT to Destroy Shadowy Objects (Placeholder 3D)
-  timeBetweenCharacters: 0.025
-  dialogueText: {fileID: 1635169998}
-  lifeTime: 5
---- !u!65 &495092021
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495092018}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3223691, y: 0.63166684, z: 1}
-  m_Center: {x: -0.10451071, y: -0.1841666, z: 0}
---- !u!23 &495092022
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495092018}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &495092023
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495092018}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &504939300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 311db6bf17986724ebcdce7113f4362e, type: 3}
@@ -13001,119 +12908,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 311db6bf17986724ebcdce7113f4362e, type: 3}
   m_PrefabInstance: {fileID: 988317622}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &632856474
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 632856475}
-  - component: {fileID: 632856479}
-  - component: {fileID: 632856478}
-  - component: {fileID: 632856477}
-  - component: {fileID: 632856476}
-  m_Layer: 0
-  m_Name: Dialogue Trigger Cube (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &632856475
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632856474}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.002, y: 0, z: -6.8245554}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children:
-  - {fileID: 1148200794}
-  m_Father: {fileID: 1548670174}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &632856476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632856474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c155817981609e342833faee2a347453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: They are back! The ancient enemy, this time I will defeat you
-  timeBetweenCharacters: 0.025
-  dialogueText: {fileID: 1148200795}
-  lifeTime: 5
---- !u!65 &632856477
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632856474}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &632856478
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632856474}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &632856479
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632856474}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &633085351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14752,6 +14546,7 @@ MonoBehaviour:
   dialogue: The ninjas fought hard, too sad they had to leave.
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 507240169}
+  dialogueTextDuplicate: {fileID: 1101539169}
   lifeTime: 5
 --- !u!65 &711651169
 BoxCollider:
@@ -19095,6 +18890,7 @@ GameObject:
   - component: {fileID: 1006331972}
   - component: {fileID: 1006331974}
   - component: {fileID: 1006331973}
+  - component: {fileID: 1006331975}
   m_Layer: 9
   m_Name: Textmesh
   m_TagString: Untagged
@@ -19109,16 +18905,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006331971}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.025}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalRotation: {x: -0, y: 0.99144495, z: -0, w: 0.13052596}
+  m_LocalPosition: {x: 0, y: 0, z: -0.05836153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1069694550}
-  m_RootOrder: 0
+  m_Father: {fileID: 1548670174}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.07, y: -0.75}
+  m_AnchoredPosition: {x: -2.9820337, y: -2.25}
   m_SizeDelta: {x: 9, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1006331973
@@ -19253,125 +19049,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &1006817517 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1bb1c146b4ba7f41923d7331afaf6a2, type: 3}
-  m_PrefabInstance: {fileID: 536292824}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1009646453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1009646454}
-  - component: {fileID: 1009646458}
-  - component: {fileID: 1009646457}
-  - component: {fileID: 1009646456}
-  - component: {fileID: 1009646455}
-  m_Layer: 9
-  m_Name: Dialogue Trigger Cube (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1009646454
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009646453}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.728, y: 0, z: -0.06999779}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children:
-  - {fileID: 354205062}
-  m_Father: {fileID: 1548670174}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1009646455
+--- !u!114 &1006331975
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009646453}
+  m_GameObject: {fileID: 1006331971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c155817981609e342833faee2a347453, type: 3}
+  m_Script: {fileID: 11500000, guid: d527281102d74a14e9ab83cafa3eda52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: "Now how do I get out of here? Well it wouldn\u2019t be an adventure
-    without any trouble"
-  timeBetweenCharacters: 0.025
-  dialogueText: {fileID: 354205063}
-  lifeTime: 5
---- !u!65 &1009646456
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  objectToCopy: {fileID: 1223734050}
+  copyPosition: 1
+  copyRotation: 1
+  yOffset: -31.7
+  callDuring: 1
+  applyOffsetInEditor: 0
+--- !u!4 &1006817517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1bb1c146b4ba7f41923d7331afaf6a2, type: 3}
+  m_PrefabInstance: {fileID: 536292824}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009646453}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1009646457
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009646453}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1009646458
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009646453}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1013755090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 169b278fb6e2b4148a8311b50009b536, type: 3}
@@ -20359,119 +20059,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1bb1c146b4ba7f41923d7331afaf6a2, type: 3}
---- !u!1 &1069694549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1069694550}
-  - component: {fileID: 1069694554}
-  - component: {fileID: 1069694553}
-  - component: {fileID: 1069694552}
-  - component: {fileID: 1069694551}
-  m_Layer: 9
-  m_Name: Dialogue Trigger Cube (11)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1069694550
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069694549}
-  m_LocalRotation: {x: -0, y: -0.13052596, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: 0.13800001, y: 0, z: 0.7000017}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children:
-  - {fileID: 1006331972}
-  m_Father: {fileID: 1548670174}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -15, z: 0}
---- !u!114 &1069694551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069694549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c155817981609e342833faee2a347453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: You Can Push And Pull Objects by Holding Down CTRL
-  timeBetweenCharacters: 0.025
-  dialogueText: {fileID: 1006331973}
-  lifeTime: 5
---- !u!65 &1069694552
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069694549}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3223691, y: 0.63166684, z: 1}
-  m_Center: {x: -0.10451071, y: -0.1841666, z: 0}
---- !u!23 &1069694553
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069694549}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1069694554
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069694549}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1070793319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21387,6 +20974,7 @@ GameObject:
   - component: {fileID: 1101539168}
   - component: {fileID: 1101539170}
   - component: {fileID: 1101539169}
+  - component: {fileID: 1101539171}
   m_Layer: 9
   m_Name: Textmesh2
   m_TagString: Untagged
@@ -21401,16 +20989,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101539167}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.011}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalRotation: {x: -0, y: 0.9238795, z: -0, w: 0.3826837}
+  m_LocalPosition: {x: 0, y: 0, z: -7.999968}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2103963577}
-  m_RootOrder: 0
+  m_Father: {fileID: 1548670174}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.478, y: -0.31}
+  m_AnchoredPosition: {x: -12.945294, y: -3}
   m_SizeDelta: {x: 9, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101539169
@@ -21545,6 +21133,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1101539171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101539167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d527281102d74a14e9ab83cafa3eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCopy: {fileID: 507240168}
+  copyPosition: 1
+  copyRotation: 1
+  yOffset: -31.7
+  callDuring: 1
+  applyOffsetInEditor: 0
 --- !u!4 &1104239651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e489dc263cdd97b489108f3057a5b702, type: 3}
@@ -22469,7 +22075,8 @@ GameObject:
   - component: {fileID: 1148200794}
   - component: {fileID: 1148200796}
   - component: {fileID: 1148200795}
-  m_Layer: 0
+  - component: {fileID: 1148200797}
+  m_Layer: 9
   m_Name: Textmesh3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22484,15 +22091,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148200793}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1.4684811}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalPosition: {x: 0, y: 0, z: -11.229999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 632856475}
+  m_Father: {fileID: 1548670174}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.3233337, y: -0.39333335}
+  m_AnchoredPosition: {x: -24.972002, y: -1.1800002}
   m_SizeDelta: {x: 9, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1148200795
@@ -22627,6 +22234,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1148200797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148200793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d527281102d74a14e9ab83cafa3eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCopy: {fileID: 166213452}
+  copyPosition: 1
+  copyRotation: 1
+  yOffset: -31.7
+  callDuring: 1
+  applyOffsetInEditor: 0
 --- !u!1001 &1148883403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23119,6 +22744,7 @@ MonoBehaviour:
   dialogue: You Can Push And Pull Objects by Holding Down CTRL
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 1223734051}
+  dialogueTextDuplicate: {fileID: 1006331973}
   lifeTime: 5
 --- !u!65 &1168800646
 BoxCollider:
@@ -23190,7 +22816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168800644}
   m_LocalRotation: {x: -0, y: -0.13052596, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: 2.61, y: 2.89, z: 4.3}
+  m_LocalPosition: {x: 2.61, y: 4.45, z: 4.3}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1223734053}
@@ -24371,7 +23997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.07, y: -0.75}
+  m_AnchoredPosition: {x: -1.07, y: -1.254}
   m_SizeDelta: {x: 9, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1227803261
@@ -26721,6 +26347,7 @@ MonoBehaviour:
   dialogue: Use LSHIFT to Destroy Shadowy Objects (Placeholder 3D)
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 288441457}
+  dialogueTextDuplicate: {fileID: 1635169998}
   lifeTime: 5
 --- !u!65 &1337751476
 BoxCollider:
@@ -27667,6 +27294,7 @@ MonoBehaviour:
     without any trouble"
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 996427020}
+  dialogueTextDuplicate: {fileID: 354205063}
   lifeTime: 5
 --- !u!65 &1400545225
 BoxCollider:
@@ -30808,12 +30436,12 @@ Transform:
   m_LocalPosition: {x: 2.472, y: -31.7, z: 3.5999985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 632856475}
-  - {fileID: 1069694550}
-  - {fileID: 495092019}
-  - {fileID: 1655962675}
-  - {fileID: 2103963577}
-  - {fileID: 1009646454}
+  - {fileID: 1148200794}
+  - {fileID: 1006331972}
+  - {fileID: 1635169997}
+  - {fileID: 1892796040}
+  - {fileID: 1101539168}
+  - {fileID: 354205062}
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30964,7 +30592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1554048631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32916,6 +32544,7 @@ GameObject:
   - component: {fileID: 1635169997}
   - component: {fileID: 1635169999}
   - component: {fileID: 1635169998}
+  - component: {fileID: 1635170000}
   m_Layer: 9
   m_Name: Textmesh
   m_TagString: Untagged
@@ -32931,15 +32560,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635169996}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.151}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalPosition: {x: 0, y: 0, z: 1.1830015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 495092019}
-  m_RootOrder: 0
+  m_Father: {fileID: 1548670174}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.18, y: -0.51}
+  m_AnchoredPosition: {x: 3.938, y: -1.5300004}
   m_SizeDelta: {x: 6, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1635169998
@@ -33074,6 +32703,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1635170000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635169996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d527281102d74a14e9ab83cafa3eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCopy: {fileID: 288441456}
+  copyPosition: 1
+  copyRotation: 1
+  yOffset: -31.7
+  callDuring: 1
+  applyOffsetInEditor: 0
 --- !u!4 &1638158356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e489dc263cdd97b489108f3057a5b702, type: 3}
@@ -33492,119 +33139,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1bb1c146b4ba7f41923d7331afaf6a2, type: 3}
   m_PrefabInstance: {fileID: 1787501952}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1655962674
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1655962675}
-  - component: {fileID: 1655962679}
-  - component: {fileID: 1655962678}
-  - component: {fileID: 1655962677}
-  - component: {fileID: 1655962676}
-  m_Layer: 9
-  m_Name: Dialogue Trigger Cube (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1655962675
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655962674}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.542, y: 0, z: -6.279999}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children:
-  - {fileID: 1892796040}
-  m_Father: {fileID: 1548670174}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1655962676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655962674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c155817981609e342833faee2a347453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: I have to jump up into the tree with the trampoline!
-  timeBetweenCharacters: 0.025
-  dialogueText: {fileID: 1892796041}
-  lifeTime: 100
---- !u!65 &1655962677
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655962674}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1655962678
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655962674}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1655962679
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655962674}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1656208115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1bb1c146b4ba7f41923d7331afaf6a2, type: 3}
@@ -39286,6 +38820,7 @@ GameObject:
   - component: {fileID: 1892796040}
   - component: {fileID: 1892796042}
   - component: {fileID: 1892796041}
+  - component: {fileID: 1892796043}
   m_Layer: 9
   m_Name: Textmesh
   m_TagString: Untagged
@@ -39301,15 +38836,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892796039}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.51}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalPosition: {x: 0, y: 0, z: -7.8099985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1655962675}
-  m_RootOrder: 0
+  m_Father: {fileID: 1548670174}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.07, y: -0.51}
+  m_AnchoredPosition: {x: -33.752, y: -1.5300004}
   m_SizeDelta: {x: 9, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892796041
@@ -39444,6 +38979,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1892796043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892796039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d527281102d74a14e9ab83cafa3eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCopy: {fileID: 1869234581}
+  copyPosition: 1
+  copyRotation: 1
+  yOffset: -31.7
+  callDuring: 1
+  applyOffsetInEditor: 0
 --- !u!1001 &1893553532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44316,119 +43869,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1bb1c146b4ba7f41923d7331afaf6a2, type: 3}
   m_PrefabInstance: {fileID: 1641650573}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2103963576
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2103963577}
-  - component: {fileID: 2103963581}
-  - component: {fileID: 2103963580}
-  - component: {fileID: 2103963579}
-  - component: {fileID: 2103963578}
-  m_Layer: 9
-  m_Name: Dialogue Trigger Cube (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2103963577
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103963576}
-  m_LocalRotation: {x: -0, y: -0.3826837, z: -0, w: 0.9238795}
-  m_LocalPosition: {x: -7.712, y: 0, z: -2.7199984}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children:
-  - {fileID: 1101539168}
-  m_Father: {fileID: 1548670174}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
---- !u!114 &2103963578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103963576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c155817981609e342833faee2a347453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: The ninjas fought hard, too sad they had to leave.
-  timeBetweenCharacters: 0.025
-  dialogueText: {fileID: 1101539169}
-  lifeTime: 5
---- !u!65 &2103963579
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103963576}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2103963580
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103963576}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2103963581
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103963576}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &2104330236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1bb1c146b4ba7f41923d7331afaf6a2, type: 3}
@@ -45156,6 +44596,7 @@ MonoBehaviour:
   dialogue: They are back! The ancient enemy, this time I will defeat you
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 166213453}
+  dialogueTextDuplicate: {fileID: 1148200795}
   lifeTime: 5
 --- !u!65 &2146434776
 BoxCollider:
