@@ -39,7 +39,15 @@ public class DialogueTrigger : MonoBehaviour
         {
             StartCoroutine(TypeScentence(dialogue));
             if (lifeTime > 0.0f)
-                Destroy(gameObject, lifeTime);
+                StartCoroutine(HideText());
         }
+    }
+
+    IEnumerator HideText()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        dialogueText.text = " ";
+        if (dialogueTextDuplicate != null)
+            dialogueTextDuplicate.text = " ";
     }
 }
