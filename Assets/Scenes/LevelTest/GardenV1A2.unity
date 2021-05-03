@@ -1497,8 +1497,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 336.67984, y: 2.4694574, z: 95.662895}
-  m_Center: {x: -38.578674, y: 0.7347284, z: -7.171008}
+  m_Size: {x: 336.67984, y: 2.4694574, z: 103.55035}
+  m_Center: {x: -38.578674, y: 0.7347284, z: -11.114633}
 --- !u!23 &530269706
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2011,6 +2011,7 @@ MonoBehaviour:
   dialogue: I have to jump Down!
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 375848845}
+  dialogueTextDuplicate: {fileID: 0}
   lifeTime: 100
 --- !u!65 &607455136
 BoxCollider:
@@ -2419,8 +2420,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 336.67984, y: 2.4694574, z: 95.662895}
-  m_Center: {x: -38.578674, y: 0.7347284, z: -7.171008}
+  m_Size: {x: 336.67984, y: 2.4694574, z: 151.7345}
+  m_Center: {x: -38.578674, y: 0.7347284, z: 20.864052}
 --- !u!23 &812212567
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3671,6 +3672,7 @@ MonoBehaviour:
     no time
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 583648720}
+  dialogueTextDuplicate: {fileID: 0}
   lifeTime: 5
 --- !u!65 &1801299780
 BoxCollider:
