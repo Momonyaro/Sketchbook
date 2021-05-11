@@ -26,7 +26,7 @@ namespace Movement
         HPUI hpUI;
 
         bool isHurt;
-        bool invulnerable; //Used to keep the player of getting hurt while they're already hurt. Basically this means that if hurt, the player can't be hurt again. If they were already hurt, of course. As in, the player can't get hurt while they are already hurt.
+        bool invulnerable; //Used to keep the player from getting hurt while they're already hurt. Basically this means that if hurt, the player can't be hurt again. If they were already hurt, of course. As in, the player can't get hurt while they are already hurt.
         //To put it more simply, the player can only get hurt if they are not currently hurt. This gives our depressed players an advantage, to make them feel better. Basically this means that the player CANNOT be hurt by an enemy or anything else as long as they
         //are already hurt, you feel me? It might make more sense if you think of it like this: I was very bored. Also please don't cancel me on twitter dot com if the depressed joke was made in poor taste, which it probably was. I'm bored, yo. That's not
         //an excuse for being rude though, I am very sorry. I've made a severe lapse in my judgement, and I don't expect to be forgiven. I'm simply here to apologize. I'm ashamed of myself. I’m disappointed in myself. And I promise to be better. I will be better.
