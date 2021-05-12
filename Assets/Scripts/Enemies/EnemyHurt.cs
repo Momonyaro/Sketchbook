@@ -19,6 +19,8 @@ public class EnemyHurt : MonoBehaviour
     public float stunnedTime = 5.0f;
     [Tooltip("The force that will launch the player upwards after bouncing on the enemy")]
     public float playerBounceDistance = 170.0f;
+    [Tooltip("The duplicate enemy in the colored world. If this is left empty the duplicate will not be destroyed which causes errors")]
+    public GameObject enemyDuplicate = null;
 
     PlayerController playerController;
     PlayerHurt playerHurt;
@@ -82,6 +84,8 @@ public class EnemyHurt : MonoBehaviour
     void Die()
     {
         //sad
+        if (enemyDuplicate != null)
+            Destroy(enemyDuplicate);
         Destroy(gameObject); //självklart en placeholder, nån fin dödseffekt får la spelas i fulla spelet
     }
 
