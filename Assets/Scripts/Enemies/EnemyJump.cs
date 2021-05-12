@@ -17,6 +17,7 @@ public class EnemyJump : MonoBehaviour
     Rigidbody rb;
     SplineWalker splineWalker;
     MoveBetweenPoints moveBetweenPoints;
+    EnemyHurt enemyHurt;
 
     bool aboutToJump;
 
@@ -32,6 +33,7 @@ public class EnemyJump : MonoBehaviour
         moveBetweenPoints = GetComponent<MoveBetweenPoints>();
         rb = GetComponent<Rigidbody>();
         splineWalker = GetComponent<SplineWalker>();
+        enemyHurt = GetComponent<EnemyHurt>();
     }
 
     void FixedUpdate()
@@ -50,7 +52,13 @@ public class EnemyJump : MonoBehaviour
             rb.velocity = velocity;
         }
 
-        if (IsGrounded() && !aboutToJump && rb.velocity.y < 0.0f)
+        if (enemyHurt.stunned)
+        {
+            StopAllCoroutines();
+            moveBetweenPoints.jumpingMultiplier = 0.0f;
+            aboutToJump = false;
+        }
+        else if (IsGrounded() && !aboutToJump && rb.velocity.y < 0.0f)
         {
             StopAllCoroutines();
             StartCoroutine(WaitBeforeJumping());
