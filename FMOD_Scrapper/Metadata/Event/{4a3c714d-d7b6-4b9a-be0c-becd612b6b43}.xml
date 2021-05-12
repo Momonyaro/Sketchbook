@@ -54,7 +54,7 @@
 			<destination>{632d8c81-b526-4a34-ba3b-3cd579dac440}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{226d651a-4c7e-4801-ae6a-69ee2ce9d3cf}</destination>
+			<destination>{37be2139-79be-402d-8c3d-a74e40df41ba}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{da99b9e5-e038-4597-93d2-de8bc107f4d8}" />
@@ -106,7 +106,7 @@
 			<value>true</value>
 		</property>
 		<property name="length">
-			<value>60</value>
+			<value>18</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{5281c3d7-9cda-4eb5-9ac1-2fa4d413b4ee}</destination>
@@ -131,7 +131,7 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>30</value>
+			<value>5.5</value>
 		</property>
 		<property name="triggerConditionMode">
 			<value>1</value>
@@ -139,8 +139,11 @@
 		<property name="isAsync">
 			<value>true</value>
 		</property>
+		<property name="start">
+			<value>5</value>
+		</property>
 		<property name="length">
-			<value>60</value>
+			<value>13</value>
 		</property>
 		<property name="playlistMode">
 			<value>1</value>
@@ -171,7 +174,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>60</value>
+			<value>10</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{81017f85-0def-473d-8f98-4b9e95513dc6}</destination>

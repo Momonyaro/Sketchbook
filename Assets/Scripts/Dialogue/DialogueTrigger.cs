@@ -9,8 +9,8 @@ public class DialogueTrigger : MonoBehaviour
     public string dialogue;
     [Tooltip("The time (in seconds) that passes after a character in the sentence has been displayed before the next character gets displayed")]
     public float timeBetweenCharacters = 0.05f;
-    [Tooltip("The TextMeshPro object that displays the dialogue text")]
-    public TMP_Text dialogueText;
+    [Tooltip("The two TextMeshPro objects that will display the dialogue text")]
+    public TMP_Text dialogueText, dialogueTextDuplicate;
     [Tooltip("Determines how long (in seconds) the text stays on screen. If set to 0, the text never disappears.")]
     public float lifeTime = 0.0f;
 
@@ -18,6 +18,8 @@ public class DialogueTrigger : MonoBehaviour
     void Start()
     {
         dialogueText.text = "";
+        if (dialogueTextDuplicate != null)
+            dialogueTextDuplicate.text = "";
     }
 
     IEnumerator TypeScentence(string sentence)
@@ -25,6 +27,8 @@ public class DialogueTrigger : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            if (dialogueTextDuplicate != null)
+                dialogueTextDuplicate.text += letter;
             yield return new WaitForSeconds(timeBetweenCharacters);
         }
     }
@@ -35,7 +39,15 @@ public class DialogueTrigger : MonoBehaviour
         {
             StartCoroutine(TypeScentence(dialogue));
             if (lifeTime > 0.0f)
-                Destroy(gameObject, lifeTime);
+                StartCoroutine(HideText());
         }
+    }
+
+    IEnumerator HideText()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        dialogueText.text = " ";
+        if (dialogueTextDuplicate != null)
+            dialogueTextDuplicate.text = " ";
     }
 }

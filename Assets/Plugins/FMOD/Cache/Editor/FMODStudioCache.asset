@@ -83,6 +83,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
+--- !u!114 &-8538589002106011852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoggoEx/Using ficklampa
+  m_EditorClassIdentifier: 
+  Name: Using ficklampa
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8240390117427013112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +145,27 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 60000
+  Length: 18000
+--- !u!114 &-7863125809725050642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoggoEx/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-7324138209535801838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +305,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6224574440348167241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +349,66 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-6048463502805365388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoggoEx/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-5852410178186249341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoggoEx/Using ficklampa
+  m_EditorClassIdentifier: 
+  Name: Using ficklampa
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-5591020839573311780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoggoEx/Using ficklampa
+  m_EditorClassIdentifier: 
+  Name: Using ficklampa
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-5388511295432815913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,8 +423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_Jump
   guid: e235f5351e779c499147106b6b40f0a0
-  Banks:
-  - {fileID: 6200618135401865682}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -432,26 +531,6 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
---- !u!114 &-3120771954996389551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/DoggoEx/Progress
-  m_EditorClassIdentifier: 
-  Name: Progress
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
 --- !u!114 &-3222715426745030353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +566,26 @@ MonoBehaviour:
   Name: Using ficklampa
   Min: 0
   Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-3120771954996389551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoggoEx/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 10
   Default: 0
   ID:
     data1: 0
@@ -552,6 +651,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-2025905334495127412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DoggoEx/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-1996663873529886238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,7 +826,7 @@ MonoBehaviour:
   - {fileID: 6200618135401865682}
   StringsBanks:
   - {fileID: 1500399148034035738}
-  stringsBankWriteTime: 637552882576788211
+  stringsBankWriteTime: 637556304726211525
   cacheVersion: 6
 --- !u!114 &240005869851063196
 MonoBehaviour:
@@ -789,11 +908,11 @@ MonoBehaviour:
   Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637552882576788211
+  lastModified: 637556304726211525
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1540
+    Value: 1738
   Exists: 1
 --- !u!114 &2026765247118301109
 MonoBehaviour:
@@ -849,8 +968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/UI/UI_Select
   guid: e3fdf358fd0a7a4fa128442da5b8be7f
-  Banks:
-  - {fileID: 6200618135401865682}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -879,7 +997,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -6345877478935074640}
-  - {fileID: -5046857785913015526}
+  - {fileID: 0}
   - {fileID: -4035725736716944877}
   MinDistance: 0
   MaxDistance: 0
@@ -920,8 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Miscellaneous/SFX_Misc_NextLevel
   guid: c4a21cf920c5eb40a8ce17ce2a02e80f
-  Banks:
-  - {fileID: 6200618135401865682}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1046,8 +1163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_Land
   guid: fcd95ebc338f3b4ebc1d832e040f4379
-  Banks:
-  - {fileID: 6200618135401865682}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1111,14 +1227,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Rum och Hus
   guid: d81d9ffa8237264292ba3bc012e4c8be
-  Banks:
-  - {fileID: 6200618135401865682}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
   - {fileID: -3189259127698342268}
-  - {fileID: 497619098639178891}
+  - {fileID: 0}
   MinDistance: 1
   MaxDistance: 20
   Length: 81600
@@ -1177,7 +1292,7 @@ MonoBehaviour:
   Path: FMOD_Scrapper/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637552882577446452
+  lastModified: 637556304726523960
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1277,8 +1392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_FlashLight
   guid: 960289213337564198e8ed4a73e3b018
-  Banks:
-  - {fileID: 6200618135401865682}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1320,8 +1434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_Walking
   guid: d14aaca94d8c504d83c7ec8a00698c18
-  Banks:
-  - {fileID: 6200618135401865682}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1387,11 +1500,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 6200618135401865682}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7324138209535801838}
-  - {fileID: -6900241680427411259}
+  - {fileID: -6048463502805365388}
+  - {fileID: -5852410178186249341}
   MinDistance: 0
   MaxDistance: 0
   Length: 21500
