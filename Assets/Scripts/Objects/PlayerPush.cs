@@ -40,7 +40,6 @@ public class PlayerPush : MonoBehaviour
     public void Pushing(float speed)
     {
         ChangeSpeedMultiplier(speed);
-        print("what");
         if (flashlightFlash != null)
             flashlightFlash.flashing = false;
     }
