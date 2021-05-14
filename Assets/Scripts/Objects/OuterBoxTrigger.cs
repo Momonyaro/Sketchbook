@@ -24,7 +24,7 @@ public class OuterBoxTrigger : MonoBehaviour
         if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<PlayerPush>() != null)
         {
             block.atEdge = false;
-            other.gameObject.GetComponent<PlayerPush>().Pushing(1.0f);
+            other.gameObject.GetComponent<PlayerPush>().ChangeSpeedMultiplier(1.0f);
         }
     }
 }

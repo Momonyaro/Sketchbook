@@ -39,8 +39,6 @@ namespace Movement
             if (GetComponent<EnemyJump>() != null)
                 hasEnemyJump = true;
 
-            print(hasEnemyJump);
-
             var position = rb.position;
 
             PathCreator currentSpline = splineWalker.currentSpline;

@@ -26,7 +26,8 @@ public class EnemyHurt : MonoBehaviour
     PlayerHurt playerHurt;
 
     MoveBetweenPoints moveBetweenPoints;
-    bool stunned = false;
+    [HideInInspector]
+    public bool stunned = false;
 
     // Start is called before the first frame update
     void Start()

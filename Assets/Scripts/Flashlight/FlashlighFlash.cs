@@ -10,7 +10,9 @@ public class FlashlighFlash : MonoBehaviour
     public bool toggleLight = false;
     bool previousFlashState = false, previousButtonState;
 
-    bool flashButton, flashing;
+    bool flashButton;
+    [HideInInspector]
+    public bool flashing;
 
     // Bara för testing
     [Tooltip("JUST FOR TESTING")]
