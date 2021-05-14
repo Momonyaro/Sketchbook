@@ -19,6 +19,9 @@ public class EnemyHurt : MonoBehaviour
     public float stunnedTime = 5.0f;
     [Tooltip("The force that will launch the player upwards after bouncing on the enemy")]
     public float playerBounceDistance = 170.0f;
+    [Tooltip("TRUE: Can be stunned if the player flashes\n" +
+            "FALSE: Can NOT be stunned by the flashlight whatsoever")]
+    public bool canBeStunned = true;
     [Tooltip("The duplicate enemy in the colored world. If this is left empty the duplicate will not be destroyed which causes errors")]
     public GameObject enemyDuplicate = null;
 
@@ -44,7 +47,7 @@ public class EnemyHurt : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Flash")
+        if (other.gameObject.tag == "Flash" && canBeStunned)
         {
             StopAllCoroutines();
             StartCoroutine(IsStunned());

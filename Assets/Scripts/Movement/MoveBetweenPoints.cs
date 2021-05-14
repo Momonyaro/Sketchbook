@@ -66,11 +66,11 @@ namespace Movement
             PathCreator currentSpline = splineWalker.currentSpline;
             float splineDist = currentSpline.path.GetClosestDistanceAlongPath(position);
 
-            if ((moveWhenTouched && touched) || !moveWhenTouched) //Jag hatar det här
+            if ((moveWhenTouched && touched) || !moveWhenTouched)
             {
                 if (moveTo1)
                 {
-                    if ((hasEnemyJump && jumpingMultiplier <= 0.0f && moveHor1 < 0.0f && point1Pos <= splineDist) || (hasEnemyJump && jumpingMultiplier <= 0.0f && moveHor1 > 0.0f && point1Pos >= splineDist))
+                    if ((hasEnemyJump && jumpingMultiplier <= 0.0f && moveHor1 < 0.0f && point1Pos <= splineDist) || (hasEnemyJump && jumpingMultiplier <= 0.0f && moveHor1 > 0.0f && point1Pos >= splineDist)) //Jag hatar det här
                         moveTo1 = false;
                     else if ((!hasEnemyJump && moveHor1 < 0.0f && point1Pos <= splineDist) || (!hasEnemyJump && moveHor1 > 0.0f && point1Pos >= splineDist))
                         moveTo1 = false;
