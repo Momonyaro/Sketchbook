@@ -23,6 +23,8 @@ public class EnemyFly : MonoBehaviour
 
     float flightDirection = 1.0f;
     float speedModifier = 1.0f;
+    [HideInInspector]
+    public float stunnedMultiplier = 1.0f;
 
     float upDistance, downDistance;
 
@@ -65,6 +67,6 @@ public class EnemyFly : MonoBehaviour
         if (speedModifier > 1.0f)
             speedModifier = 1.0f;
 
-        rb.velocity = new Vector3(rb.velocity.x, flySpeed * speedModifier * flightDirection, rb.velocity.z);
+        rb.velocity = new Vector3(rb.velocity.x, flySpeed * speedModifier * flightDirection * stunnedMultiplier, rb.velocity.z);
     }
 }
