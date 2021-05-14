@@ -2859,6 +2859,7 @@ MonoBehaviour:
   downOffset: 5
   slowDownThreshold: 3
   flyUp: 1
+  stunnedMultiplier: 1
 --- !u!114 &1785481178
 MonoBehaviour:
   m_ObjectHideFlags: 0

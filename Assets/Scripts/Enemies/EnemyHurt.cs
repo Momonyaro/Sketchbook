@@ -25,14 +25,20 @@ public class EnemyHurt : MonoBehaviour
     PlayerController playerController;
     PlayerHurt playerHurt;
 
-    MoveBetweenPoints moveBetweenPoints;
+    MoveBetweenPoints moveBetweenPoints = null;
+    EnemyFly enemyFly = null;
     [HideInInspector]
     public bool stunned = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        moveBetweenPoints = GetComponent<MoveBetweenPoints>();
+        if (GetComponent<MoveBetweenPoints>() != null)
+            moveBetweenPoints = GetComponent<MoveBetweenPoints>();
+
+        if (GetComponent<EnemyFly>() != null)
+            enemyFly = GetComponent<EnemyFly>();
+
         stunned = false;
     }
     
@@ -93,9 +99,16 @@ public class EnemyHurt : MonoBehaviour
     IEnumerator IsStunned()
     {
         stunned = true;
-        moveBetweenPoints.stunnedMultiplier = 0.0f;
+        if (moveBetweenPoints != null)
+            moveBetweenPoints.stunnedMultiplier = 0.0f;
+        if (enemyFly != null)
+            enemyFly.stunnedMultiplier = 0.0f;
+
         yield return new WaitForSeconds(stunnedTime);
         stunned = false;
-        moveBetweenPoints.stunnedMultiplier = 1.0f;
+        if (moveBetweenPoints != null)
+            moveBetweenPoints.stunnedMultiplier = 0.0f;
+        if (enemyFly != null)
+            enemyFly.stunnedMultiplier = 1.0f;
     }
 }
