@@ -2804,6 +2804,7 @@ MonoBehaviour:
   stunnedTime: 5
   playerBounceDistance: 2
   enemyDuplicate: {fileID: 0}
+  stunned: 0
 --- !u!114 &334686722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11717,7 +11718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 817659605532902024, guid: 6f46703e98e20ea4090a8857b99d18a1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 817659605532902026, guid: 6f46703e98e20ea4090a8857b99d18a1, type: 3}
       propertyPath: m_MatchWidthOrHeight
