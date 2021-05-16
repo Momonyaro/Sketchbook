@@ -5,7 +5,7 @@
 			<value>Rum och Hus</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>5</value>
 		</property>
 		<relationship name="folder">
 			<destination>{03a82932-a432-4d19-9542-ee415f7bc69a}</destination>
@@ -64,7 +64,7 @@
 			<destination>{5a1140c0-e6d0-436b-abda-81ceaedd56a0}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{226d651a-4c7e-4801-ae6a-69ee2ce9d3cf}</destination>
+			<destination>{171fed4e-c701-43f0-91c8-562906b64c0a}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{fd0395f2-0583-40bb-a4c6-ae7c31e6a111}" />
@@ -514,7 +514,6 @@
 	<object class="MixerBusEffectChain" id="{c282fce9-b971-4f0f-925c-509d741aa669}">
 		<relationship name="effects">
 			<destination>{7ab556ba-2a8a-4003-badc-88d59cc34674}</destination>
-			<destination>{46695b1f-81e0-4f33-866d-1f940dc857c1}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e844dc84-08a6-4e8c-a39c-2b00bd64006b}" />
@@ -631,7 +630,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{7ab556ba-2a8a-4003-badc-88d59cc34674}" />
-	<object class="SpatialiserEffect" id="{46695b1f-81e0-4f33-866d-1f940dc857c1}" />
 	<object class="MixerBusFader" id="{dd85172d-8a38-45a9-8549-7e5b54d7ace0}" />
 	<object class="MixerBusFader" id="{de6b3ba4-346b-491f-b79d-f14b15b7999e}" />
 	<object class="AutomationCurve" id="{125b42fc-cc7b-4255-9681-575b4fc576c2}">
