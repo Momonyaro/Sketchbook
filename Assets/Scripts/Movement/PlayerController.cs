@@ -17,6 +17,8 @@ namespace Movement
         public float pushSpeedMultiplier = 1.0f;
         [HideInInspector]
         public float hurtSpeedMultiplier = 1.0f; // Namnet passar inte riktigt vad den gör...
+        [HideInInspector]
+        public float horiWindForce = 0.0f, vertWindForce = 0.0f; // Dumbo shit to make it work with the spline
 
         public float pushOffForce = 50.0f;
         [Min(1.0f)] public float jumpSpeed = 2.0f;
@@ -53,6 +55,7 @@ namespace Movement
 
             rigidbody = GetComponent<Rigidbody>();
             hasAnimator = !(meshAnimator == null);
+            vertWindForce = 0.0f;
         }
 
         private void FixedUpdate()
@@ -62,6 +65,8 @@ namespace Movement
             {
                 MoveAlongSplineHor(lastDelta.x);
             }
+            else if (horiWindForce != 0.0f)
+                MoveAlongSplineHor(0.0f);
 
             if (rigidbody.velocity.y < 0) // Falling
             {
@@ -76,6 +81,14 @@ namespace Movement
                 velocity.y += Physics.gravity.y * (jumpSpeed - 1.0f);
                 rigidbody.velocity = velocity;
             }
+
+            // För stora fläktar
+            if (vertWindForce != 0.0f)
+            {
+                Vector3 velocity = rigidbody.velocity;
+                velocity.y += vertWindForce;
+                rigidbody.velocity = velocity;
+            }
             
             PlayAnimations(lastDelta);
         }
@@ -85,9 +98,10 @@ namespace Movement
         public void MoveAlongSplineHor(float horSpeed)
         {
             //Varför ska vi röra oss?
-            if (horSpeed == 0) return;
+            if (horSpeed == 0 && horiWindForce == 0.0f) return;
 
             horSpeed *= Time.deltaTime * moveSpeed * pushSpeedMultiplier * hurtSpeedMultiplier;
+            horSpeed += horiWindForce / 100.0f;
             
             var position = rigidbody.position;
 
