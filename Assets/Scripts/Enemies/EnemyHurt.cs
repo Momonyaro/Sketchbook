@@ -10,7 +10,7 @@ public class EnemyHurt : MonoBehaviour
     [Tooltip("The amount of times the player needs to jump on the enemy before it dies")]
     public int hP = 1;
     [Tooltip("The amount of damage the enemy will deal to the player upon touch")]
-    public int damage = 1;
+    public int damage = 4;
     [Tooltip("Determines how fast the player will be knocked back when hurt")]
     public float horizontalKnockbackSpeed = 10.0f;
     [Tooltip("The force the pushes the player up when they get hurt")]
@@ -19,6 +19,8 @@ public class EnemyHurt : MonoBehaviour
     public float stunnedTime = 5.0f;
     [Tooltip("The force that will launch the player upwards after bouncing on the enemy")]
     public float playerBounceDistance = 170.0f;
+    [Tooltip("The duplicate enemy in the colored world. If this is left empty the duplicate will not be destroyed which causes errors")]
+    public GameObject enemyDuplicate = null;
 
     PlayerController playerController;
     PlayerHurt playerHurt;
@@ -82,6 +84,8 @@ public class EnemyHurt : MonoBehaviour
     void Die()
     {
         //sad
+        if (enemyDuplicate != null)
+            Destroy(enemyDuplicate);
         Destroy(gameObject); //självklart en placeholder, nån fin dödseffekt får la spelas i fulla spelet
     }
 
