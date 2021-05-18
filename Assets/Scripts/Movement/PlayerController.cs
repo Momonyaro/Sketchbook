@@ -55,7 +55,6 @@ namespace Movement
 
             rigidbody = GetComponent<Rigidbody>();
             hasAnimator = !(meshAnimator == null);
-            vertWindForce = 0.0f;
         }
 
         private void FixedUpdate()
@@ -86,7 +85,11 @@ namespace Movement
             if (vertWindForce != 0.0f)
             {
                 Vector3 velocity = rigidbody.velocity;
-                velocity.y += vertWindForce;
+                //velocity.y += vertWindForce; // Hirad ville inte ha det så här
+
+                if (velocity.y <= vertWindForce)
+                    velocity.y = vertWindForce; // Hirad ville ha det så här
+
                 rigidbody.velocity = velocity;
             }
             
