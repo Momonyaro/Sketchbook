@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
-  m_Name: PlayerRunLeft
+  m_Name: PlayerRun
   m_EditorClassIdentifier: 
-  animName: _playerRunLeft
-  invertAnimXAxis: 1
+  animName: _playerRun
   loop: 1
   transitionAfterFinish: 0
   leadsInto: 
