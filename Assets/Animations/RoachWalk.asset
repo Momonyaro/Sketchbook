@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
+  m_Name: RoachWalk
+  m_EditorClassIdentifier: 
+  animName: _roachWalkLeft
+  invertAnimXAxis: 0
+  loop: 1
+  transitionAfterFinish: 0
+  leadsInto: 
+  animFrames:
+  - frameMesh: {fileID: -6869950046296203264, guid: 19afa16fbaedd9848a5b47670880c1de, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: 503558547445863124, guid: 19afa16fbaedd9848a5b47670880c1de, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: 6526478996609428155, guid: 19afa16fbaedd9848a5b47670880c1de, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: 2989421095685947667, guid: 19afa16fbaedd9848a5b47670880c1de, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: -3587701190019003799, guid: 19afa16fbaedd9848a5b47670880c1de, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: 2442096464990001493, guid: 19afa16fbaedd9848a5b47670880c1de, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  firstFrame: 0
