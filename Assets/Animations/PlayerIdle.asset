@@ -17,7 +17,7 @@ MonoBehaviour:
   transitionAfterFinish: 0
   leadsInto: 
   animFrames:
-  - frameMesh: {fileID: -1014424676754335668, guid: aa4710c2752618a46b0c417a3a83a719, type: 3}
+  - frameMesh: {fileID: -873573544331674325, guid: 9508a2882297b7342ab446607eff30a0, type: 3}
     frameDuration: 0
     audioAction: 0
   firstFrame: 0
