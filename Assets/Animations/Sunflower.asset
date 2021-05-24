@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
+  m_Name: Sunflower
+  m_EditorClassIdentifier: 
+  animName: _sunflower
+  invertAnimXAxis: 0
+  loop: 1
+  transitionAfterFinish: 0
+  leadsInto: 
+  animFrames:
+  - frameMesh: {fileID: -1589738029682824140, guid: 40829a466f08bfc4aa67da7fb00ad2f9, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: 5826965307736900199, guid: 40829a466f08bfc4aa67da7fb00ad2f9, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: -6882468345585598540, guid: 40829a466f08bfc4aa67da7fb00ad2f9, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: 8519718773883252682, guid: 40829a466f08bfc4aa67da7fb00ad2f9, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  - frameMesh: {fileID: -8600591164490469688, guid: 40829a466f08bfc4aa67da7fb00ad2f9, type: 3}
+    frameDuration: 0.3
+    audioAction: 0
+  firstFrame: 0

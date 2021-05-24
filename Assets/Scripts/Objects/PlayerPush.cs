@@ -14,13 +14,17 @@ public class PlayerPush : MonoBehaviour
     public float playerSpeed;
 
     PlayerController playerController;
+    FlashlighFlash flashlightFlash = null; // Märkte precis att skriptet "FlashlighFlash" stavar "Flashlight" fel...
 
     // Start is called before the first frame update
     void Start()
     {
         playerController = GetComponent<PlayerController>();
-        Pushing(1.0f);
+        ChangeSpeedMultiplier(1.0f);
         playerSpeed = playerController.moveSpeed;
+
+        if (FindObjectOfType<FlashlighFlash>() != null)
+            flashlightFlash = FindObjectOfType<FlashlighFlash>();
     }
 
     // Update is called once per frame
@@ -34,6 +38,13 @@ public class PlayerPush : MonoBehaviour
     }
 
     public void Pushing(float speed)
+    {
+        ChangeSpeedMultiplier(speed);
+        if (flashlightFlash != null)
+            flashlightFlash.flashing = false;
+    }
+
+    public void ChangeSpeedMultiplier(float speed) // Görs utanför Pushing så att andra skript ska kunna ändra speeden utan att spelaren puttar
     {
         playerController.pushSpeedMultiplier = speed;
     }
