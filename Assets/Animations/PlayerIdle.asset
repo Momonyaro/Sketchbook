@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
-  m_Name: PlayerIdleRight
+  m_Name: PlayerIdle
   m_EditorClassIdentifier: 
-  animName: _playerIdleRight
-  invertAnimXAxis: 0
-  loop: 0
+  animName: _playerIdle
+  loop: 1
   transitionAfterFinish: 0
   leadsInto: 
   animFrames:
   - frameMesh: {fileID: -1014424676754335668, guid: aa4710c2752618a46b0c417a3a83a719, type: 3}
     frameDuration: 0
+    audioAction: 0
+  firstFrame: 0

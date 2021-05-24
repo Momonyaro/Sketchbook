@@ -2433,6 +2433,8 @@ MonoBehaviour:
   moveSpeed: 10
   pushSpeedMultiplier: 0
   hurtSpeedMultiplier: 1
+  horiWindForce: 0
+  vertWindForce: 0
   pushOffForce: 92.75
   jumpSpeed: 1.36
   fallSpeed: 1.4
@@ -3743,16 +3745,12 @@ MonoBehaviour:
   WalkEmitter: {fileID: 1924175327}
   JumpEmitter: {fileID: 109623620}
   animationBranches:
-  - {fileID: 11400000, guid: b6f28d2e0f2140b459e13a338bda2180, type: 2}
   - {fileID: 11400000, guid: a3cda3eb44be54e4fac7e5a774f3dcb4, type: 2}
-  - {fileID: 11400000, guid: 256a83961dff8df4da33991be6491aa2, type: 2}
   - {fileID: 11400000, guid: 13db2c71f19c3d2429b4d28e3e78eccf, type: 2}
-  - {fileID: 11400000, guid: cac20bfdd82ec4942ac8d666026227c0, type: 2}
   - {fileID: 11400000, guid: ad589d91895b0de4f905332d667e80a5, type: 2}
-  - {fileID: 11400000, guid: b69c7122f50998c48a41f6f59643ee90, type: 2}
   - {fileID: 11400000, guid: c95d256d2d9d04f4f9f52f905a999933, type: 2}
-  - {fileID: 11400000, guid: e7c2c29312177e047a35fd14c7e6224f, type: 2}
   - {fileID: 11400000, guid: 7571e1b89cf89834181267d16c569910, type: 2}
+  invertXScale: 0
 --- !u!23 &1615300230
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3953,6 +3951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleLight: 1
+  flashing: 0
   lightCone: {fileID: 1431396721}
   flashHitBox: {fileID: 0}
   flashLocation: {fileID: 0}

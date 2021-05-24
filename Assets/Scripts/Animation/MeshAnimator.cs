@@ -28,6 +28,7 @@ namespace Animation
 
         private int currentBranchIndex = 0;
         private Vector3 originalScale = Vector3.one;
+        public bool invertXScale = false;
 
         private void Awake()
         {
@@ -41,7 +42,7 @@ namespace Animation
 
         private void Start()
         {
-            StartAnimFromName(debugAnimName);
+            StartAnimFromName(debugAnimName, false);
         }
 
         private void Update()
@@ -50,8 +51,9 @@ namespace Animation
             PlayNextFrameFromActiveAnim();
         }
 
-        public void StartAnimFromName(string animName)
+        public void StartAnimFromName(string animName, bool walkLeft)
         {
+            invertXScale = walkLeft;
             for (int i = 0; i < animationBranches.Count; i++)
             {
                 if (animationBranches[i].animName == animName)
@@ -68,7 +70,7 @@ namespace Animation
         public void PlayNextFrameFromActiveAnim()
         {
             var current = animationBranches[currentBranchIndex];
-            transform.localScale = current.invertAnimXAxis ? originalScale + new Vector3(-originalScale.x * 2, 0, 0): originalScale;
+            transform.localScale = invertXScale ? originalScale + new Vector3(-originalScale.x * 2, 0, 0): originalScale;
             meshFilter.mesh = current.TickAnimation();
             if (current.firstFrame)
             {
