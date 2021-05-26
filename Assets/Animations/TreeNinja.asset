@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
+  m_Name: TreeNinja
+  m_EditorClassIdentifier: 
+  animName: _treeNinja
+  loop: 1
+  transitionAfterFinish: 0
+  leadsInto: 
+  animFrames:
+  - frameMesh: {fileID: -705978057847009037, guid: 0fc70f7687aa29c4b89499b98570ff7c, type: 3}
+    frameDuration: 5
+    audioAction: 0
+  - frameMesh: {fileID: -7475333703902517797, guid: 0fc70f7687aa29c4b89499b98570ff7c, type: 3}
+    frameDuration: 5
+    audioAction: 0
+  - frameMesh: {fileID: -3492670153337460456, guid: 0fc70f7687aa29c4b89499b98570ff7c, type: 3}
+    frameDuration: 5
+    audioAction: 0
+  - frameMesh: {fileID: -1126472998197599380, guid: 0fc70f7687aa29c4b89499b98570ff7c, type: 3}
+    frameDuration: 5
+    audioAction: 0
+  firstFrame: 0

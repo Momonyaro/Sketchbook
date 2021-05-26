@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
+  m_Name: Tulips
+  m_EditorClassIdentifier: 
+  animName: _tulips
+  loop: 1
+  transitionAfterFinish: 0
+  leadsInto: 
+  animFrames:
+  - frameMesh: {fileID: -8728080780061008906, guid: 087f91a7a85a83e4eb3e41a07dd1d121, type: 3}
+    frameDuration: 10
+    audioAction: 0
+  - frameMesh: {fileID: -3550504136999721094, guid: 087f91a7a85a83e4eb3e41a07dd1d121, type: 3}
+    frameDuration: 10
+    audioAction: 0
+  - frameMesh: {fileID: -2371837410861393763, guid: 087f91a7a85a83e4eb3e41a07dd1d121, type: 3}
+    frameDuration: 10
+    audioAction: 0
+  - frameMesh: {fileID: -3177381784890897887, guid: 087f91a7a85a83e4eb3e41a07dd1d121, type: 3}
+    frameDuration: 10
+    audioAction: 0
+  - frameMesh: {fileID: 7617235334880124639, guid: 087f91a7a85a83e4eb3e41a07dd1d121, type: 3}
+    frameDuration: 10
+    audioAction: 0
+  - frameMesh: {fileID: 1630223437025042313, guid: 087f91a7a85a83e4eb3e41a07dd1d121, type: 3}
+    frameDuration: 10
+    audioAction: 0
+  firstFrame: 0

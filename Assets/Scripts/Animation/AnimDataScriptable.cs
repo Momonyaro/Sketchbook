@@ -11,8 +11,6 @@ namespace Animation
         
         [Header("General Settings")]
         public string animName = "New Animation";
-        [Tooltip("This is for when you for example have a 'Walk Left' animation and want to make it 'Walk Right' by flipping the animation.")]
-        public bool invertAnimXAxis = false;
         public bool loop = true;
         
         [Header("Transition Settings")]
