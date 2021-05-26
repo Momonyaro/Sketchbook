@@ -18,18 +18,18 @@ MonoBehaviour:
   leadsInto: 
   animFrames:
   - frameMesh: {fileID: 7642752948380650515, guid: 089e5af1e229f074baf493887a7a7d32, type: 3}
-    frameDuration: 0.3
+    frameDuration: 10
     audioAction: 0
   - frameMesh: {fileID: 131876554155645519, guid: 089e5af1e229f074baf493887a7a7d32, type: 3}
-    frameDuration: 0.3
+    frameDuration: 10
     audioAction: 0
   - frameMesh: {fileID: 7484258287199150622, guid: 089e5af1e229f074baf493887a7a7d32, type: 3}
-    frameDuration: 0.3
+    frameDuration: 10
     audioAction: 0
   - frameMesh: {fileID: 6408205118954225066, guid: 089e5af1e229f074baf493887a7a7d32, type: 3}
-    frameDuration: 0.3
+    frameDuration: 10
     audioAction: 0
   - frameMesh: {fileID: 3870877562703523041, guid: 089e5af1e229f074baf493887a7a7d32, type: 3}
-    frameDuration: 0.3
+    frameDuration: 10
     audioAction: 0
   firstFrame: 0
