@@ -17,22 +17,22 @@ MonoBehaviour:
   transitionAfterFinish: 0
   leadsInto: 
   animFrames:
-  - frameMesh: {fileID: -1365998915108542584, guid: 792d35de49ec08c4e90b15b2b886ad42, type: 3}
+  - frameMesh: {fileID: -2493179090903283412, guid: 9871fada8cad9e444a3190082957eac2, type: 3}
     frameDuration: 0.16
     audioAction: 1
-  - frameMesh: {fileID: 8946638171254428960, guid: 792d35de49ec08c4e90b15b2b886ad42, type: 3}
+  - frameMesh: {fileID: -2037442614191803905, guid: 9871fada8cad9e444a3190082957eac2, type: 3}
     frameDuration: 0.16
     audioAction: 0
-  - frameMesh: {fileID: 7359882194239021397, guid: 792d35de49ec08c4e90b15b2b886ad42, type: 3}
+  - frameMesh: {fileID: 4850553119864896059, guid: 9871fada8cad9e444a3190082957eac2, type: 3}
     frameDuration: 0.16
     audioAction: 1
-  - frameMesh: {fileID: -6317381949564095506, guid: 792d35de49ec08c4e90b15b2b886ad42, type: 3}
+  - frameMesh: {fileID: -5105787238888705730, guid: 9871fada8cad9e444a3190082957eac2, type: 3}
     frameDuration: 0.16
     audioAction: 1
-  - frameMesh: {fileID: -6304553179762311724, guid: 792d35de49ec08c4e90b15b2b886ad42, type: 3}
+  - frameMesh: {fileID: 6005936954677139542, guid: 9871fada8cad9e444a3190082957eac2, type: 3}
     frameDuration: 0.16
     audioAction: 0
-  - frameMesh: {fileID: -7484621205228193559, guid: 792d35de49ec08c4e90b15b2b886ad42, type: 3}
+  - frameMesh: {fileID: -1457964108179120508, guid: 9871fada8cad9e444a3190082957eac2, type: 3}
     frameDuration: 0.16
     audioAction: 1
   firstFrame: 0
