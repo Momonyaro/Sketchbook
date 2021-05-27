@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f747bb71-e4a1-40ac-9265-0f1c129b82a6}">
+		<property name="assetPath">
+			<value>gatan_i_himlen/gatan i himlen ex - Flute enemy.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>52.800708333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ac75bbc6-1ee0-4a13-a39e-dc8f6f7bd5f2}</destination>
+		</relationship>
+	</object>
+</objects>
