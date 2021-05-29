@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Sebastian\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Sebastian\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Sketchbook.917820536.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Sebastian\Documents\GitHub\Kraken\Sketchbook" t="IncludeRecursive">
+    <e p="C:\Users\gamer\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\gamer\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Sketchbook.877587184.00" t="ExcludeRecursive" />
+    <e p="C:\Users\gamer\Documents\GitHub\Sketchbook" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Models" t="Include">
@@ -134,9 +134,6 @@
             <e p="MeshAnimator.cs" t="Include" />
             <e p="MeshAnimLeech.cs" t="Include" />
           </e>
-          <e p="Camera" t="Include">
-            <e p="CameraMan.cs" t="Include" />
-          </e>
           <e p="Config" t="Include">
             <e p="MapConfigScriptable.cs" t="Include" />
             <e p="MapSettings.cs" t="Include" />
@@ -145,28 +142,38 @@
             <e p="DialogueTrigger.cs" t="Include" />
           </e>
           <e p="Enemies" t="Include">
+            <e p="EnemyChase.cs" t="Include" />
+            <e p="EnemyFly.cs" t="Include" />
             <e p="EnemyHurt.cs" t="Include" />
-            <e p="MoveBetweenPoints.cs" t="Include" />
+            <e p="EnemyJump.cs" t="Include" />
           </e>
           <e p="Flashlight" t="Include">
             <e p="FlashlighFlash.cs" t="Include" />
             <e p="FlashlightAim.cs" t="Include" />
           </e>
+          <e p="Kamera" t="Include">
+            <e p="CameraMan.cs" t="Include" />
+          </e>
           <e p="Managers" t="Include">
             <e p="AudioManager.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
+            <e p="MoveBetweenPoints.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerHurt.cs" t="Include" />
             <e p="SplineWalker.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
             <e p="BouncePad.cs" t="Include" />
             <e p="Destroy.cs" t="Include" />
             <e p="DestroyWhenFlashed.cs" t="Include" />
+            <e p="Fan.cs" t="Include" />
+            <e p="InstaKillPlayer.cs" t="Include" />
             <e p="MannequinEntity.cs" t="Include" />
             <e p="OuterBoxTrigger.cs" t="Include" />
             <e p="PlayerPush.cs" t="Include" />
             <e p="PushBlock.cs" t="Include" />
+            <e p="Wind.cs" t="Include" />
           </e>
           <e p="Scene Change" t="Include">
             <e p="ChangeScene.cs" t="Include" />
@@ -205,6 +212,9 @@
                 <e p="VertexPathUtility.cs" t="Include" />
               </e>
             </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="HPUI.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

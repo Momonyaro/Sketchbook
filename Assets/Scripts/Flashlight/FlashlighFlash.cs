@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class FlashlighFlash : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class FlashlighFlash : MonoBehaviour
     public bool toggleLight = false;
     bool previousFlashState = false, previousButtonState;
 
-    bool flashButton, flashing;
+    bool flashButton;
+    [HideInInspector]
+    public bool flashing;
+
+    [HideInInspector]
+    public UnityEvent onFlashOff = new UnityEvent();
 
     // Bara för testing
     [Tooltip("JUST FOR TESTING")]
@@ -44,7 +50,15 @@ public class FlashlighFlash : MonoBehaviour
         if (flashing && !previousFlashState && flashHitBox != null && flashLocation != null)
             Instantiate(flashHitBox, flashLocation.transform.position, flashLocation.transform.rotation);
 
+        if (!flashing && previousFlashState)
+            JustTurnedOFf();
         previousFlashState = flashing;
+    }
+
+    void JustTurnedOFf()
+    {
+        onFlashOff.Invoke();
+        onFlashOff = new UnityEvent();
     }
 
     #region InputCalls

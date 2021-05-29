@@ -11,8 +11,6 @@ namespace Animation
         
         [Header("General Settings")]
         public string animName = "New Animation";
-        [Tooltip("This is for when you for example have a 'Walk Left' animation and want to make it 'Walk Right' by flipping the animation.")]
-        public bool invertAnimXAxis = false;
         public bool loop = true;
         
         [Header("Transition Settings")]
@@ -25,6 +23,7 @@ namespace Animation
 
         private float frameTimer = 0.0f;
         private int frameIndex = 0;
+        [HideInInspector] public bool firstFrame = false;
 
 
         public Mesh StartAnim()
@@ -33,6 +32,7 @@ namespace Animation
             
             frameTimer = animFrames[frameIndex].frameDuration;
             frameTimer -= Time.deltaTime;
+            firstFrame = true;
             
             return animFrames[frameIndex].frameMesh;
         }
@@ -40,6 +40,7 @@ namespace Animation
         public Mesh TickAnimation()
         {
             frameTimer -= Time.deltaTime;
+            firstFrame = false;
             if (frameTimer <= 0)
             {
                 if (loop)
@@ -48,7 +49,7 @@ namespace Animation
                     frameIndex = Mathf.Min(frameIndex + 1, animFrames.Count - 1); // Limit it to repeat the last frame
                 
                 //New frame, let's parse the frames audio action
-                ParseAudioAction();
+                firstFrame = true;
                 
                 frameTimer = animFrames[frameIndex].frameDuration;
             }
@@ -56,25 +57,9 @@ namespace Animation
             return animFrames[frameIndex].frameMesh;
         }
 
-        private void ParseAudioAction()
+        public AnimFrame GetCurrentFrame()
         {
-            /////////////////////////////////////////////////////////////////////////////////////////////////////
-            //    Plan of attack: Fetch the wanted clip from the AudioManager, set it as the clip to play &    //
-            //                 finally signalling the audio source to play it's sound.                         //
-            /////////////////////////////////////////////////////////////////////////////////////////////////////
-            
-            AnimFrame.AudioActions action = animFrames[frameIndex].audioAction;
-            switch (action)
-            {
-                case AnimFrame.AudioActions.PlayerStep:
-                    return;
-                
-                case AnimFrame.AudioActions.PlayerJump:
-                    return;
-                
-                default:
-                    return;
-            }
+            return animFrames[frameIndex];
         }
     }
 

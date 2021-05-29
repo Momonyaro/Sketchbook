@@ -10,7 +10,7 @@ public class EnemyHurt : MonoBehaviour
     [Tooltip("The amount of times the player needs to jump on the enemy before it dies")]
     public int hP = 1;
     [Tooltip("The amount of damage the enemy will deal to the player upon touch")]
-    public int damage = 1;
+    public int damage = 4;
     [Tooltip("Determines how fast the player will be knocked back when hurt")]
     public float horizontalKnockbackSpeed = 10.0f;
     [Tooltip("The force the pushes the player up when they get hurt")]
@@ -19,23 +19,35 @@ public class EnemyHurt : MonoBehaviour
     public float stunnedTime = 5.0f;
     [Tooltip("The force that will launch the player upwards after bouncing on the enemy")]
     public float playerBounceDistance = 170.0f;
+    [Tooltip("TRUE: Can be stunned if the player flashes\n" +
+            "FALSE: Can NOT be stunned by the flashlight whatsoever")]
+    public bool canBeStunned = true;
+    [Tooltip("The duplicate enemy in the colored world. If this is left empty the duplicate will not be destroyed which causes errors")]
+    public GameObject enemyDuplicate = null;
 
     PlayerController playerController;
     PlayerHurt playerHurt;
 
-    MoveBetweenPoints moveBetweenPoints;
-    bool stunned = false;
+    MoveBetweenPoints moveBetweenPoints = null;
+    EnemyFly enemyFly = null;
+    [HideInInspector]
+    public bool stunned = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        moveBetweenPoints = GetComponent<MoveBetweenPoints>();
+        if (GetComponent<MoveBetweenPoints>() != null)
+            moveBetweenPoints = GetComponent<MoveBetweenPoints>();
+
+        if (GetComponent<EnemyFly>() != null)
+            enemyFly = GetComponent<EnemyFly>();
+
         stunned = false;
     }
     
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Flash")
+        if (other.gameObject.tag == "Flash" && canBeStunned)
         {
             StopAllCoroutines();
             StartCoroutine(IsStunned());
@@ -82,15 +94,24 @@ public class EnemyHurt : MonoBehaviour
     void Die()
     {
         //sad
+        if (enemyDuplicate != null)
+            Destroy(enemyDuplicate);
         Destroy(gameObject); //självklart en placeholder, nån fin dödseffekt får la spelas i fulla spelet
     }
 
     IEnumerator IsStunned()
     {
         stunned = true;
-        moveBetweenPoints.stunnedMultiplier = 0.0f;
+        if (moveBetweenPoints != null)
+            moveBetweenPoints.stunnedMultiplier = 0.0f;
+        if (enemyFly != null)
+            enemyFly.stunnedMultiplier = 0.0f;
+
         yield return new WaitForSeconds(stunnedTime);
         stunned = false;
-        moveBetweenPoints.stunnedMultiplier = 1.0f;
+        if (moveBetweenPoints != null)
+            moveBetweenPoints.stunnedMultiplier = 0.0f;
+        if (enemyFly != null)
+            enemyFly.stunnedMultiplier = 1.0f;
     }
 }

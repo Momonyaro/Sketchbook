@@ -26,7 +26,8 @@ namespace Movement
         float moveHor1 = -1.0f, moveHor2 = 1.0f;
         float point1Pos, point2Pos;
         [HideInInspector]
-        public float stunnedMultiplier = 1.0f;
+        public float stunnedMultiplier = 1.0f, jumpingMultiplier = 1.0f;
+        bool hasEnemyJump = false;
 
         // Start is called before the first frame update
         void Start()
@@ -34,6 +35,9 @@ namespace Movement
             rb = GetComponent<Rigidbody>();
             splineWalker = GetComponent<SplineWalker>();
             touched = false;
+
+            if (GetComponent<EnemyJump>() != null)
+                hasEnemyJump = true;
 
             var position = rb.position;
 
@@ -66,14 +70,18 @@ namespace Movement
             {
                 if (moveTo1)
                 {
-                    if ((moveHor1 < 0.0f && point1Pos <= splineDist) || (moveHor1 > 0.0f && point1Pos >= splineDist))
+                    if ((hasEnemyJump && jumpingMultiplier <= 0.0f && moveHor1 < 0.0f && point1Pos <= splineDist) || (hasEnemyJump && jumpingMultiplier <= 0.0f && moveHor1 > 0.0f && point1Pos >= splineDist)) //Jag hatar det här
+                        moveTo1 = false;
+                    else if ((!hasEnemyJump && moveHor1 < 0.0f && point1Pos <= splineDist) || (!hasEnemyJump && moveHor1 > 0.0f && point1Pos >= splineDist))
                         moveTo1 = false;
                     else
                         MoveAlongSplineHor(moveHor1, splineDist, currentSpline, position);
                 }
                 else
                 {
-                    if ((moveHor2 < 0.0f && point2Pos <= splineDist) || (moveHor2 > 0.0f && point2Pos >= splineDist))
+                    if ((hasEnemyJump && jumpingMultiplier <= 0.0f && moveHor2 < 0.0f && point2Pos <= splineDist) || (hasEnemyJump && jumpingMultiplier <= 0.0f && moveHor2 > 0.0f && point2Pos >= splineDist))
+                        moveTo1 = true;
+                    else if ((!hasEnemyJump && moveHor2 < 0.0f && point2Pos <= splineDist) || (!hasEnemyJump && moveHor2 > 0.0f && point2Pos >= splineDist))
                         moveTo1 = true;
                     else
                         MoveAlongSplineHor(moveHor2, splineDist, currentSpline, position);
@@ -83,7 +91,7 @@ namespace Movement
 
         public void MoveAlongSplineHor(float movingDir, float splineDist, PathCreator currentSpline, Vector3 position)
         {
-            movingDir *= Time.deltaTime * movementSpeed * stunnedMultiplier;
+            movingDir *= Time.deltaTime * movementSpeed * stunnedMultiplier * jumpingMultiplier;
             Vector3 splinePos = currentSpline.path.GetPointAtDistance(splineDist - movingDir, EndOfPathInstruction.Stop);
 
             //This is garbage but ok for testing - Sebastian

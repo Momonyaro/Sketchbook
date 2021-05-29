@@ -1,6 +1,8 @@
 ﻿using System;
 using Animation;
 using Config;
+using FMOD;
+using FMODUnity;
 using PathCreation;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -15,6 +17,8 @@ namespace Movement
         public float pushSpeedMultiplier = 1.0f;
         [HideInInspector]
         public float hurtSpeedMultiplier = 1.0f; // Namnet passar inte riktigt vad den gör...
+        [HideInInspector]
+        public float horiWindForce = 0.0f, vertWindForce = 0.0f; // Dumbo shit to make it work with the spline
 
         public float pushOffForce = 50.0f;
         [Min(1.0f)] public float jumpSpeed = 2.0f;
@@ -35,6 +39,7 @@ namespace Movement
         private new Rigidbody rigidbody;
         private bool hasAnimator = false;
         private bool lastFacedRight = true;
+        private bool falling = false;
         [HideInInspector]
         public Vector2 lastDelta = Vector2.zero;
 
@@ -47,7 +52,7 @@ namespace Movement
         {
             if (assignSplineAtAwake)
                 splineWalker = GetComponent<SplineWalker>();
-            
+
             rigidbody = GetComponent<Rigidbody>();
             hasAnimator = !(meshAnimator == null);
         }
@@ -59,6 +64,8 @@ namespace Movement
             {
                 MoveAlongSplineHor(lastDelta.x);
             }
+            else if (horiWindForce != 0.0f)
+                MoveAlongSplineHor(0.0f);
 
             if (rigidbody.velocity.y < 0) // Falling
             {
@@ -68,8 +75,21 @@ namespace Movement
             }
             else if (rigidbody.velocity.y > 0) // Jumping
             {
+                //airCurrentTimer = airTimer;
                 Vector3 velocity = rigidbody.velocity;
                 velocity.y += Physics.gravity.y * (jumpSpeed - 1.0f);
+                rigidbody.velocity = velocity;
+            }
+
+            // För stora fläktar
+            if (vertWindForce != 0.0f)
+            {
+                Vector3 velocity = rigidbody.velocity;
+                //velocity.y += vertWindForce; // Hirad ville inte ha det så här
+
+                if (velocity.y <= vertWindForce)
+                    velocity.y = vertWindForce; // Hirad ville ha det så här
+
                 rigidbody.velocity = velocity;
             }
             
@@ -81,9 +101,10 @@ namespace Movement
         public void MoveAlongSplineHor(float horSpeed)
         {
             //Varför ska vi röra oss?
-            if (horSpeed == 0) return;
+            if (horSpeed == 0 && horiWindForce == 0.0f) return;
 
             horSpeed *= Time.deltaTime * moveSpeed * pushSpeedMultiplier * hurtSpeedMultiplier;
+            horSpeed += horiWindForce / 100.0f;
             
             var position = rigidbody.position;
 
@@ -108,36 +129,41 @@ namespace Movement
                 // JUMP/FALL ANIMS
                 if (rigidbody.velocity.y < 0.1f) // Falling
                 {
-                    meshAnimator.StartAnimFromName(lastFacedRight ? "_playerFallRight" : "_playerFallLeft");
+                    meshAnimator.StartAnimFromName("_playerFall", !lastFacedRight);
                     return;
                 }
                 else if (rigidbody.velocity.y > 0.1f) // Jumping
                 {
-                    meshAnimator.StartAnimFromName(lastFacedRight ? "_playerJumpRight" : "_playerJumpLeft");
+                    meshAnimator.StartAnimFromName("_playerJump", !lastFacedRight);
                     return;
                 }
             }
             
             // RUN/WALK ANIMS
-            if (Mathf.Abs(mvmtDelta.x) > 0.08f)
+            if (Mathf.Abs(mvmtDelta.x) > 0.5f)
             {
-                if (mvmtDelta.x > 0.08f) //Running Right
-                {
-                    meshAnimator.StartAnimFromName("_playerWalkRight");
+                if (mvmtDelta.x > 0.5f) 
                     lastFacedRight = true;
-                }
-                else                     //Running Left
-                {
-                    meshAnimator.StartAnimFromName("_playerWalkLeft");
+                else
                     lastFacedRight = false;
-                }
+                
+                meshAnimator.StartAnimFromName("_playerRun", !lastFacedRight);
+                
+                return;
+            }
+            else if (Mathf.Abs(mvmtDelta.x) > 0.08f)
+            {
+                if (mvmtDelta.x > 0.5f) 
+                    lastFacedRight = true;
+                else
+                    lastFacedRight = false;
+                
+                meshAnimator.StartAnimFromName("_playerWalk", !lastFacedRight);
+                
                 return;
             }
             
-            if (lastFacedRight)
-                meshAnimator.StartAnimFromName("_playerIdleRight");
-            else
-                meshAnimator.StartAnimFromName("_playerIdleLeft");
+            meshAnimator.StartAnimFromName("_playerIdle", !lastFacedRight);
         }
         
         //Här så gör vi så att karaktären kan hoppa. (ska vi använda AddForce?)
