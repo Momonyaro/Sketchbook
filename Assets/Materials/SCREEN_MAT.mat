@@ -66,8 +66,11 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _DebugGain: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _GaussAmountX: 0.0019
+    - _GaussAmountY: 0.0016
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
