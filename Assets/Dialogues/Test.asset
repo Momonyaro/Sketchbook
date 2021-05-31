@@ -21,6 +21,7 @@ MonoBehaviour:
   - id: 1
   - id: 2
   - id: 3
+  - id: 4
   references:
     version: 1
     00000000:
@@ -35,12 +36,20 @@ MonoBehaviour:
     00000001:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
+        reference: _spawnObjComp2
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+    00000002:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
         reference: _spawnObjComp1
         objectPrefab: {fileID: 4130081406030967735, guid: 1e11a995dc756e0429a1f82c9087f7d1, type: 3}
         screenPosition: {x: 100, y: 100}
         errorAttempts: 99
         reveal: 1
-    00000002:
+    00000003:
       type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _waitComp2
@@ -49,7 +58,7 @@ MonoBehaviour:
         errorAttempts: 99
         reveal: 1
         waitTime: 2.3
-    00000003:
+    00000004:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _destroyComp3
