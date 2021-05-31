@@ -18,10 +18,13 @@ namespace Movement
         [Tooltip("TRUE: Will only start moving once the player has touched the object\n" +
             "FALSE: Will start moving as soon as the scene loads")]
         public bool moveWhenTouched = false;
+        [Tooltip("An object linked to this platform that will move identically to it")]
+        public GameObject secondaryObject = null;
 
         bool touched;
 
         Rigidbody rb;
+        Rigidbody secondaryObjectRb = null;
         SplineWalker splineWalker;
         float moveHor1 = -1.0f, moveHor2 = 1.0f;
         float point1Pos, point2Pos;
@@ -35,6 +38,9 @@ namespace Movement
             rb = GetComponent<Rigidbody>();
             splineWalker = GetComponent<SplineWalker>();
             touched = false;
+
+            if (secondaryObject != null && secondaryObject.GetComponent<Rigidbody>() != null)
+                secondaryObjectRb = secondaryObject.GetComponent<Rigidbody>();
 
             if (GetComponent<EnemyJump>() != null)
                 hasEnemyJump = true;
@@ -98,6 +104,11 @@ namespace Movement
             if (!MapSettings.Instance.configScriptable.lockYToSpline) splinePos.y = position.y;
 
             rb.MovePosition(splinePos);
+            if (secondaryObjectRb != null)
+            {
+                Vector3 secondarySplinePos = new Vector3(splinePos.x, secondaryObjectRb.position.y, splinePos.z);
+                secondaryObjectRb.MovePosition(secondarySplinePos);
+            }
         }
 
         void OnTriggerEnter(Collider other)
