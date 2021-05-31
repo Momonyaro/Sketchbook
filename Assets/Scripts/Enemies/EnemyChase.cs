@@ -92,6 +92,8 @@ namespace Movement
         {
             if (other.gameObject.tag == "Light")
             {
+                GameObject flash = other.gameObject;
+                flash.transform.parent.GetComponent<FlashlighFlash>().onFlashOff.AddListener(CannotSeePlayer);
                 inLight = true;
                 if (player != null)
                 {
@@ -106,11 +108,14 @@ namespace Movement
         void OnTriggerExit(Collider other)
         {
             if (other.gameObject.tag == "Light")
-            {
-                turningRound = false;
-                StopAllCoroutines();
-                StartCoroutine(StopChasing());
-            }
+                CannotSeePlayer();
+        }
+
+        public void CannotSeePlayer()
+        {
+            turningRound = false;
+            StopAllCoroutines();
+            StartCoroutine(StopChasing());
         }
 
         IEnumerator StopChasing()
