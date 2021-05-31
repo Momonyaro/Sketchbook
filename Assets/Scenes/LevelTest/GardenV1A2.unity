@@ -561,7 +561,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115386851}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -571,6 +571,7 @@ MonoBehaviour:
   point2: {fileID: 633813906}
   moveTo1: 1
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &115386856
@@ -2175,7 +2176,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338899591}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -2185,6 +2186,7 @@ MonoBehaviour:
   point2: {fileID: 1344026219}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &338899596
@@ -2615,7 +2617,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382460277}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -2625,6 +2627,7 @@ MonoBehaviour:
   point2: {fileID: 562349157}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &382460282
@@ -5386,7 +5389,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883781126}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -5396,6 +5399,7 @@ MonoBehaviour:
   point2: {fileID: 1169187899}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &883781131
@@ -5922,7 +5926,7 @@ GameObject:
   - component: {fileID: 941076691}
   - component: {fileID: 941076690}
   - component: {fileID: 941076689}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Leaf1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5981,7 +5985,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941076687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -5991,6 +5995,7 @@ MonoBehaviour:
   point2: {fileID: 1854981251}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &941076692
@@ -6352,7 +6357,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002025276}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -6362,6 +6367,7 @@ MonoBehaviour:
   point2: {fileID: 1937676043}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &1002025281
@@ -8757,7 +8763,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441987973}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -8767,6 +8773,7 @@ MonoBehaviour:
   point2: {fileID: 1666630459}
   moveTo1: 1
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &1441987978
@@ -8927,7 +8934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450074671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -8937,6 +8944,7 @@ MonoBehaviour:
   point2: {fileID: 2009964142}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &1450074676
@@ -9921,7 +9929,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539804164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -9931,6 +9939,7 @@ MonoBehaviour:
   point2: {fileID: 1583640522}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &1539804169
@@ -11369,7 +11378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1854981252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11568,7 +11577,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888670074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac704081e4ce5d468a650e3165a7584, type: 3}
   m_Name: 
@@ -11578,6 +11587,7 @@ MonoBehaviour:
   point2: {fileID: 283150110}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 0}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &1888670079
@@ -12744,7 +12754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2132545928}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13003,6 +13013,7 @@ MonoBehaviour:
   point2: {fileID: 215062961}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 941076687}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &919132147921405780
@@ -13190,6 +13201,7 @@ MonoBehaviour:
   point2: {fileID: 1399967613}
   moveTo1: 1
   moveWhenTouched: 1
+  secondaryObject: {fileID: 115386851}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &1818127841784685220
@@ -13415,6 +13427,7 @@ MonoBehaviour:
   point2: {fileID: 1898452653}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 1450074671}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!1 &3109387335089322666
@@ -13515,6 +13528,7 @@ MonoBehaviour:
   point2: {fileID: 718303083}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 883781126}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!1 &3397832066125226954
@@ -13713,6 +13727,7 @@ MonoBehaviour:
   point2: {fileID: 1138141819}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 338899591}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!114 &4811392834359432313
@@ -13829,6 +13844,7 @@ MonoBehaviour:
   point2: {fileID: 412993885}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 382460277}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!1 &4818708187910419978
@@ -14005,6 +14021,7 @@ MonoBehaviour:
   point2: {fileID: 1496654394}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 1539804164}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!65 &5437237334798680044
@@ -14230,6 +14247,7 @@ MonoBehaviour:
   point2: {fileID: 1955397105}
   moveTo1: 1
   moveWhenTouched: 1
+  secondaryObject: {fileID: 1441987973}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!114 &6168049292467634021
@@ -14558,6 +14576,7 @@ MonoBehaviour:
   point2: {fileID: 1081720923}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 1888670074}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!114 &8898168492022844189
@@ -14629,6 +14648,7 @@ MonoBehaviour:
   point2: {fileID: 831959346}
   moveTo1: 0
   moveWhenTouched: 1
+  secondaryObject: {fileID: 1002025276}
   stunnedMultiplier: 1
   jumpingMultiplier: 1
 --- !u!114 &8962505594668208569
