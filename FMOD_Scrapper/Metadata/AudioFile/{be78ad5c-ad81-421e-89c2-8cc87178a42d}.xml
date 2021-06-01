@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{513d69b1-9d5e-4ec6-b600-071ee38cc10c}">
+	<object class="AudioFile" id="{be78ad5c-ad81-421e-89c2-8cc87178a42d}">
 		<property name="assetPath">
-			<value>Ambiance/Ambiance_Wind_OneShot_Test.wav</value>
+			<value>Ambiance/Ambiance_Wind_OneShot_1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
