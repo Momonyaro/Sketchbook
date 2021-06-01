@@ -43,6 +43,8 @@ namespace Movement
         [HideInInspector]
         public Vector2 lastDelta = Vector2.zero;
 
+        bool previousGroundedState;
+
         private void OnValidate()
         {
             rigidbody = GetComponent<Rigidbody>();
@@ -55,6 +57,8 @@ namespace Movement
 
             rigidbody = GetComponent<Rigidbody>();
             hasAnimator = !(meshAnimator == null);
+
+            previousGroundedState = IsGrounded();
         }
 
         private void FixedUpdate()
@@ -94,6 +98,11 @@ namespace Movement
             }
             
             PlayAnimations(lastDelta);
+
+            // hmm att kolla grounded varje frame kanske kinda dumbo idk
+            if (!previousGroundedState && IsGrounded())
+                JustLanded();
+            previousGroundedState = IsGrounded();
         }
 
 
@@ -195,6 +204,11 @@ namespace Movement
             }
 
             return false;
+        }
+
+        public void JustLanded()
+        {
+            // Funny landing stuff
         }
 
 

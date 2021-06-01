@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{fa070204-c205-4cf1-8c26-6b5f973a7e5c}">
+		<property name="assetPath">
+			<value>Gatan i himlen CHASE/Gatan_i_Himlen_chase - Violin pizz.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.199958333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ac75bbc6-1ee0-4a13-a39e-dc8f6f7bd5f2}</destination>
+		</relationship>
+	</object>
+</objects>
