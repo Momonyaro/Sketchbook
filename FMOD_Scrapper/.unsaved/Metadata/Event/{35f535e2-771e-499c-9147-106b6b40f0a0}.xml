@@ -5,7 +5,7 @@
 			<value>Player_Jump</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bd363849-46e4-4017-8cb7-e7e1114a3bbd}</destination>
@@ -202,7 +202,11 @@
 			<destination>{974fa6f2-49cb-40f2-98df-887a631a8130}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{0482879d-2575-4c88-97bc-406b9e6ac51c}" />
+	<object class="MixerBusPanner" id="{0482879d-2575-4c88-97bc-406b9e6ac51c}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{552c4a32-485a-4856-a053-c70fff3a2a00}" />
 	<object class="FadeCurve" id="{5b5cf1e9-4e91-4e69-81bf-e81f545ff32f}">
 		<relationship name="startPoint">

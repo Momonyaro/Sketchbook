@@ -5,7 +5,7 @@
 			<value>Player_PushPull</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bd363849-46e4-4017-8cb7-e7e1114a3bbd}</destination>
@@ -90,16 +90,16 @@
 	<object class="MixerBusPanner" id="{a3f5d818-daa1-4192-bbcb-399123de70de}" />
 	<object class="SingleSound" id="{2edec433-b6c4-42c3-9685-fd856761f6d3}">
 		<property name="length">
-			<value>0.82469387755102042</value>
+			<value>0.62469387755102024</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.20000000000000001</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{b9cfcfdc-fe25-426e-b08d-5a772592e78a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{cdb86c0f-7de3-498c-b4e7-38cd1ce849bf}">
-		<property name="volume">
-			<value>-2.5</value>
-		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -118,7 +118,11 @@
 			<destination>{c8f5c3aa-6c95-410c-9001-6dd8b99b718b}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{6854fb47-225b-4673-b1d1-d19a6ce18946}" />
+	<object class="MixerBusPanner" id="{6854fb47-225b-4673-b1d1-d19a6ce18946}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ccd0339a-23c2-4b68-a0b2-2b4f5840006f}" />
 	<object class="MixerBusEffectChain" id="{6b59962b-e905-45cf-bccf-9c3b9da05dc8}">
 		<relationship name="effects">

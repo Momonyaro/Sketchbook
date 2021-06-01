@@ -5,7 +5,7 @@
 			<value>Player_Walking</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bd363849-46e4-4017-8cb7-e7e1114a3bbd}</destination>
@@ -168,7 +168,11 @@
 			<destination>{ed56a5fc-cadb-4638-be65-64f38548651d}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{83e24eff-abbe-46d4-ad6c-c53f9cc587c0}" />
+	<object class="MixerBusPanner" id="{83e24eff-abbe-46d4-ad6c-c53f9cc587c0}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{d48b2c03-7e63-4e5a-9e0c-b040e5e8402a}" />
 	<object class="RandomizerModulator" id="{6cd2c8e9-6951-4e00-893c-fe6df8e1925f}">
 		<property name="nameOfPropertyBeingModulated">
