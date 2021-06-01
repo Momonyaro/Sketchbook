@@ -5,7 +5,7 @@
 			<value>UI_Select</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d995c5ed-dc84-4a79-b8d7-d96d2f8d650f}</destination>
@@ -118,7 +118,11 @@
 			<destination>{92d21593-1f22-4285-adca-f534bb084e29}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{9e8ae1e3-6600-4b40-9225-4187b5456dfc}" />
+	<object class="MixerBusPanner" id="{9e8ae1e3-6600-4b40-9225-4187b5456dfc}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{fa7b43fe-88f5-4748-b363-6a13c03e42ce}" />
 	<object class="MixerBusEffectChain" id="{d816d1da-44ac-4316-851f-d2d90944151a}">
 		<relationship name="effects">
