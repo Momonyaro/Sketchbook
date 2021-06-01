@@ -15,13 +15,16 @@ public class ChangeScene : MonoBehaviour
         triggered = false;
     }
 
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && !triggered)
-        {
-            triggered = true;
-            StartCoroutine(LoadScene());
-        }
+            StartSceneChange();
+    }
+    public void StartSceneChange()
+    {
+        triggered = true;
+        StartCoroutine(LoadScene());
     }
 
     IEnumerator LoadScene()
