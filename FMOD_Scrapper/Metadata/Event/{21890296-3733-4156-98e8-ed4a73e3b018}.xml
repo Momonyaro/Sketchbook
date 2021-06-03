@@ -181,6 +181,9 @@
 		</relationship>
 	</object>
 	<object class="EventSound" id="{40b264ce-f042-4b62-a4dd-ca91083bebfb}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
 		<property name="start">
 			<value>0.20000000000000001</value>
 		</property>
@@ -378,7 +381,7 @@
 	</object>
 	<object class="AutomationPoint" id="{b5b29d61-b470-4232-94f7-09d0ce76c118}">
 		<property name="position">
-			<value>1.1400000000000001</value>
+			<value>1.0600000000000001</value>
 		</property>
 		<property name="value">
 			<value>1</value>
