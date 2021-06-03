@@ -444,6 +444,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 1
+  bounceEmitter: {fileID: 18053908}
 --- !u!65 &18053905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -486,6 +488,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &18053908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18053901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &18053910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75763c46e6c20aa4782aa2c928f3a004, type: 3}
@@ -1474,7 +1499,7 @@ Transform:
   - {fileID: 1911775025}
   - {fileID: 734760094}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &63407430
 PrefabInstance:
@@ -2051,7 +2076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1042313379141174017, guid: b946bdec54069ca4d91f938a114d4c64, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1042313379141174017, guid: b946bdec54069ca4d91f938a114d4c64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2820,6 +2845,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!65 &127617268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2921,7 +2948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5383546575824755174, guid: 2f1496eac88ba7d4eb73974eddc974c1, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 5383546575824755174, guid: 2f1496eac88ba7d4eb73974eddc974c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4047,7 +4074,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178906694
 GameObject:
@@ -4264,6 +4291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!114 &181628762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4376,6 +4405,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!114 &181665635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4504,7 +4535,7 @@ MonoBehaviour:
   copyPosition: 1
   copyRotation: 1
   yOffset: -31.7
-  callDuring: 0
+  callDuring: 1
   applyOffsetInEditor: 1
 --- !u!20 &186257604
 Camera:
@@ -4531,7 +4562,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 62
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -4557,11 +4588,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186257602}
   m_LocalRotation: {x: -0, y: -0.9961947, z: 0.08715588, w: 0}
-  m_LocalPosition: {x: 54.420002, y: -26.720001, z: 107.04}
+  m_LocalPosition: {x: -0.069999695, y: -28, z: 13.099998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 2128590936}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 80.252, y: 120.675, z: 121.942}
 --- !u!4 &189573855 stripped
 Transform:
@@ -5371,7 +5402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &211850004 stripped
 Transform:
@@ -6160,7 +6191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623736547854469027, guid: 798090d48b122f14e999f14374a1975c, type: 3}
       propertyPath: m_RootOrder
-      value: 51
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 623736547854469027, guid: 798090d48b122f14e999f14374a1975c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6721,7 +6752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623736547854469027, guid: 798090d48b122f14e999f14374a1975c, type: 3}
       propertyPath: m_RootOrder
-      value: 49
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 623736547854469027, guid: 798090d48b122f14e999f14374a1975c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7492,6 +7523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!114 &253553731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8419,6 +8452,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 1
+  bounceEmitter: {fileID: 299146521}
 --- !u!114 &299146516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8490,6 +8525,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &299146521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299146514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &299146523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75763c46e6c20aa4782aa2c928f3a004, type: 3}
@@ -9654,6 +9712,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 1
+  bounceEmitter: {fileID: 355671415}
 --- !u!114 &355671410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9725,6 +9785,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &355671415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355671408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &355671417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75763c46e6c20aa4782aa2c928f3a004, type: 3}
@@ -11508,7 +11591,7 @@ GameObject:
   - component: {fileID: 435509647}
   - component: {fileID: 435509649}
   m_Layer: 0
-  m_Name: ForestAmb
+  m_Name: AmbianceAndMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11527,7 +11610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ambience/Amb_Forest
+  Event: event:/Ambience/Amb_backyard
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -11549,7 +11632,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &435509649
 MonoBehaviour:
@@ -12170,7 +12253,7 @@ Transform:
   m_Children:
   - {fileID: 1789161406}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &462783517
 GameObject:
@@ -13692,6 +13775,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 50
+  emitsAudio: 1
+  bounceEmitter: {fileID: 531038991}
 --- !u!114 &531038986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13763,6 +13848,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &531038991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531038984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &531038993 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75763c46e6c20aa4782aa2c928f3a004, type: 3}
@@ -14049,7 +14157,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &535615346
 PrefabInstance:
@@ -15475,6 +15583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!114 &581710472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23576,6 +23686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 1
+  bounceEmitter: {fileID: 916294010}
 --- !u!65 &916294007
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23618,6 +23730,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &916294010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916294003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &917321285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4146174810077386446, guid: 46a88a87e56456445bb1194dcd3091aa, type: 3}
@@ -24827,7 +24962,7 @@ Transform:
   - {fileID: 515953900}
   - {fileID: 574813441}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &957790482
 GameObject:
@@ -25187,6 +25322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 1
+  bounceEmitter: {fileID: 970055822}
 --- !u!65 &970055819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25229,6 +25366,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &970055822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970055815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &970055824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75763c46e6c20aa4782aa2c928f3a004, type: 3}
@@ -28481,7 +28641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1569847736878413536, guid: 446de91364d94bc45bcf52bec25e2a18, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 1569847736878413536, guid: 446de91364d94bc45bcf52bec25e2a18, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -28727,7 +28887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8051326938231602321, guid: 3ce5d9838d09be3439c48bca69bd076d, type: 3}
       propertyPath: m_RootOrder
-      value: 50
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 8051326938231602321, guid: 3ce5d9838d09be3439c48bca69bd076d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -28777,7 +28937,7 @@ MonoBehaviour:
   copyRotation: 1
   yOffset: -31.7
   callDuring: 1
-  applyOffsetInEditor: 0
+  applyOffsetInEditor: 1
 --- !u!4 &1145852713
 Transform:
   m_ObjectHideFlags: 0
@@ -28786,7 +28946,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145852711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -81.21867, y: -70, z: -64.54698}
+  m_LocalPosition: {x: -81.21867, y: -33.9449, z: -64.54698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 734002208}
@@ -28798,7 +28958,7 @@ Transform:
   - {fileID: 879459160}
   - {fileID: 1752064919}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146229413
 GameObject:
@@ -29180,7 +29340,7 @@ Transform:
   - {fileID: 213967158}
   - {fileID: 312454358}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1153611811 stripped
 Transform:
@@ -29358,6 +29518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 50
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!65 &1157530107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32819,6 +32981,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!65 &1325599268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33112,6 +33276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 1
+  bounceEmitter: {fileID: 1332298854}
 --- !u!65 &1332298851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33154,6 +33320,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1332298854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332298847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &1332298856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75763c46e6c20aa4782aa2c928f3a004, type: 3}
@@ -33200,7 +33389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1042313379141174017, guid: b946bdec54069ca4d91f938a114d4c64, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 1042313379141174017, guid: b946bdec54069ca4d91f938a114d4c64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -34779,6 +34968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!65 &1397840888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36155,7 +36346,7 @@ Transform:
   - {fileID: 1373659865}
   - {fileID: 589277728}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1454381674
 GameObject:
@@ -36533,7 +36724,7 @@ Transform:
   - {fileID: 1359750408}
   - {fileID: 1894322622}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461793712
 GameObject:
@@ -36672,7 +36863,7 @@ Transform:
   - {fileID: 1947004741}
   - {fileID: 2056548070}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1466370676 stripped
 Transform:
@@ -36846,7 +37037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623736547854469027, guid: 798090d48b122f14e999f14374a1975c, type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 623736547854469027, guid: 798090d48b122f14e999f14374a1975c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -37604,7 +37795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1509843190
 GameObject:
@@ -38602,7 +38793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623736547854469027, guid: 798090d48b122f14e999f14374a1975c, type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 623736547854469027, guid: 798090d48b122f14e999f14374a1975c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -38866,7 +39057,7 @@ Transform:
   m_LocalScale: {x: 0.43740916, y: 0.43740916, z: 0.43740916}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1554048636
 MonoBehaviour:
@@ -39688,7 +39879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1042313379141174017, guid: b946bdec54069ca4d91f938a114d4c64, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 1042313379141174017, guid: b946bdec54069ca4d91f938a114d4c64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -41033,7 +41224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5383546575824755174, guid: 2f1496eac88ba7d4eb73974eddc974c1, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 5383546575824755174, guid: 2f1496eac88ba7d4eb73974eddc974c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -41958,7 +42149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667867029
 GameObject:
@@ -43116,7 +43307,7 @@ Transform:
   - {fileID: 1783126859}
   - {fileID: 1634348175}
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1695128978
 PrefabInstance:
@@ -43959,6 +44150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!65 &1752064923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46227,6 +46420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 1
+  bounceEmitter: {fileID: 1833384338}
 --- !u!114 &1833384333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46298,6 +46493,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1833384338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833384331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &1833384340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75763c46e6c20aa4782aa2c928f3a004, type: 3}
@@ -46844,7 +47062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1569847736878413536, guid: 446de91364d94bc45bcf52bec25e2a18, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 1569847736878413536, guid: 446de91364d94bc45bcf52bec25e2a18, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -48419,6 +48637,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 5
+  emitsAudio: 1
+  bounceEmitter: {fileID: 1940873564}
 --- !u!114 &1940873557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48490,6 +48710,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1940873564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940873554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &1944422846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5922784531306486299, guid: 45c9130073d9c5c4e8a0a42818da5d52, type: 3}
@@ -49080,7 +49323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5383546575824755174, guid: 2f1496eac88ba7d4eb73974eddc974c1, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 5383546575824755174, guid: 2f1496eac88ba7d4eb73974eddc974c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -49979,7 +50222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1569847736878413536, guid: 446de91364d94bc45bcf52bec25e2a18, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1569847736878413536, guid: 446de91364d94bc45bcf52bec25e2a18, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -53220,6 +53463,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1324649130}
+  - {fileID: 186257605}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53859,6 +54103,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoachWalkEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 527356300775942368, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527356300775942368, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -31.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 527356300775942368, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 527356300775942371, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
       propertyPath: point1
       value: 
@@ -53866,6 +54122,10 @@ PrefabInstance:
     - target: {fileID: 527356300775942371, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
       propertyPath: point2
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527356300775942398, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
+      propertyPath: applyOffsetInEditor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4589658523444299139, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
       propertyPath: m_LocalPosition.x

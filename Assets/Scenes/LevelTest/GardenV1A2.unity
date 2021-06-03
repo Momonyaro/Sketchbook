@@ -10999,7 +10999,7 @@ GameObject:
   - component: {fileID: 1765106433}
   - component: {fileID: 1765106435}
   m_Layer: 0
-  m_Name: ForestMusic
+  m_Name: AmbianceAndMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
