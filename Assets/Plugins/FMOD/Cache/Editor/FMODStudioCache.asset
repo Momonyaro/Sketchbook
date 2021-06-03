@@ -1250,6 +1250,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-2682722137812126672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_Objeckt_fan/FanOffOn
+  m_EditorClassIdentifier: 
+  Name: FanOffOn
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-2671381883761024451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1461,6 +1481,30 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-2003416541658753278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ojeckt/SFX_Objeckt_fan
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ojeckt/SFX_Objeckt_fan
+  guid: 286870c2d44ee246b281a14c2721b52d
+  Banks:
+  - {fileID: 6200618135401865682}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2682722137812126672}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 13000
 --- !u!114 &-1996663873529886238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1707,8 +1751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Himlen
   guid: 00c43a68199d554ab2198457428364ef
-  Banks:
-  - {fileID: 6200618135401865682}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2831,6 +2874,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &6008081586210251984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Attack
+  guid: 24845877e0fe4c469dedbfcfdf677194
+  Banks:
+  - {fileID: 6200618135401865682}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
 --- !u!114 &6029978016839739823
 MonoBehaviour:
   m_ObjectHideFlags: 0
