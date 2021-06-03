@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackScreenCanvas: {fileID: 8582446151067496020, guid: 2393d87d410507d42aa78c4ba1e8b2b9, type: 3}
-  scene: Comic2
+  scene: RoomV1
 --- !u!1 &1075003527
 GameObject:
   m_ObjectHideFlags: 0
