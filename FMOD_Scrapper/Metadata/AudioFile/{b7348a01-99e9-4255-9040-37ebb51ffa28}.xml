@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{b7348a01-99e9-4255-9040-37ebb51ffa28}">
-		<property name="assetPath">
-			<value>SFX/Player/SFX_Player_Jump_Voice_3.ogg</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
 		</property>
