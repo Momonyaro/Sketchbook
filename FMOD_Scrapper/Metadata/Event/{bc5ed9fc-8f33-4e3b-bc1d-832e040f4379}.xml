@@ -5,7 +5,7 @@
 			<value>Player_Land</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bd363849-46e4-4017-8cb7-e7e1114a3bbd}</destination>
@@ -159,7 +159,11 @@
 			<destination>{bcf71662-b5a0-41e0-8602-bf29df88ab3e}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{e81d9260-b68f-419a-a78f-c096519d6e4b}" />
+	<object class="MixerBusPanner" id="{e81d9260-b68f-419a-a78f-c096519d6e4b}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ef1817bc-a971-4011-9ed1-df04f83cb16b}" />
 	<object class="FadeCurve" id="{c72d9f5c-697f-4829-a3d6-046e0a5ad851}">
 		<relationship name="startPoint">

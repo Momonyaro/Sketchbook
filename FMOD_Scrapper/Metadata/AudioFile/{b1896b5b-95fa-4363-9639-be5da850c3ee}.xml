@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{b1896b5b-95fa-4363-9639-be5da850c3ee}">
+		<property name="assetPath">
+			<value>Gatan i himlen CHASE/Gatan_i_Himlen_chase - BBC Marimba.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.199958333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ac75bbc6-1ee0-4a13-a39e-dc8f6f7bd5f2}</destination>
+		</relationship>
+	</object>
+</objects>

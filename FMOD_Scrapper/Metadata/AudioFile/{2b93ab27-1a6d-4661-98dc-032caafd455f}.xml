@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{2b93ab27-1a6d-4661-98dc-032caafd455f}">
+		<property name="assetPath">
+			<value>SFX_Objeckt_Fan_back.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>37.079637188208615</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ac75bbc6-1ee0-4a13-a39e-dc8f6f7bd5f2}</destination>
+		</relationship>
+	</object>
+</objects>
