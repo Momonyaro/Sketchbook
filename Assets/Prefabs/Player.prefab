@@ -375,7 +375,7 @@ MonoBehaviour:
   assignSplineAtAwake: 1
   currentSpline: {fileID: 0}
   rotateWithSpline: 1
-  rotOffset: {x: 180, y: 90, z: 90}
+  rotOffset: {x: 0, y: -90, z: 90}
 --- !u!114 &931780825272867366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +465,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d0176d30-02d5-4735-bfbc-5dc6c04410ee
     m_ActionName: Platformer/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c7912cfb-3d25-40cb-9797-96d2adcc1517
+    m_ActionName: UI/Submit[/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Platformer
@@ -757,9 +761,10 @@ GameObject:
   - component: {fileID: 931780826110175317}
   - component: {fileID: 931780826110175316}
   - component: {fileID: 931780826110175319}
+  - component: {fileID: 1454147301}
   m_Layer: 10
   m_Name: Light "Cone"
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -827,3 +832,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1454147301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931780826110175318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.053971216, y: 0.03009639, z: 0.031249138}
+  m_Center: {x: -0.028981231, y: 0.000088376946, z: 0.0010955107}
