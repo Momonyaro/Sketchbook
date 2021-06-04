@@ -305,6 +305,7 @@ GameObject:
   - component: {fileID: 931780825272867352}
   - component: {fileID: 931780825272867355}
   - component: {fileID: 6345869044908499780}
+  - component: {fileID: -8350685774109871240}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
@@ -349,6 +350,7 @@ MonoBehaviour:
   hurtSpeedMultiplier: 1
   horiWindForce: 0
   vertWindForce: 0
+  pushing: 0
   pushOffForce: 2
   jumpSpeed: 1
   fallSpeed: 1.1
@@ -534,6 +536,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumHP: 12
   deathScreenCanvas: {fileID: 8582446151067496020, guid: 2393d87d410507d42aa78c4ba1e8b2b9, type: 3}
+--- !u!114 &-8350685774109871240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931780825272867354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &931780825581401820
 GameObject:
   m_ObjectHideFlags: 0
