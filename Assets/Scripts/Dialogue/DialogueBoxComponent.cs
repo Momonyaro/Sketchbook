@@ -58,7 +58,8 @@ namespace Dialogue
                 
                 if (IsNull()) return;
                 DialogueBoxReciever reciever = GetCurrentInstance().GetComponent<DialogueBoxReciever>();
-                reciever.continuePrompt.SetActive(false);
+                if (reciever.continuePrompt != null)
+                    reciever.continuePrompt.SetActive(false);
             }
         }
 
@@ -71,8 +72,10 @@ namespace Dialogue
             DialogueBoxReciever reciever = GetCurrentInstance().GetComponent<DialogueBoxReciever>();
             DialogueBox current = dialogueBoxes[currentIndex];
             Speaker currentSpeaker = GetCurrentSpeaker();
-            reciever.speakerPhoto.sprite = currentSpeaker.speakerPhoto;
-            reciever.speakerName.text = currentSpeaker.speakerName;
+            if (reciever.speakerPhoto != null)
+                reciever.speakerPhoto.sprite = currentSpeaker.speakerPhoto;
+            if (reciever.speakerName != null)
+                reciever.speakerName.text = currentSpeaker.speakerName;
             
             // How do make string builder? Me 2 dumb?
             if (skipBuild)
@@ -113,7 +116,8 @@ namespace Dialogue
             }
             else
             {
-                reciever.continuePrompt.SetActive(true);
+                if (reciever.continuePrompt != null)
+                    reciever.continuePrompt.SetActive(true);
             }
         }
 

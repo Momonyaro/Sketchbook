@@ -73,6 +73,8 @@ namespace Dialogue
             dialogueRunning = false;
             lastComponent = null;
             Debug.Log($"Dialogue: End of Read");
+            if (GetComponent<ChangeScene>() != null)
+                GetComponent<ChangeScene>().StartSceneChange();
         }
 
         private void InitComponent(ref DialogueComponent component)

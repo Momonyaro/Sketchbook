@@ -1,0 +1,469 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae13be0447a66ed48befacfeeb4b52a4, type: 3}
+  m_Name: Comic 1
+  m_EditorClassIdentifier: 
+  speakers:
+  - speakerName: speaker1
+    speakerReference: _newSpeaker1
+    speakerPhoto: {fileID: 21300000, guid: 627f7bcc4e94f5849bf17bc5699e6a64, type: 3}
+  components:
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  - id: 4
+  - id: 5
+  - id: 6
+  - id: 7
+  - id: 8
+  - id: 9
+  - id: 10
+  - id: 11
+  - id: 12
+  - id: 13
+  - id: 14
+  - id: 15
+  - id: 16
+  - id: 17
+  - id: 18
+  - id: 19
+  - id: 20
+  - id: 21
+  - id: 22
+  - id: 23
+  - id: 24
+  - id: 25
+  - id: 26
+  - id: 27
+  - id: 28
+  - id: 29
+  - id: 30
+  - id: 31
+  - id: 32
+  - id: 33
+  - id: 34
+  - id: 35
+  - id: 36
+  - id: 37
+  - id: 38
+  - id: 39
+  - id: 40
+  - id: 41
+  - id: 42
+  references:
+    version: 1
+    00000000:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp0
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    00000001:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp1
+        objectPrefab: {fileID: 4130081406030967735, guid: 25f1c39f0945d9b4e9c8b4604b2efd69, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    00000002:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox2
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 1
+          buildTime: 0.03
+    00000003:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp3
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _spawnObjComp1
+    00000004:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp4
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _diagBox2
+    00000005:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp5
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    00000006:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp6
+        objectPrefab: {fileID: 4130081406030967735, guid: 5336ac99a32b99147a99cc9dbc0af453, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    00000007:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox7
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 2
+          buildTime: 0.03
+    00000008:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp8
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _spawnObjComp6
+    00000009:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp9
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _diagBox7
+    0000000A:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp10
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    0000000B:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp11
+        objectPrefab: {fileID: 4130081406030967735, guid: 17e480c9fcd51544eb3d0104a619a427, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    0000000C:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox12
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 3
+          buildTime: 0.03
+    0000000D:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp13
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _spawnObjComp11
+    0000000E:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp14
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _diagBox12
+    0000000F:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp15
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    00000010:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp16
+        objectPrefab: {fileID: 4130081406030967735, guid: 9d2339fc8beffd44481cfad25f22d43b, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    00000011:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox17
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 4
+          buildTime: 0.03
+    00000012:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp18
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _spawnObjComp16
+    00000013:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp19
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _diagBox17
+    00000014:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp20
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    00000015:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp21
+        objectPrefab: {fileID: 4130081406030967735, guid: c03fbab01ece29748836e0f13662e6dd, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    00000016:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox22
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 5
+          buildTime: 0.03
+    00000017:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp23
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _spawnObjComp21
+    00000018:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp24
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _diagBox22
+    00000019:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp25
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    0000001A:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp26
+        objectPrefab: {fileID: 4130081406030967735, guid: 9258bab4bde7c7844ba9310f99021d1f, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    0000001B:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox27
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 6
+          buildTime: 0.03
+    0000001C:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp28
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _spawnObjComp26
+    0000001D:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp29
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _diagBox27
+    0000001E:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp30
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    0000001F:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp31
+        objectPrefab: {fileID: 4130081406030967735, guid: 8934574ef868e494d8bfb2a62fa8fbfe, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    00000020:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox32
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 7
+          buildTime: 0.03
+    00000021:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp33
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _spawnObjComp31
+    00000022:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp34
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _diagBox32
+    00000023:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp35
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    00000024:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp36
+        objectPrefab: {fileID: 4130081406030967735, guid: 67a9b0b35cf921241ac46e27f9459467, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    00000025:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox37
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 8
+          buildTime: 0.03
+    00000026:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp38
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _spawnObjComp36
+    00000027:
+      type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _destroyComp39
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        refToDestroy: _diagBox37
+    00000028:
+      type: {class: WaitComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _waitComp40
+        objectPrefab: {fileID: 0}
+        screenPosition: {x: 0, y: 0}
+        errorAttempts: 99
+        reveal: 1
+        waitTime: 0.25
+    00000029:
+      type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _spawnObjComp41
+        objectPrefab: {fileID: 4130081406030967735, guid: d2d1d5973135e714cbcb503bf0a57018, type: 3}
+        screenPosition: {x: 0, y: 100}
+        errorAttempts: 99
+        reveal: 1
+    0000002A:
+      type: {class: DialogueBoxComponent, ns: Dialogue, asm: Assembly-CSharp}
+      data:
+        reference: _diagBox42
+        objectPrefab: {fileID: 4291648761944891514, guid: 41a5cebdb7c734c47a331e5d124fe583, type: 3}
+        screenPosition: {x: 0, y: -400}
+        errorAttempts: 99
+        reveal: 1
+        dialogueBoxes:
+        - speakerReference: _newSpeaker1
+          text: Message 9
+          buildTime: 0.03
