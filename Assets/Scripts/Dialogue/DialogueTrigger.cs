@@ -11,6 +11,8 @@ public class DialogueTrigger : MonoBehaviour
     public float timeBetweenCharacters = 0.05f;
     [Tooltip("The two TextMeshPro objects that will display the dialogue text")]
     public TMP_Text dialogueText, dialogueTextDuplicate;
+    [Tooltip("The two SpriteRenderers that displays the dialogue boxes")]
+    public SpriteRenderer dialogueBox, dialogueBoxDuplicate;
     [Tooltip("Determines how long (in seconds) the text stays on screen. If set to 0, the text never disappears.")]
     public float lifeTime = 0.0f;
 
@@ -20,6 +22,11 @@ public class DialogueTrigger : MonoBehaviour
         dialogueText.text = "";
         if (dialogueTextDuplicate != null)
             dialogueTextDuplicate.text = "";
+        if (dialogueBox != null && dialogueBoxDuplicate != null)
+        {
+            dialogueBox.enabled = false;
+            dialogueBoxDuplicate.enabled = false;
+        }
     }
 
     IEnumerator TypeScentence(string sentence)
@@ -37,6 +44,11 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && dialogueText.text == "")
         {
+            if (dialogueBox != null && dialogueBoxDuplicate != null)
+            {
+                dialogueBox.enabled = true;
+                dialogueBoxDuplicate.enabled = true;
+            }
             StartCoroutine(TypeScentence(dialogue));
             if (lifeTime > 0.0f)
                 StartCoroutine(HideText());
@@ -49,5 +61,10 @@ public class DialogueTrigger : MonoBehaviour
         dialogueText.text = " ";
         if (dialogueTextDuplicate != null)
             dialogueTextDuplicate.text = " ";
+        if (dialogueBox != null && dialogueBoxDuplicate != null)
+        {
+            dialogueBox.enabled = false;
+            dialogueBoxDuplicate.enabled = false;
+        }
     }
 }
