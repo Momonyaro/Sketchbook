@@ -153,6 +153,7 @@
             <e p="DialogueEditor.cs" t="Include" />
           </e>
           <e p="Enemies" t="Include">
+            <e p="Dog.cs" t="Include" />
             <e p="EnemyChase.cs" t="Include" />
             <e p="EnemyFly.cs" t="Include" />
             <e p="EnemyHurt.cs" t="Include" />
@@ -180,6 +181,7 @@
             <e p="Destroy.cs" t="Include" />
             <e p="DestroyWhenFlashed.cs" t="Include" />
             <e p="Fan.cs" t="Include" />
+            <e p="FmodAudioTrigger.cs" t="Include" />
             <e p="Goat.cs" t="Include" />
             <e p="InstaKillPlayer.cs" t="Include" />
             <e p="MannequinEntity.cs" t="Include" />

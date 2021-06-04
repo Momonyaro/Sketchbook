@@ -71,7 +71,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &931780824259982296
 Transform:
   m_ObjectHideFlags: 0
@@ -305,6 +305,7 @@ GameObject:
   - component: {fileID: 931780825272867352}
   - component: {fileID: 931780825272867355}
   - component: {fileID: 6345869044908499780}
+  - component: {fileID: -8350685774109871240}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
@@ -321,7 +322,7 @@ Transform:
   m_GameObject: {fileID: 931780825272867354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.44, y: -0.06, z: 4.41}
-  m_LocalScale: {x: 0.21318927, y: 0.21318927, z: 0.21318927}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 931780825581401816}
   - {fileID: 931780824432445900}
@@ -349,6 +350,7 @@ MonoBehaviour:
   hurtSpeedMultiplier: 1
   horiWindForce: 0
   vertWindForce: 0
+  pushing: 0
   pushOffForce: 2
   jumpSpeed: 1
   fallSpeed: 1.1
@@ -375,7 +377,7 @@ MonoBehaviour:
   assignSplineAtAwake: 1
   currentSpline: {fileID: 0}
   rotateWithSpline: 1
-  rotOffset: {x: 180, y: 90, z: 90}
+  rotOffset: {x: 0, y: -90, z: -90}
 --- !u!114 &931780825272867366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +467,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d0176d30-02d5-4735-bfbc-5dc6c04410ee
     m_ActionName: Platformer/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c7912cfb-3d25-40cb-9797-96d2adcc1517
+    m_ActionName: UI/Submit[/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Platformer
@@ -530,6 +536,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumHP: 12
   deathScreenCanvas: {fileID: 8582446151067496020, guid: 2393d87d410507d42aa78c4ba1e8b2b9, type: 3}
+--- !u!114 &-8350685774109871240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931780825272867354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &931780825581401820
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +654,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c95d256d2d9d04f4f9f52f905a999933, type: 2}
   - {fileID: 11400000, guid: ad589d91895b0de4f905332d667e80a5, type: 2}
   - {fileID: 11400000, guid: 7571e1b89cf89834181267d16c569910, type: 2}
+  - {fileID: 11400000, guid: 457f25c37933f144d85d2d0f0cef60c7, type: 2}
   invertXScale: 0
 --- !u!1 &931780825735496865
 GameObject:
@@ -757,9 +778,10 @@ GameObject:
   - component: {fileID: 931780826110175317}
   - component: {fileID: 931780826110175316}
   - component: {fileID: 931780826110175319}
+  - component: {fileID: 1454147301}
   m_Layer: 10
   m_Name: Light "Cone"
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -827,3 +849,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1454147301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931780826110175318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.053971216, y: 0.03009639, z: 0.031249138}
+  m_Center: {x: -0.028981231, y: 0.000088376946, z: 0.0010955107}

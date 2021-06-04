@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
+  m_Name: BlueHouseWings
+  m_EditorClassIdentifier: 
+  animName: _blueHouseWings
+  loop: 1
+  transitionAfterFinish: 0
+  leadsInto: 
+  animFrames:
+  - frameMesh: {fileID: 3516339943748411481, guid: 4da520fd9d8252441b0bcde0cc65df62, type: 3}
+    frameDuration: 0.16
+    audioAction: 0
+  - frameMesh: {fileID: 1962040565473431637, guid: 4da520fd9d8252441b0bcde0cc65df62, type: 3}
+    frameDuration: 0.16
+    audioAction: 0
+  - frameMesh: {fileID: 303212277470972307, guid: 4da520fd9d8252441b0bcde0cc65df62, type: 3}
+    frameDuration: 0.16
+    audioAction: 0
+  - frameMesh: {fileID: 5449194508417993903, guid: 4da520fd9d8252441b0bcde0cc65df62, type: 3}
+    frameDuration: 0.16
+    audioAction: 0
+  firstFrame: 0
