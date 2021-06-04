@@ -58,7 +58,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440114515701404427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.57, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5995185016025278775}
@@ -310,6 +310,9 @@ MonoBehaviour:
   playerBounceDistance: 2
   canBeStunned: 1
   enemyDuplicate: {fileID: 0}
+  meshAnimator: {fileID: 0}
+  defaultAnimationName: 
+  stunnedAnimationName: 
   stunned: 0
 --- !u!135 &527356300775942397
 SphereCollider:
@@ -442,6 +445,7 @@ MonoBehaviour:
   JumpEmitter: {fileID: 0}
   animationBranches:
   - {fileID: 11400000, guid: 1600ffead77c33e4cb1bd7fdf088384e, type: 2}
+  - {fileID: 11400000, guid: 24731e76100d90349af9538501150532, type: 2}
   invertXScale: 0
 --- !u!1 &6155532392172448481
 GameObject:
@@ -567,6 +571,9 @@ MonoBehaviour:
   playerBounceDistance: 2
   canBeStunned: 1
   enemyDuplicate: {fileID: 527356300775942399}
+  meshAnimator: {fileID: 5106276558340021499}
+  defaultAnimationName: _roachWalkLeft
+  stunnedAnimationName: _roachWalkStunned
   stunned: 0
 --- !u!135 &6155532392172448491
 SphereCollider:
@@ -659,7 +666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8034194007764314710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15.76, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5995185016025278775}

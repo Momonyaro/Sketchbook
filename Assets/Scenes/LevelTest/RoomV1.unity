@@ -2488,6 +2488,9 @@ MonoBehaviour:
   playerBounceDistance: 2
   canBeStunned: 1
   enemyDuplicate: {fileID: 0}
+  meshAnimator: {fileID: 0}
+  defaultAnimationName: 
+  stunnedAnimationName: 
   stunned: 0
 --- !u!114 &334686722
 MonoBehaviour:
@@ -4202,10 +4205,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoachWalkEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 4589658523444299139, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.57
-      objectReference: {fileID: 0}
     - target: {fileID: 5995185016025278775, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.30764
@@ -4249,10 +4248,6 @@ PrefabInstance:
     - target: {fileID: 5995185016025278775, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8908850179373434754, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.76
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fe8a47fed85a5045b4f6b80d2a70ee7, type: 3}
