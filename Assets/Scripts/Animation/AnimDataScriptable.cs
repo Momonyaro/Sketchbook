@@ -71,6 +71,9 @@ namespace Animation
             None,
             PlayerStep,
             PlayerJump,
+            RoachWalk,
+            RoachFly,
+            PostWalk,
         }
 
         public Mesh frameMesh;

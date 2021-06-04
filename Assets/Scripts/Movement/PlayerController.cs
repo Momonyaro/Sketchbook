@@ -19,6 +19,8 @@ namespace Movement
         public float hurtSpeedMultiplier = 1.0f; // Namnet passar inte riktigt vad den gör...
         [HideInInspector]
         public float horiWindForce = 0.0f, vertWindForce = 0.0f; // Dumbo shit to make it work with the spline
+        [HideInInspector]
+        public bool pushing = false;
 
         public float pushOffForce = 50.0f;
         [Min(1.0f)] public float jumpSpeed = 2.0f;
@@ -147,7 +149,23 @@ namespace Movement
                     return;
                 }
             }
-            
+
+            // PUSH/PULL ANIMS
+            if (pushing && Mathf.Abs(mvmtDelta.x) > 0.08f)
+            {
+                if (mvmtDelta.x > 0.5f)
+                    lastFacedRight = true;
+                else
+                    lastFacedRight = false;
+
+                if(pushSpeedMultiplier < 1.0f)
+                    meshAnimator.StartAnimFromName("_playerPull", lastFacedRight);
+                else
+                    meshAnimator.StartAnimFromName("_playerPush", !lastFacedRight);
+
+                return;
+            }
+
             // RUN/WALK ANIMS
             if (Mathf.Abs(mvmtDelta.x) > 0.5f)
             {

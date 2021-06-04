@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
+  m_Name: PlayerPull
+  m_EditorClassIdentifier: 
+  animName: _playerPull
+  loop: 1
+  transitionAfterFinish: 0
+  leadsInto: 
+  animFrames:
+  - frameMesh: {fileID: -8856391065985601067, guid: 8ee91b360bfbe5345a67d5d14e3436a8, type: 3}
+    frameDuration: 0.4
+    audioAction: 0
+  - frameMesh: {fileID: 8791711051057927954, guid: 8ee91b360bfbe5345a67d5d14e3436a8, type: 3}
+    frameDuration: 0.4
+    audioAction: 0
+  - frameMesh: {fileID: 8205929618856818583, guid: 8ee91b360bfbe5345a67d5d14e3436a8, type: 3}
+    frameDuration: 0.4
+    audioAction: 0
+  - frameMesh: {fileID: -5524318263214296260, guid: 8ee91b360bfbe5345a67d5d14e3436a8, type: 3}
+    frameDuration: 0.4
+    audioAction: 0
+  - frameMesh: {fileID: -2111649091233728232, guid: 8ee91b360bfbe5345a67d5d14e3436a8, type: 3}
+    frameDuration: 0.4
+    audioAction: 0
+  - frameMesh: {fileID: -2736425627143911899, guid: 8ee91b360bfbe5345a67d5d14e3436a8, type: 3}
+    frameDuration: 0.4
+    audioAction: 0
+  firstFrame: 0

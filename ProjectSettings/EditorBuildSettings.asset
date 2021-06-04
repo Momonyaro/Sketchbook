@@ -32,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelTest/GardenV1A2.unity
     guid: 053e3a30d526ba248bb76158ef8ea27c
+  - enabled: 1
+    path: Assets/Scenes/LevelTest/Street1.unity
+    guid: 1af6efd63443b0343bfa6150078e158a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b5ad9d958771452408e6b4032fa03f5e, type: 2}
