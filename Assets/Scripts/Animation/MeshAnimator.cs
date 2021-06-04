@@ -126,24 +126,24 @@ namespace Animation
                     }
                     return;
                 
-                case AnimFrame.AudioActions.RoachWalk: // event:/SFX/Player/Player_Jump
-                    if (AudioManager.events["event:/SFX/Player/Player_Jump"].getPath(out path) == RESULT.OK)
+                case AnimFrame.AudioActions.RoachWalk: // event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Walk
+                    if (AudioManager.events["event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Walk"].getPath(out path) == RESULT.OK)
                     {
                         WalkEmitter.Event = path;
                         WalkEmitter.Play();
                     }
                     return;
                 
-                case AnimFrame.AudioActions.RoachFly: // event:/SFX/Player/Player_Jump
-                    if (AudioManager.events["event:/SFX/Player/Player_Jump"].getPath(out path) == RESULT.OK)
+                case AnimFrame.AudioActions.RoachFly: // event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+                    if (AudioManager.events["event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly"].getPath(out path) == RESULT.OK)
                     {
                         WalkEmitter.Event = path;
                         WalkEmitter.Play();
                     }
                     return;
                 
-                case AnimFrame.AudioActions.PostWalk: // event:/SFX/Player/Player_Jump
-                    if (AudioManager.events["event:/SFX/Player/Player_Jump"].getPath(out path) == RESULT.OK)
+                case AnimFrame.AudioActions.PostWalk: // event:/SFX/Enemy/PostMord/Enemy_Postmord_Walk
+                    if (AudioManager.events["event:/SFX/Enemy/PostMord/Enemy_Postmord_Walk"].getPath(out path) == RESULT.OK)
                     {
                         WalkEmitter.Event = path;
                         WalkEmitter.Play();
