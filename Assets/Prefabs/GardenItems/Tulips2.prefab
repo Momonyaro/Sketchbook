@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1042313378263014656}
   - component: {fileID: 1042313378263014663}
   - component: {fileID: 1042313378263014662}
-  - component: {fileID: 1042313378263014657}
+  - component: {fileID: 278015076849882306}
   m_Layer: 9
   m_Name: Tulips2colored
   m_TagString: Untagged
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1042313378263014657
+--- !u!114 &278015076849882306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,16 +91,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1042313378263014659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b6ff1ab71475304c8a5f645f5984408, type: 3}
+  m_Script: {fileID: 11500000, guid: a2a7d0259cc0a7f4ea8813be888912d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  host: {fileID: 5886630122422128669}
   meshFilter: {fileID: 1042313378263014663}
-  debugAnimName: _tulips2
-  WalkEmitter: {fileID: 0}
-  JumpEmitter: {fileID: 0}
-  animationBranches:
-  - {fileID: 11400000, guid: 072da98759e95a94d952ca4f21ee189c, type: 2}
-  invertXScale: 0
 --- !u!1 &1042313379141174016
 GameObject:
   m_ObjectHideFlags: 0

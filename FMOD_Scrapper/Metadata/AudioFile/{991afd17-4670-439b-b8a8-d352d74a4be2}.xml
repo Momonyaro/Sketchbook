@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{991afd17-4670-439b-b8a8-d352d74a4be2}">
 		<property name="assetPath">
-			<value>Skall-001.wav</value>
+			<value>SFX/Enemy/Dogg/Skall-001.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

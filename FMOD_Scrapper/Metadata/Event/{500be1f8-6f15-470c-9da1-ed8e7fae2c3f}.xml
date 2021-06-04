@@ -5,7 +5,7 @@
 			<value>Enemy_Doggo_Move</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{88c6cc1e-9605-428b-8f17-a6559e205d96}</destination>
@@ -116,6 +116,7 @@
 	<object class="MixerBusEffectChain" id="{46da9a53-0435-4f1e-9ac9-c501831cc53c}">
 		<relationship name="effects">
 			<destination>{350679ab-e14d-4094-8821-f81977101c05}</destination>
+			<destination>{a1737261-9251-4b8f-ac18-3950071e5a6e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7b149e3f-600e-416d-84da-4e8afd604bea}" />
@@ -142,6 +143,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{548cf2dd-6074-41ec-824d-817cb4de7822}" />
 	<object class="MixerBusFader" id="{350679ab-e14d-4094-8821-f81977101c05}" />
+	<object class="SpatialiserEffect" id="{a1737261-9251-4b8f-ac18-3950071e5a6e}" />
 	<object class="SingleSound" id="{dad63f3f-ebc2-4418-bf12-90f82d08baad}">
 		<relationship name="audioFile">
 			<destination>{2bc228dc-17bb-4bdf-833b-c48a38852875}</destination>
