@@ -126,6 +126,30 @@ namespace Animation
                     }
                     return;
                 
+                case AnimFrame.AudioActions.RoachWalk: // event:/SFX/Player/Player_Jump
+                    if (AudioManager.events["event:/SFX/Player/Player_Jump"].getPath(out path) == RESULT.OK)
+                    {
+                        WalkEmitter.Event = path;
+                        WalkEmitter.Play();
+                    }
+                    return;
+                
+                case AnimFrame.AudioActions.RoachFly: // event:/SFX/Player/Player_Jump
+                    if (AudioManager.events["event:/SFX/Player/Player_Jump"].getPath(out path) == RESULT.OK)
+                    {
+                        WalkEmitter.Event = path;
+                        WalkEmitter.Play();
+                    }
+                    return;
+                
+                case AnimFrame.AudioActions.PostWalk: // event:/SFX/Player/Player_Jump
+                    if (AudioManager.events["event:/SFX/Player/Player_Jump"].getPath(out path) == RESULT.OK)
+                    {
+                        WalkEmitter.Event = path;
+                        WalkEmitter.Play();
+                    }
+                    return;
+                
                 default:
                     return;
             }
