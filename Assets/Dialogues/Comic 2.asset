@@ -75,7 +75,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp1
-        objectPrefab: {fileID: 4130081406030967735, guid: 25f1c39f0945d9b4e9c8b4604b2efd69, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: c9fe99d68a1b49a40ac80e6b7144dc51, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 1
+          text: Message 10
           buildTime: 0.03
     00000003:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -122,7 +122,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp6
-        objectPrefab: {fileID: 4130081406030967735, guid: 5336ac99a32b99147a99cc9dbc0af453, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: 85f04676e5c4e7b4b8dd51d2ab3aad2d, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -136,7 +136,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 2
+          text: Message 11
           buildTime: 0.03
     00000008:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -169,7 +169,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp11
-        objectPrefab: {fileID: 4130081406030967735, guid: 17e480c9fcd51544eb3d0104a619a427, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: 98407635b2dcacf47a9d867f9cb4cde7, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -183,7 +183,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 3
+          text: Message 12
           buildTime: 0.03
     0000000D:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -216,7 +216,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp16
-        objectPrefab: {fileID: 4130081406030967735, guid: 9d2339fc8beffd44481cfad25f22d43b, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: ea6ebdf0f00c5b846ae8f7fbd23aff63, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -230,7 +230,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 4
+          text: Message 13
           buildTime: 0.03
     00000012:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -263,7 +263,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp21
-        objectPrefab: {fileID: 4130081406030967735, guid: c03fbab01ece29748836e0f13662e6dd, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: fff3ef5850d6bc44aaf8f6eb38a19fe0, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -277,7 +277,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 5
+          text: Message 14
           buildTime: 0.03
     00000017:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -310,7 +310,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp26
-        objectPrefab: {fileID: 4130081406030967735, guid: 9258bab4bde7c7844ba9310f99021d1f, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: 976e19852e085d14383964037775414e, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -324,7 +324,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 6
+          text: Message 15
           buildTime: 0.03
     0000001C:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -357,7 +357,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp31
-        objectPrefab: {fileID: 4130081406030967735, guid: 8934574ef868e494d8bfb2a62fa8fbfe, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: 3ded5126d36a45248bd59abac995b31a, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -371,7 +371,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 7
+          text: Message 16
           buildTime: 0.03
     00000021:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -404,7 +404,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp36
-        objectPrefab: {fileID: 4130081406030967735, guid: 67a9b0b35cf921241ac46e27f9459467, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: cc7b06100e859954aa4eb3b7c0544d05, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -418,7 +418,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 8
+          text: Message 17
           buildTime: 0.03
     00000026:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -451,7 +451,7 @@ MonoBehaviour:
       type: {class: SpawnObjectComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
         reference: _spawnObjComp41
-        objectPrefab: {fileID: 4130081406030967735, guid: d2d1d5973135e714cbcb503bf0a57018, type: 3}
+        objectPrefab: {fileID: 4130081406030967735, guid: 31e2237c9c9c3c24b8f8ebe34e589738, type: 3}
         screenPosition: {x: 0, y: 100}
         errorAttempts: 99
         reveal: 1
@@ -465,5 +465,5 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 9
+          text: Message 18
           buildTime: 0.03
