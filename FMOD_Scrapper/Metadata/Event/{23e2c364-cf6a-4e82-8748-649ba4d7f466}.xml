@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{23e2c364-cf6a-4e82-8748-649ba4d7f466}">
 		<property name="name">
-			<value>Postmord_Walk</value>
+			<value>Enemy_Postmord_Walk</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{db26d0a0-849b-4842-973f-6ff329da0068}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{f7ba211c-408e-405c-adcd-ce7a8db56993}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{6448e441-4ae7-4b39-bac5-45b21f1d050a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{149050b3-66fb-41c4-8e47-4684805f797e}">
@@ -192,7 +195,11 @@
 			<destination>{45c4b1bc-7f11-4d70-bc53-efaf12027153}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{0fa0ee3d-510d-4588-913a-cd99482bba3b}" />
+	<object class="MixerBusPanner" id="{0fa0ee3d-510d-4588-913a-cd99482bba3b}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{cec909ce-da8a-4de7-a358-7a756f11082c}" />
 	<object class="RandomizerModulator" id="{7bd6c0ae-2e59-4e7e-bd48-a312dc397b7d}">
 		<property name="nameOfPropertyBeingModulated">

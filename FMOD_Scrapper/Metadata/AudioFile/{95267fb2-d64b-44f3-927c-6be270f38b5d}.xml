@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{95267fb2-d64b-44f3-927c-6be270f38b5d}">
 		<property name="assetPath">
-			<value>MailBox_Squeak3.wav</value>
+			<value>SFX/Enemy/Postmord/MailBox_Squeak3.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

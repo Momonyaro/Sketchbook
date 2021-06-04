@@ -5,7 +5,7 @@
 			<value>UI_Back</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d995c5ed-dc84-4a79-b8d7-d96d2f8d650f}</destination>
@@ -121,7 +121,11 @@
 			<destination>{819f2f2c-a902-4634-8a40-4300c2dd0277}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{b26611d7-3509-41fb-b6a2-95e1ecf8ec17}" />
+	<object class="MixerBusPanner" id="{b26611d7-3509-41fb-b6a2-95e1ecf8ec17}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{b956dfd6-a501-4d57-ab4d-d0e323948d66}" />
 	<object class="FadeCurve" id="{36f0b679-12bb-480e-aa28-3115fb182f97}">
 		<relationship name="startPoint">

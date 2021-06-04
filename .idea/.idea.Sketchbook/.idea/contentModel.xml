@@ -153,6 +153,7 @@
             <e p="DialogueEditor.cs" t="Include" />
           </e>
           <e p="Enemies" t="Include">
+            <e p="Dog.cs" t="Include" />
             <e p="EnemyChase.cs" t="Include" />
             <e p="EnemyFly.cs" t="Include" />
             <e p="EnemyHurt.cs" t="Include" />
