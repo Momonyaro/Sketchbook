@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{2b93ab27-1a6d-4661-98dc-032caafd455f}">
 		<property name="assetPath">
-			<value>SFX_Objeckt_Fan_back.wav</value>
+			<value>SFX/Objeckts/SFX_Objeckt_Fan_back.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
