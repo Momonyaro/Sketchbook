@@ -64,7 +64,10 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 19
+          text: 'Ljud: Jonathan Ormak Hallin, Valter Torring
+
+            Programming:
+            Sebastian Alkstrand, Albin Dahlheim'
           buildTime: 0.03
     00000003:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -111,7 +114,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 20
+          text: "Graffik 2D & 3D: Sofia Johansson 2D, Paru Kattova 3D\nAnimation:
+            Eva \xC5hfedlt, Josefin Rempling"
           buildTime: 0.03
     00000008:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -158,7 +162,12 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 21
+          text: 'Design: Hirad Salmend
+
+            Game Writing: John Karlsson
+
+            Musik:
+            Tova Holmberger'
           buildTime: 0.03
     0000000D:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
@@ -205,5 +214,5 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 22
+          text: "       Thank you for\n           Playing!"
           buildTime: 0.03
