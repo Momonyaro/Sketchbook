@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5238294930590085964
+--- !u!1 &5855415303894947553
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,31 +8,62 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4146174810077386446}
+  - component: {fileID: 6487802081548373083}
   m_Layer: 0
-  m_Name: Tulips
+  m_Name: RedFlyingMono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4146174810077386446
+--- !u!4 &6487802081548373083
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5238294930590085964}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.522232, y: -54.815376, z: -82.163284}
+  m_GameObject: {fileID: 5855415303894947553}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 15.66991, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5109925597442816300}
-  - {fileID: 3881923564448325433}
+  - {fileID: 3376750998429324086}
+  m_Father: {fileID: 6828619462116333440}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6828619462116333441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6828619462116333440}
+  m_Layer: 0
+  m_Name: RedHouseWings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6828619462116333440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6828619462116333441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -116.68031, y: -13.328852, z: -5.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6828619462945935828}
+  - {fileID: 6487802081548373083}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5945287528365357330
+--- !u!1 &6828619462945935829
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,46 +71,77 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5109925597442816300}
-  - component: {fileID: 5267060943575076905}
-  - component: {fileID: 1584471311376973077}
-  - component: {fileID: 5945287528365357331}
-  m_Layer: 0
-  m_Name: TulipsMono
+  - component: {fileID: 6828619462945935828}
+  m_Layer: 9
+  m_Name: RedFlyingColored
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5109925597442816300
+--- !u!4 &6828619462945935828
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5945287528365357330}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -6.648941, y: 54.515377, z: 168.45367}
-  m_LocalScale: {x: 40, y: 39.999985, z: 39.999985}
-  m_Children: []
-  m_Father: {fileID: 4146174810077386446}
+  m_GameObject: {fileID: 6828619462945935829}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -16.03009, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6828619462954410999}
+  m_Father: {fileID: 6828619462116333440}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5267060943575076905
+--- !u!1 &6828619462954410996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6828619462954410999}
+  - component: {fileID: 6828619462954410992}
+  - component: {fileID: 6828619462954410993}
+  - component: {fileID: 6828619462954410998}
+  m_Layer: 9
+  m_Name: RedFlyingHouse1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6828619462954410999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6828619462954410996}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 6828619462945935828}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6828619462954410992
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5945287528365357330}
-  m_Mesh: {fileID: -8728080780061008906, guid: 087f91a7a85a83e4eb3e41a07dd1d121, type: 3}
---- !u!23 &1584471311376973077
+  m_GameObject: {fileID: 6828619462954410996}
+  m_Mesh: {fileID: -482439437809387140, guid: c9dc96e5fe04399418146dffe32b26a0, type: 3}
+--- !u!23 &6828619462954410993
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5945287528365357330}
+  m_GameObject: {fileID: 6828619462954410996}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -92,7 +154,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bb73f06ad1294334a98b320aca169c4b, type: 2}
+  - {fileID: 2100000, guid: 8d4d87632fab19a40a84181c131b1f36, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,26 +176,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5945287528365357331
+--- !u!114 &6828619462954410998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5945287528365357330}
+  m_GameObject: {fileID: 6828619462954410996}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b6ff1ab71475304c8a5f645f5984408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshFilter: {fileID: 5267060943575076905}
-  debugAnimName: _tulips
+  meshFilter: {fileID: 6828619462954410992}
+  debugAnimName: _redHouseWings
   WalkEmitter: {fileID: 0}
   JumpEmitter: {fileID: 0}
   animationBranches:
-  - {fileID: 11400000, guid: 18500d0e5993ea541bcf7a9839474681, type: 2}
+  - {fileID: 11400000, guid: 5dce414b5cf4b3640814d6c96385cfae, type: 2}
   invertXScale: 0
---- !u!1 &7094841844875245888
+--- !u!1 &7707780154421364260
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,46 +203,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3881923564448325433}
-  - component: {fileID: 7861489809242369038}
-  - component: {fileID: 1353775134714988280}
-  - component: {fileID: 8089065028139404582}
-  m_Layer: 9
-  m_Name: TulipsColored
+  - component: {fileID: 3376750998429324086}
+  - component: {fileID: 1302062600661732060}
+  - component: {fileID: 4821111436447603342}
+  - component: {fileID: 7707780154421364263}
+  m_Layer: 0
+  m_Name: RedFlyingHouse1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3881923564448325433
+--- !u!4 &3376750998429324086
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7094841844875245888}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -6.648941, y: 22.815376, z: 168.45367}
-  m_LocalScale: {x: 40, y: 39.999985, z: 39.999985}
+  m_GameObject: {fileID: 7707780154421364260}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
-  m_Father: {fileID: 4146174810077386446}
-  m_RootOrder: 1
+  m_Father: {fileID: 6487802081548373083}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7861489809242369038
+--- !u!33 &1302062600661732060
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7094841844875245888}
-  m_Mesh: {fileID: -8728080780061008906, guid: 087f91a7a85a83e4eb3e41a07dd1d121, type: 3}
---- !u!23 &1353775134714988280
+  m_GameObject: {fileID: 7707780154421364260}
+  m_Mesh: {fileID: -482439437809387140, guid: c9dc96e5fe04399418146dffe32b26a0, type: 3}
+--- !u!23 &4821111436447603342
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7094841844875245888}
+  m_GameObject: {fileID: 7707780154421364260}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -193,7 +255,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 604b850dd2ad5fe4c997bedf0929c980, type: 2}
+  - {fileID: 2100000, guid: 298f3ba9213f1f74eb0b54fcd6d84ec2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -215,17 +277,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8089065028139404582
+--- !u!114 &7707780154421364263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7094841844875245888}
+  m_GameObject: {fileID: 7707780154421364260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a7d0259cc0a7f4ea8813be888912d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b6ff1ab71475304c8a5f645f5984408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  host: {fileID: 5945287528365357331}
-  meshFilter: {fileID: 7861489809242369038}
+  meshFilter: {fileID: 1302062600661732060}
+  debugAnimName: _redHouseWings
+  WalkEmitter: {fileID: 0}
+  JumpEmitter: {fileID: 0}
+  animationBranches:
+  - {fileID: 11400000, guid: 5dce414b5cf4b3640814d6c96385cfae, type: 2}
+  invertXScale: 0

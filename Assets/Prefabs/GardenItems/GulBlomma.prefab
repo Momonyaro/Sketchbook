@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 2220663932120158359}
   - component: {fileID: 2780227027286850184}
   - component: {fileID: 5875915301370567835}
-  - component: {fileID: 2318944296370843194}
+  - component: {fileID: 976009510376365364}
   m_Layer: 9
   m_Name: GulBlommaColor
   m_TagString: Untagged
@@ -215,7 +215,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2318944296370843194
+--- !u!114 &976009510376365364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,13 +224,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5767460361705109381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b6ff1ab71475304c8a5f645f5984408, type: 3}
+  m_Script: {fileID: 11500000, guid: a2a7d0259cc0a7f4ea8813be888912d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  host: {fileID: 3879822116788987187}
   meshFilter: {fileID: 2780227027286850184}
-  debugAnimName: _yellowFlower
-  WalkEmitter: {fileID: 0}
-  JumpEmitter: {fileID: 0}
-  animationBranches:
-  - {fileID: 11400000, guid: 9b317cd0f79eb8a4a9eef8dbcea299b1, type: 2}
-  invertXScale: 0
