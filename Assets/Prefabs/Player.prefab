@@ -71,7 +71,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &931780824259982296
 Transform:
   m_ObjectHideFlags: 0
@@ -321,7 +321,7 @@ Transform:
   m_GameObject: {fileID: 931780825272867354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.44, y: -0.06, z: 4.41}
-  m_LocalScale: {x: 0.21318927, y: 0.21318927, z: 0.21318927}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 931780825581401816}
   - {fileID: 931780824432445900}
@@ -375,7 +375,7 @@ MonoBehaviour:
   assignSplineAtAwake: 1
   currentSpline: {fileID: 0}
   rotateWithSpline: 1
-  rotOffset: {x: 0, y: -90, z: 90}
+  rotOffset: {x: 0, y: -90, z: -90}
 --- !u!114 &931780825272867366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,6 +638,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c95d256d2d9d04f4f9f52f905a999933, type: 2}
   - {fileID: 11400000, guid: ad589d91895b0de4f905332d667e80a5, type: 2}
   - {fileID: 11400000, guid: 7571e1b89cf89834181267d16c569910, type: 2}
+  - {fileID: 11400000, guid: 457f25c37933f144d85d2d0f0cef60c7, type: 2}
   invertXScale: 0
 --- !u!1 &931780825735496865
 GameObject:
