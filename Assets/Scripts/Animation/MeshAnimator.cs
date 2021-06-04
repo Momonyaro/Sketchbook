@@ -15,7 +15,7 @@ namespace Animation
         [Header("General Settings")] 
         public MeshFilter meshFilter;
 
-        public string debugAnimName = "_playerWalkRight";
+        public string debugAnimName = "";
         
         private bool _hasWalkEmitter = false;
         public StudioEventEmitter WalkEmitter = null;
@@ -38,6 +38,7 @@ namespace Animation
                 _hasJumpEmitter = true;
             
             originalScale = transform.localScale;
+            CreateInternalCopies();
         }
 
         private void Start()
@@ -77,6 +78,22 @@ namespace Animation
                 current.firstFrame = false;
                 ParseAudioAction(current);
             }
+        }
+
+        private void CreateInternalCopies()
+        {
+            var copies = new AnimDataScriptable[animationBranches.Count];
+            for (int i = 0; i < copies.Length; i++)
+            {
+                copies[i] = (AnimDataScriptable) ScriptableObject.CreateInstance(typeof(AnimDataScriptable));
+                copies[i].loop = animationBranches[i].loop;
+                copies[i].animFrames = animationBranches[i].animFrames;
+                copies[i].animName = animationBranches[i].animName;
+                copies[i].leadsInto = animationBranches[i].leadsInto;
+                copies[i].transitionAfterFinish = animationBranches[i].transitionAfterFinish;
+            }
+            
+            animationBranches = new List<AnimDataScriptable>(copies);
         }
 
         private void ParseAudioAction(AnimDataScriptable current)
