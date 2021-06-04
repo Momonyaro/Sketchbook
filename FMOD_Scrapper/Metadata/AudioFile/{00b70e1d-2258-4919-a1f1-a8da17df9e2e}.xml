@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{00b70e1d-2258-4919-a1f1-a8da17df9e2e}">
 		<property name="assetPath">
-			<value>PostMord_v2_16-007.wav</value>
+			<value>SFX/Enemy/Postmord/PostMord_v2_16-007.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

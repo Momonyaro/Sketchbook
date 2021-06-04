@@ -229,6 +229,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggleLight: 1
   flashing: 0
+  onFlashOff:
+    m_PersistentCalls:
+      m_Calls: []
   lightCone: {fileID: 931780826110175318}
   flashHitBox: {fileID: 5285183891546408669, guid: 56e76f4b2b044d949809f4d55b65c76e, type: 3}
   flashLocation: {fileID: 931780826110175318}
@@ -316,7 +319,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931780825272867354}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.44, y: -0.06, z: 4.41}
   m_LocalScale: {x: 0.21318927, y: 0.21318927, z: 0.21318927}
   m_Children:
@@ -372,7 +375,7 @@ MonoBehaviour:
   assignSplineAtAwake: 1
   currentSpline: {fileID: 0}
   rotateWithSpline: 1
-  rotOffset: {x: 180, y: 90, z: 90}
+  rotOffset: {x: 0, y: -90, z: 90}
 --- !u!114 &931780825272867366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,6 +465,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d0176d30-02d5-4735-bfbc-5dc6c04410ee
     m_ActionName: Platformer/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c7912cfb-3d25-40cb-9797-96d2adcc1517
+    m_ActionName: UI/Submit[/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Platformer
@@ -754,9 +761,10 @@ GameObject:
   - component: {fileID: 931780826110175317}
   - component: {fileID: 931780826110175316}
   - component: {fileID: 931780826110175319}
+  - component: {fileID: 1454147301}
   m_Layer: 10
   m_Name: Light "Cone"
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -770,7 +778,7 @@ Transform:
   m_GameObject: {fileID: 931780826110175318}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 1.12, z: -0}
-  m_LocalScale: {x: 300, y: 320, z: 300}
+  m_LocalScale: {x: 600, y: 800, z: 300}
   m_Children: []
   m_Father: {fileID: 931780824924548175}
   m_RootOrder: 1
@@ -824,3 +832,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1454147301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931780826110175318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.053971216, y: 0.03009639, z: 0.031249138}
+  m_Center: {x: -0.028981231, y: 0.000088376946, z: 0.0010955107}

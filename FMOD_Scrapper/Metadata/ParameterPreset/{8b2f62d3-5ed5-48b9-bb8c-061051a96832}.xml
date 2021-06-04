@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{8b2f62d3-5ed5-48b9-bb8c-061051a96832}">
+		<property name="name">
+			<value>FanOffOn</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ad145f72-511a-4bd7-9591-9b4740d45e8d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{71990783-5d47-4d65-afd0-d26f6bc8b4fc}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{71990783-5d47-4d65-afd0-d26f6bc8b4fc}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
