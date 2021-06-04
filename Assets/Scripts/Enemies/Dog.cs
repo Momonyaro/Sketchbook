@@ -46,7 +46,7 @@ namespace Movement
             if (player != null)
             {
                 playerDist = currentSpline.path.GetClosestDistanceAlongPath(player.transform.position);
-                print(playerDist - splineDist);
+                //print(playerDist - splineDist);
             }
 
             MoveAlongSplineHor(currentSpline, position);
