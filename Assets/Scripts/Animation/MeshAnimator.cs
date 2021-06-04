@@ -103,8 +103,8 @@ namespace Animation
             //                 finally signalling the audio source to play it's sound.                         //
             /////////////////////////////////////////////////////////////////////////////////////////////////////
             
-            if (!_hasWalkEmitter) return;
-            if (!_hasJumpEmitter) return;
+            
+            if (!_hasJumpEmitter && !_hasWalkEmitter) return;
             
             AnimFrame.AudioActions action = current.GetCurrentFrame().audioAction;
             string path = "";
@@ -113,6 +113,7 @@ namespace Animation
                 case AnimFrame.AudioActions.PlayerStep: // event:/SFX/Player/Player_Walking
                     if (AudioManager.events["event:/SFX/Player/Player_Walking"].getPath(out path) == RESULT.OK)
                     {
+			if (!_hasWalkEmitter) return;
                         WalkEmitter.Event = path;
                         WalkEmitter.Play();
                     }
@@ -121,8 +122,36 @@ namespace Animation
                 case AnimFrame.AudioActions.PlayerJump: // event:/SFX/Player/Player_Jump
                     if (AudioManager.events["event:/SFX/Player/Player_Jump"].getPath(out path) == RESULT.OK)
                     {
+			if (!_hasJumpEmitter) return;
                         JumpEmitter.Event = path;
                         JumpEmitter.Play();
+                    }
+                    return;
+                
+                case AnimFrame.AudioActions.RoachWalk: // event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Walk
+                    if (AudioManager.events["event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Walk"].getPath(out path) == RESULT.OK)
+                    {
+			if (!_hasWalkEmitter) return;
+                        WalkEmitter.Event = path;
+                        WalkEmitter.Play();
+                    }
+                    return;
+                
+                case AnimFrame.AudioActions.RoachFly: // event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+                    if (AudioManager.events["event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly"].getPath(out path) == RESULT.OK)
+                    {
+			if (!_hasWalkEmitter) return;
+                        WalkEmitter.Event = path;
+                        WalkEmitter.Play();
+                    }
+                    return;
+                
+                case AnimFrame.AudioActions.PostWalk: // event:/SFX/Enemy/PostMord/Enemy_Postmord_Walk
+                    if (AudioManager.events["event:/SFX/Enemy/PostMord/Enemy_Postmord_Walk"].getPath(out path) == RESULT.OK)
+                    {
+			if (!_hasWalkEmitter) return;
+                        WalkEmitter.Event = path;
+                        WalkEmitter.Play();
                     }
                     return;
                 

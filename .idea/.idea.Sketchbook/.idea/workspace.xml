@@ -20,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71def8a-c1a6-43ce-9efa-d263f66f5956" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/RoachFly.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/RoachFly.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/RoachWalk.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/RoachWalk.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +58,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RenderShaderToScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/MannequinEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraMan.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthSample.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" />
       </list>
     </option>
@@ -115,6 +122,7 @@
       <workItem from="1622316827528" duration="6563000" />
       <workItem from="1622449697850" duration="1768000" />
       <workItem from="1622798069368" duration="460000" />
+      <workItem from="1622799386267" duration="963000" />
     </task>
     <servers />
   </component>
