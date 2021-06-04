@@ -5,7 +5,7 @@
 			<value>Enemy_Steve_Move</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{dd7e0318-8b45-4b29-86fe-7134edb7c42f}</destination>
@@ -98,6 +98,7 @@
 	<object class="MixerBusEffectChain" id="{5c8bfbd3-60d5-48f0-ab7c-5e21c2cc7a74}">
 		<relationship name="effects">
 			<destination>{269ba280-fdc9-4879-825e-b68201b21d4a}</destination>
+			<destination>{b0d1a1d5-9776-4683-aa8e-92c2a32f8051}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{04749741-5d04-4576-a62f-d3668c8b7f63}" />
@@ -109,5 +110,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{942d385c-7072-4458-bfe9-aeff35a54748}" />
 	<object class="MixerBusFader" id="{269ba280-fdc9-4879-825e-b68201b21d4a}" />
+	<object class="SpatialiserEffect" id="{b0d1a1d5-9776-4683-aa8e-92c2a32f8051}" />
 	<object class="MixerBusFader" id="{0b02e09e-04dc-4ff6-b402-3ce706e66d14}" />
 </objects>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{cf0bf5c9-6793-45b1-8f75-34d3e0146534}">
 		<property name="assetPath">
-			<value>SFX_Cockrotch_Walking_1.ogg</value>
+			<value>SFX/Enemy/Cockrotch/SFX_Cockrotch_Walking_1.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
