@@ -9672,6 +9672,8 @@ MonoBehaviour:
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 769344245}
   dialogueTextDuplicate: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  dialogueBoxDuplicate: {fileID: 0}
   lifeTime: 5
 --- !u!65 &1672804485
 BoxCollider:
@@ -12402,6 +12404,34 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 457f25c37933f144d85d2d0f0cef60c7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e198ad732e661d347887f394dc56fa62, type: 3}
+--- !u!1 &2091980305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 931780826110175318, guid: e198ad732e661d347887f394dc56fa62, type: 3}
+  m_PrefabInstance: {fileID: 2091980304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2091980306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091980305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Player/Player_FlashLight
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &2093859349
 GameObject:
   m_ObjectHideFlags: 0
