@@ -49872,6 +49872,7 @@ GameObject:
   - component: {fileID: 1974537223}
   - component: {fileID: 1974537222}
   - component: {fileID: 1974537224}
+  - component: {fileID: 1974537225}
   m_Layer: 0
   m_Name: --MAP SETTINGS--
   m_TagString: Untagged
@@ -49918,6 +49919,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80928616fab726d40ab9844e66d3682a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1974537225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974537221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbe7eb6db16491396d4215445d5a540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 1324649129}
+  secondCamRenderTex: {fileID: 8400000, guid: df64683495103b14293be453f527515f, type: 2}
+  depthCamRenderTex: {fileID: 8400000, guid: bdc873d768b8b4d4a84193f24aa64464, type: 2}
+  depthCamRenderScale: 0.5
 --- !u!1 &1975487534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6a509a88b3f88524da29a4fbc3371325, type: 3}

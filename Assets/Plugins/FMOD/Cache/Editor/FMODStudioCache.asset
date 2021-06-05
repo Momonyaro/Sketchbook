@@ -54,8 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_Hurt
   guid: 0ddeb65c56ae6b4095966754100133d7
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -140,8 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/PostMord/Enemy_Postmord_Attack
   guid: ab2fa7451121684bb4eb0acc214b60e1
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -246,8 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Doggo (Dog)/Enemy_Doggo_Attack
   guid: 4d7968aefca202478ba2911128b54d66
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -498,8 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Miscellaneous/SFX_Misc_NextLevel
   guid: c4a21cf920c5eb40a8ce17ce2a02e80f
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -564,8 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Barry (Bee)/Enemy_Barry_Attack
   guid: f87c0db4ce9a82479203f1535fb49af6
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -711,8 +706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Steve(Horse)/Enemy_Steve_Death
   guid: fd71955f3626b646adbf0e10b7301595
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -860,8 +854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_PushPull
   guid: 3babe2cda5617344b23dffef3fd00e25
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1093,8 +1086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Startmeny
   guid: 173483fb5dbd054590ebe9cf8028c65e
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1156,8 +1148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Barry (Bee)/Enemy_Barry_Move
   guid: b48fff29eed2f440b03ffb079cf9f681
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1179,8 +1170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_Walking
   guid: d14aaca94d8c504d83c7ec8a00698c18
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1326,8 +1316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/PostMord/Enemy_Postmord_Walk
   guid: 64c3e2236acf824e8748649ba4d7f466
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1369,8 +1358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Ambience/Amb_Forest
   guid: 4d713c4ab6d79a4bbe0cbecd612b6b43
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1594,8 +1582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Steve(Horse)/Enemy_Steve_Move
   guid: d7c3a99fc38ac94b8979424766f586ee
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1640,8 +1627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Himlen Round 2
   guid: 2b8b10d4134c7e4b982b5817de95f23c
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1773,8 +1759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
   guid: 4f9444ae79bbd848be1610c2e0805743
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -2127,8 +2112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Himlen
   guid: ba260e20a6fd0749a53237d832f53b7e
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2192,8 +2176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_Jump
   guid: e235f5351e779c499147106b6b40f0a0
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2298,8 +2281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Credits
   guid: 619e5abcd918de49b28ddc56ff0f51a3
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2361,8 +2343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Garden
   guid: 953267a32b169c4bb8a2596169b4f656
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2446,8 +2427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Ambience/Amb_backyard
   guid: 5a1927ac266e70439308a4635ca16b0b
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2618,8 +2598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Attack
   guid: 24845877e0fe4c469dedbfcfdf677194
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2661,8 +2640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_Land
   guid: fcd95ebc338f3b4ebc1d832e040f4379
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2767,8 +2745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/UI/UI_Back
   guid: 15192f50fffd6e42802710c08c07d14a
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2899,8 +2876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_Death
   guid: 5f4e97eef865fc42b0c1316c534788be
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2987,8 +2963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Ojeckt/SFX_Objeckt_flyingHouse
   guid: ae6005553d354d49929791b949da95c1
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3051,8 +3026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/Player_FlashLight
   guid: 960289213337564198e8ed4a73e3b018
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -3074,8 +3048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Death
   guid: 7fe38dc97d1ecc4398d584a1de85022d
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3097,8 +3070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Ojeckt/SFX_Objeckt_Bounce
   guid: c687777396420444984a445a1fb62ca5
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3140,8 +3112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Steve(Horse)/Enemy_Steve_Attack
   guid: 266519d2806c114a8c67db4d218c78ae
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3163,8 +3134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Walk
   guid: aa125e97c43f4c48a91ce1de6b82d8f6
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3206,8 +3176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Ficklampa
   guid: d56bc8924273604286364f1187eb34ee
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -3249,8 +3218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/UI/UI_Select
   guid: e3fdf358fd0a7a4fa128442da5b8be7f
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3336,8 +3304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Enemy/Doggo (Dog)/Enemy_Doggo_Move
   guid: f8e10b50156f0c479da1ed8e7fae2c3f
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3402,8 +3369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Ojeckt/SFX_Objeckt_fan
   guid: 286870c2d44ee246b281a14c2721b52d
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -3509,8 +3475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Rum och Hus
   guid: 2ddc5848de643f45ac74103ec6407882
-  Banks:
-  - {fileID: 1775717051657528360}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
