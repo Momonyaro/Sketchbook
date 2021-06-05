@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using PathCreation;
 using Config;
+using Animation;
 
 namespace Movement
 {
@@ -16,10 +17,14 @@ namespace Movement
         [Tooltip("The time (in seconds) the enemy will continue to run around when the flashlight is no longer on him")]
         public float stopTime = 5.0f;
 
+        [Tooltip("The animator!")]
+        public MeshAnimator meshAnimator = null;
+
         [Min(1.0f)] public float riseSpeed = 2.0f;
         [Min(1.0f)] public float fallSpeed = 2.7f;
 
         float movingDirection = 1.0f;
+        bool animDirection;
         float splineDist, playerDist;
 
         GameObject player = null;
@@ -32,6 +37,9 @@ namespace Movement
         {
             rb = GetComponent<Rigidbody>();
             splineWalker = GetComponent<SplineWalker>();
+
+            if (meshAnimator != null)
+                meshAnimator.StartAnimFromName("_brevIdle", animDirection);
 
             if (GameObject.FindGameObjectWithTag("Player") != null)
                 player = GameObject.FindGameObjectWithTag("Player");
@@ -73,6 +81,7 @@ namespace Movement
                 {
                     print("ga");
                     movingDirection *= -1.0f;
+                    animDirection = !animDirection;
                     StartCoroutine(CannotTurnAround());
                     turningRound = true;
                 }
@@ -98,10 +107,19 @@ namespace Movement
                 if (player != null)
                 {
                     if (playerDist > splineDist)
+                    {
                         movingDirection = -1.0f;
+                        animDirection = false;
+                    }
                     else
+                    {
                         movingDirection = 1.0f;
+                        animDirection = true;
+                    }
                 }
+
+                if (meshAnimator != null)
+                    meshAnimator.StartAnimFromName("_brevAttack", animDirection);
             }
         }
 
@@ -122,6 +140,8 @@ namespace Movement
         {
             yield return new WaitForSeconds(stopTime);
             inLight = false;
+            if (meshAnimator != null)
+                meshAnimator.StartAnimFromName("_brevIdle", animDirection);
         }
 
         IEnumerator CannotTurnAround() // This kinda dumbo but it's almost 16:00 and I wanna get this done, so simple dumb fix it is

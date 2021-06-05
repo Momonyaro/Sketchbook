@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{35ca51ff-fbb7-469e-b69a-91fbd466c5af}">
 		<property name="assetPath">
-			<value>Attack_Swosh_3.ogg</value>
+			<value>SFX/Enemy/Attack_Swosh_3.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

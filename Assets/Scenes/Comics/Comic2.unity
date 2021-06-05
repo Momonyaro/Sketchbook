@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackScreenCanvas: {fileID: 8582446151067496020, guid: 2393d87d410507d42aa78c4ba1e8b2b9, type: 3}
-  scene: Comic3
+  scene: Street1
 --- !u!114 &1261188672
 MonoBehaviour:
   m_ObjectHideFlags: 0

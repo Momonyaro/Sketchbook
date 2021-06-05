@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{06371a8b-9c00-46bd-a7c7-f4f6d2457b1e}">
 		<property name="assetPath">
-			<value>Skrammel_Fläkt-002.wav</value>
+			<value>SFX/Skrammel_Fläkt-002.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

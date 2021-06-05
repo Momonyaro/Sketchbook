@@ -39,14 +39,24 @@ public class PlayerPush : MonoBehaviour
 
     public void Pushing(float speed)
     {
+        StopAllCoroutines();
+        playerController.pushing = true;
         ChangeSpeedMultiplier(speed);
         if (flashlightFlash != null)
             flashlightFlash.flashing = false;
+
+        StartCoroutine(Cringe());
     }
 
     public void ChangeSpeedMultiplier(float speed) // Görs utanför Pushing så att andra skript ska kunna ändra speeden utan att spelaren puttar
     {
         playerController.pushSpeedMultiplier = speed;
+    }
+
+    IEnumerator Cringe() // I strongly dislike this solution
+    {
+        yield return new WaitForSeconds(0.1f);
+        playerController.pushing = false;
     }
 
     #region InputCalls

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{62b7161d-5ff7-40e7-ac75-d263b75b4053}">
 		<property name="assetPath">
-			<value>Ambiance_Backyadrd_loop.ogg</value>
+			<value>Ambiance/Ambiance_Backyadrd_loop.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
