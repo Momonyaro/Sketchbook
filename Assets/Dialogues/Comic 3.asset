@@ -64,7 +64,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: 'Ljud: Jonathan Ormak Hallin, Valter Torring
+          text: 'Sound: Jonathan Ormak Hallin, Valter Torring
 
             Programming:
             Sebastian Alkstrand, Albin Dahlheim'
@@ -114,7 +114,7 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: "Graffik 2D & 3D: Sofia Johansson 2D, Paru Kattova 3D\nAnimation:
+          text: "Graphics 2D & 3D: Sofia Johansson 2D, Paru Kattova 3D\nAnimation:
             Eva \xC5hfedlt, Josefin Rempling"
           buildTime: 0.03
     00000008:
@@ -166,7 +166,7 @@ MonoBehaviour:
 
             Game Writing: John Karlsson
 
-            Musik:
+            Music:
             Tova Holmberger'
           buildTime: 0.03
     0000000D:

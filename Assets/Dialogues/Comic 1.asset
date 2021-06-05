@@ -89,8 +89,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 1
-          buildTime: 0.03
+          text: 
+          buildTime: 0
     00000003:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
@@ -136,8 +136,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 2
-          buildTime: 0.03
+          text: 
+          buildTime: 0
     00000008:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
@@ -183,8 +183,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 3
-          buildTime: 0.03
+          text: 
+          buildTime: 0
     0000000D:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
@@ -230,8 +230,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 4
-          buildTime: 0.03
+          text: 
+          buildTime: 0
     00000012:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
@@ -277,8 +277,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 5
-          buildTime: 0.03
+          text: 
+          buildTime: 0
     00000017:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
@@ -324,8 +324,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 6
-          buildTime: 0.03
+          text: 
+          buildTime: 0
     0000001C:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
@@ -371,8 +371,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 7
-          buildTime: 0.03
+          text: 
+          buildTime: 0
     00000021:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
@@ -418,8 +418,8 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 8
-          buildTime: 0.03
+          text: 
+          buildTime: 0
     00000026:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
       data:
@@ -465,5 +465,5 @@ MonoBehaviour:
         reveal: 1
         dialogueBoxes:
         - speakerReference: _newSpeaker1
-          text: Message 9
-          buildTime: 0.03
+          text: 
+          buildTime: 0
