@@ -290,6 +290,7 @@ MonoBehaviour:
   JumpEmitter: {fileID: 0}
   animationBranches:
   - {fileID: 11400000, guid: cf71a1be95b9b114f9335d1a6c309603, type: 2}
+  - {fileID: 11400000, guid: 24731e76100d90349af9538501150532, type: 2}
   invertXScale: 0
 --- !u!1 &5104231724620589707
 GameObject:
@@ -501,6 +502,9 @@ MonoBehaviour:
   playerBounceDistance: 5
   canBeStunned: 1
   enemyDuplicate: {fileID: 637544275699238893}
+  meshAnimator: {fileID: 1697318396439792091}
+  defaultAnimationName: _roachFly
+  stunnedAnimationName: _roachWalkStunned
   stunned: 0
 --- !u!114 &7584936918538774270
 MonoBehaviour:

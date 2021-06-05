@@ -197,6 +197,7 @@
           <e p="Shaders" t="Include">
             <e p="DepthSample.shader" t="Include" />
             <e p="RenderShaderToScreen.cs" t="Include" />
+            <e p="RenderTextureSync.cs" t="Include" />
           </e>
           <e p="Spline" t="Include">
             <e p="Editor" t="Include">

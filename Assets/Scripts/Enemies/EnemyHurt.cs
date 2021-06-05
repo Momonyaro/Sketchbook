@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Movement;
 using PathCreation;
+using Animation;
 
 //Märkte nu i efterhand att EnemyHurt kanske inte var det bästa nämnet, men eh så kan det gå
 public class EnemyHurt : MonoBehaviour
@@ -24,6 +25,12 @@ public class EnemyHurt : MonoBehaviour
     public bool canBeStunned = true;
     [Tooltip("The duplicate enemy in the colored world. If this is left empty the duplicate will not be destroyed which causes errors")]
     public GameObject enemyDuplicate = null;
+    [Tooltip("The animator!")]
+    public MeshAnimator meshAnimator = null;
+    [Tooltip("The name of the default animation")]
+    public string defaultAnimationName = null;
+    [Tooltip("The name of the stunned animation")]
+    public string stunnedAnimationName = null;
 
     PlayerController playerController;
     PlayerHurt playerHurt;
@@ -101,6 +108,8 @@ public class EnemyHurt : MonoBehaviour
 
     IEnumerator IsStunned()
     {
+        if (stunnedAnimationName != null && meshAnimator != null)
+            meshAnimator.StartAnimFromName(stunnedAnimationName, false);
         stunned = true;
         if (moveBetweenPoints != null)
             moveBetweenPoints.stunnedMultiplier = 0.0f;
@@ -109,6 +118,8 @@ public class EnemyHurt : MonoBehaviour
 
         yield return new WaitForSeconds(stunnedTime);
         stunned = false;
+        if (defaultAnimationName != null && meshAnimator != null)
+            meshAnimator.StartAnimFromName(defaultAnimationName, false);
         if (moveBetweenPoints != null)
             moveBetweenPoints.stunnedMultiplier = 0.0f;
         if (enemyFly != null)

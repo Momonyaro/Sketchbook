@@ -293,6 +293,9 @@ MonoBehaviour:
   playerBounceDistance: 5
   canBeStunned: 1
   enemyDuplicate: {fileID: 0}
+  meshAnimator: {fileID: 0}
+  defaultAnimationName: 
+  stunnedAnimationName: 
   stunned: 0
 --- !u!114 &875961253943643955
 MonoBehaviour:
@@ -556,7 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: 
+  Event: event:/SFX/Enemy/Steve(Horse)/Enemy_Steve_Move
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -564,5 +567,5 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

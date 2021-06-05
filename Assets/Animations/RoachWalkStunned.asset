@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33cf08ed3879e949b305741b406b0ac, type: 3}
+  m_Name: RoachWalkStunned
+  m_EditorClassIdentifier: 
+  animName: _roachWalkStunned
+  loop: 0
+  transitionAfterFinish: 0
+  leadsInto: 
+  animFrames:
+  - frameMesh: {fileID: -3841609849223158850, guid: 1d63fab7fe213f34dad30ab74ba2299e, type: 3}
+    frameDuration: 0.2
+    audioAction: 0
+  - frameMesh: {fileID: -2134396256369919818, guid: 1d63fab7fe213f34dad30ab74ba2299e, type: 3}
+    frameDuration: 0.2
+    audioAction: 0
+  - frameMesh: {fileID: 2137216398416183021, guid: 1d63fab7fe213f34dad30ab74ba2299e, type: 3}
+    frameDuration: 0.2
+    audioAction: 0
+  - frameMesh: {fileID: -5276331098507330737, guid: 1d63fab7fe213f34dad30ab74ba2299e, type: 3}
+    frameDuration: 0.2
+    audioAction: 0
+  firstFrame: 0
