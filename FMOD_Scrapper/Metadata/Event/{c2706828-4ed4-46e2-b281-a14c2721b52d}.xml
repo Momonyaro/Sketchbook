@@ -5,7 +5,7 @@
 			<value>SFX_Objeckt_fan</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{30921dea-943e-48e5-8824-870eb089f631}</destination>
@@ -267,6 +267,7 @@
 	<object class="MixerBusEffectChain" id="{2252787d-ff16-49e0-95c6-f415dbaf410f}">
 		<relationship name="effects">
 			<destination>{8564816b-65db-4c71-945d-216ef52228cc}</destination>
+			<destination>{9463febc-d5c1-40ac-b6a2-0ef7004cefb6}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{34de8322-6984-4089-85a5-104b7d312f24}" />
@@ -352,6 +353,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{8564816b-65db-4c71-945d-216ef52228cc}" />
+	<object class="SpatialiserEffect" id="{9463febc-d5c1-40ac-b6a2-0ef7004cefb6}" />
 	<object class="AutomationCurve" id="{42f1acc6-0799-4883-beb5-800a28a49a97}">
 		<relationship name="parameter">
 			<destination>{3efb77b1-f2ad-4fa5-8f47-f879dd6e4211}</destination>
