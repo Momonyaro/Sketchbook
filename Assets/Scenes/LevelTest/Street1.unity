@@ -13819,6 +13819,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724848746}
   m_Mesh: {fileID: -462981019419857548, guid: 12d9a5b5ca0dcd44ca591065ccd516e0, type: 3}
+--- !u!114 &728296060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5757779445987678266, guid: 7122f37f385c1124c98e5c786592955f, type: 3}
+  m_PrefabInstance: {fileID: 1364517894}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &728952329
 GameObject:
   m_ObjectHideFlags: 0
@@ -26723,6 +26734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1432466126}
     m_Modifications:
+    - target: {fileID: 332278212, guid: 7122f37f385c1124c98e5c786592955f, type: 3}
+      propertyPath: WalkEmitter
+      value: 
+      objectReference: {fileID: 728296060}
     - target: {fileID: 6085220211744106965, guid: 7122f37f385c1124c98e5c786592955f, type: 3}
       propertyPath: currentSpline
       value: 
