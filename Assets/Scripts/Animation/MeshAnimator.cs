@@ -164,14 +164,23 @@ namespace Animation
                     }
                     return;
 
-                //case AnimFrame.AudioActions.PlayerPushPull: // event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
-                //    if (AudioManager.events["event:/SFX/Player/Player_PushPull"].getPath(out path) == RESULT.OK)
-                //    {
-                //        if (!_hasWalkEmitter) return;
-                //        WalkEmitter.Event = path;
-                //        WalkEmitter.Play();
-                //    }
-                //    return;
+                case AnimFrame.AudioActions.PlayerHurt: // event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+                    if (AudioManager.events["event:/SFX/Player/Player_Hurt"].getPath(out path) == RESULT.OK)
+                    {
+                        if (!_hasWalkEmitter) return;
+                        WalkEmitter.Event = path;
+                        WalkEmitter.Play();
+                    }
+                    return;
+
+                case AnimFrame.AudioActions.DogRun: // event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+                    if (AudioManager.events["event:/SFX/Enemy/Doggo (Dog)/Enemy_Doggo_Move"].getPath(out path) == RESULT.OK)
+                    {
+                        if (!_hasWalkEmitter) return;
+                        WalkEmitter.Event = path;
+                        WalkEmitter.Play();
+                    }
+                    return;
 
                 default:
                     return;

@@ -19,19 +19,19 @@ MonoBehaviour:
   animFrames:
   - frameMesh: {fileID: 5337228751233188454, guid: bc9d68ff0e5062147af0637f3b9e09e7, type: 3}
     frameDuration: 0.08
-    audioAction: 0
+    audioAction: 8
   - frameMesh: {fileID: -7804333027446158656, guid: bc9d68ff0e5062147af0637f3b9e09e7, type: 3}
     frameDuration: 0.08
     audioAction: 0
   - frameMesh: {fileID: -8109590688928177677, guid: bc9d68ff0e5062147af0637f3b9e09e7, type: 3}
     frameDuration: 0.08
-    audioAction: 0
+    audioAction: 8
   - frameMesh: {fileID: -1422142653054408222, guid: bc9d68ff0e5062147af0637f3b9e09e7, type: 3}
     frameDuration: 0.08
     audioAction: 0
   - frameMesh: {fileID: -2999163387298632769, guid: bc9d68ff0e5062147af0637f3b9e09e7, type: 3}
     frameDuration: 0.08
-    audioAction: 0
+    audioAction: 8
   - frameMesh: {fileID: -8749796267100170700, guid: bc9d68ff0e5062147af0637f3b9e09e7, type: 3}
     frameDuration: 0.08
     audioAction: 0
