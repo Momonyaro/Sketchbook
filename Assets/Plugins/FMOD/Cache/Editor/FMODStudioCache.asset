@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8991073131346339879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Garden/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8606092015478538916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,6 +105,26 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
+  Exists: 0
+--- !u!114 &-7428477044614405710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Walking/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &-7042209485362455758
 MonoBehaviour:
@@ -128,7 +168,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6441467655093342367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +189,7 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
---- !u!114 &-6296169057140072559
+--- !u!114 &-6294878195297531060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,11 +199,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Rum och Hus/Progress
+  m_Name: parameter:/Garden/Combat
   m_EditorClassIdentifier: 
-  Name: Progress
+  Name: Combat
   Min: 0
-  Max: 10
+  Max: 1
   Default: 0
   ID:
     data1: 0
@@ -298,7 +338,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-3833223161362872563
+--- !u!114 &-4033110659420806934
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -308,32 +348,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Himlen/Combat
+  m_Name: parameter:/SFX_Objeckt_fan/FanOffOn
   m_EditorClassIdentifier: 
-  Name: Combat
+  Name: FanOffOn
   Min: 0
   Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-3749158048394819984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Player_Walking/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  Min: 0
-  Max: 2
-  Default: 0
+  Default: 1
   ID:
     data1: 0
     data2: 0
@@ -361,7 +381,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 624
---- !u!114 &-2977863219517671797
+--- !u!114 &-3314459559593970834
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,11 +391,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Garden/Progress
+  m_Name: parameter:/Himlen/Combat
   m_EditorClassIdentifier: 
-  Name: Progress
+  Name: Combat
   Min: 0
-  Max: 10
+  Max: 1
   Default: 0
   ID:
     data1: 0
@@ -401,6 +421,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-1882460927942135842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Himlen Round 2/DogClose
+  m_EditorClassIdentifier: 
+  Name: DogClose
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-1771397846017514534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +507,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -3749158048394819984}
+  - {fileID: -7428477044614405710}
   MinDistance: 0
   MaxDistance: 0
   Length: 3000
@@ -556,7 +596,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-62641850097232379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,7 +673,7 @@ MonoBehaviour:
   - {fileID: 1775717051657528360}
   StringsBanks:
   - {fileID: 6348666667703115569}
-  stringsBankWriteTime: 637584027485750965
+  stringsBankWriteTime: 637584174446360026
   cacheVersion: 6
 --- !u!114 &460788136237723259
 MonoBehaviour:
@@ -678,7 +718,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 5760596117485889777}
+  - {fileID: -1882460927942135842}
   MinDistance: 0
   MaxDistance: 0
   Length: 33999
@@ -743,7 +783,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 60
+  MaxDistance: 70
   Length: 3500
 --- !u!114 &1775717051657528360
 MonoBehaviour:
@@ -760,7 +800,7 @@ MonoBehaviour:
   Path: FMOD_Scrapper/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637584150459200952
+  lastModified: 637584174446319998
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -804,8 +844,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -3833223161362872563}
-  - {fileID: -4528852667883914498}
+  - {fileID: -3314459559593970834}
+  - {fileID: 5256294230593320450}
   MinDistance: 0
   MaxDistance: 0
   Length: 51009
@@ -915,8 +955,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2977863219517671797}
-  - {fileID: 7143007005456600558}
+  - {fileID: -8991073131346339879}
+  - {fileID: -6294878195297531060}
   MinDistance: 0
   MaxDistance: 0
   Length: 157714
@@ -939,7 +979,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &4217483000662485016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,7 +1042,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &4601370600250976025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,7 +1109,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 220
---- !u!114 &5308036820007657446
+--- !u!114 &5256294230593320450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1089,6 +1129,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &5308036820007657446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Himlen/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &5375858946798032977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1253,7 @@ MonoBehaviour:
   Path: FMOD_Scrapper/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637584027485750965
+  lastModified: 637584174446360026
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -1307,7 +1367,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6821672585725997836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,7 +1412,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 80
+  MaxDistance: 9.400001
   Length: 550
 --- !u!114 &7120504033887370656
 MonoBehaviour:
@@ -1462,7 +1522,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7846443969250459907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,7 +1543,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -5676431783118478894}
+  - {fileID: -4033110659420806934}
   MinDistance: 0
   MaxDistance: 0
   Length: 13000
@@ -1527,6 +1587,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &8286734159804735094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Rum och Hus/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8464432506505997915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1547,7 +1627,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6296169057140072559}
+  - {fileID: 8286734159804735094}
   MinDistance: 0
   MaxDistance: 0
   Length: 81600
