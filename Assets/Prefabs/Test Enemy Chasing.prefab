@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: 
+  Event: event:/SFX/Enemy/PostMord/Enemy_Postmord_Walk
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -502,5 +502,5 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

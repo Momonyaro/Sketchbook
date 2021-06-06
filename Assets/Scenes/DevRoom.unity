@@ -973,6 +973,7 @@ GameObject:
   - component: {fileID: 315781995}
   - component: {fileID: 315781994}
   - component: {fileID: 315781996}
+  - component: {fileID: 315781997}
   m_Layer: 0
   m_Name: --MAP SETTINGS--
   m_TagString: Untagged
@@ -1019,6 +1020,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80928616fab726d40ab9844e66d3682a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &315781997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315781993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbe7eb6db16491396d4215445d5a540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 1624649994}
+  secondCamRenderTex: {fileID: 8400000, guid: df64683495103b14293be453f527515f, type: 2}
+  depthCamRenderTex: {fileID: 8400000, guid: bdc873d768b8b4d4a84193f24aa64464, type: 2}
+  depthCamRenderScale: 0.5
 --- !u!1 &322636658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +2452,7 @@ MonoBehaviour:
   hurtSpeedMultiplier: 1
   horiWindForce: 0
   vertWindForce: 0
+  pushing: 0
   pushOffForce: 92.75
   jumpSpeed: 1.36
   fallSpeed: 1.4

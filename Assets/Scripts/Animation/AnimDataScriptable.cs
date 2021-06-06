@@ -74,6 +74,9 @@ namespace Animation
             RoachWalk,
             RoachFly,
             PostWalk,
+            PlayerPushPull,
+            PlayerHurt,
+            DogRun,
         }
 
         public Mesh frameMesh;

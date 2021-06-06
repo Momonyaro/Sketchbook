@@ -425,6 +425,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &80896180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 80896179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &80896181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80896180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1001 &101365340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -486,6 +514,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &101365341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 101365340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &101365342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101365341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &115386851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1104,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &147255514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 147255513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &147255515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147255514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!4 &153394094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6248228888938097089, guid: ac35ec6d27ab373409df61e794b99fee, type: 3}
@@ -3277,6 +3361,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e198ad732e661d347887f394dc56fa62, type: 3}
+--- !u!1 &527147536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 931780826110175318, guid: e198ad732e661d347887f394dc56fa62, type: 3}
+  m_PrefabInstance: {fileID: 527147535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &527147537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527147536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Player/Player_FlashLight
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &562349157
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,6 +3480,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &574107136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 574107135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &574107137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574107136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &583648719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3759,6 +3899,8 @@ MonoBehaviour:
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 375848845}
   dialogueTextDuplicate: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  dialogueBoxDuplicate: {fileID: 0}
   lifeTime: 100
 --- !u!65 &607455136
 BoxCollider:
@@ -4277,6 +4419,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &694804038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 694804037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &694804039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694804038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1001 &701682384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4477,6 +4647,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+--- !u!1 &748873205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6114110782824111911, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+  m_PrefabInstance: {fileID: 748873204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &748873206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748873205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &753167359
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,6 +4992,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+--- !u!1 &787507047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6114110782824111911, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+  m_PrefabInstance: {fileID: 787507046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &787507048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787507047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!4 &787566393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2387184959786936888, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
@@ -5294,6 +5520,7 @@ GameObject:
   - component: {fileID: 858022817}
   - component: {fileID: 858022816}
   - component: {fileID: 858022818}
+  - component: {fileID: 858022819}
   m_Layer: 0
   m_Name: --MAP SETTINGS--
   m_TagString: Untagged
@@ -5340,6 +5567,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80928616fab726d40ab9844e66d3682a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &858022819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858022815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbe7eb6db16491396d4215445d5a540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 990517019}
+  secondCamRenderTex: {fileID: 8400000, guid: df64683495103b14293be453f527515f, type: 2}
+  depthCamRenderTex: {fileID: 8400000, guid: bdc873d768b8b4d4a84193f24aa64464, type: 2}
+  depthCamRenderScale: 0.5
 --- !u!1001 &873898922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5405,6 +5648,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+--- !u!1 &873898923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6114110782824111911, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+  m_PrefabInstance: {fileID: 873898922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &873898924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873898923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &883781126
 GameObject:
   m_ObjectHideFlags: 0
@@ -7057,6 +7328,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &1120175094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 1120175093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1120175095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120175094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1001 &1126276805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7166,6 +7465,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+--- !u!1 &1126276806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6114110782824111911, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+  m_PrefabInstance: {fileID: 1126276805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1126276807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126276806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &1138141819
 GameObject:
   m_ObjectHideFlags: 0
@@ -7257,6 +7584,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &1141248160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 1141248159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1141248161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141248160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &1142421804
 GameObject:
   m_ObjectHideFlags: 0
@@ -9790,6 +10145,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+--- !u!1 &1527622231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6114110782824111911, guid: 9075b6a2afc2e1f4cb713e625dc9961f, type: 3}
+  m_PrefabInstance: {fileID: 1527622230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1527622232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527622231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &1533481641
 GameObject:
   m_ObjectHideFlags: 0
@@ -10857,6 +11240,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &1725569894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 1725569893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1725569895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725569894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &1737585812
 GameObject:
   m_ObjectHideFlags: 0
@@ -11158,6 +11569,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+--- !u!1 &1780640656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697318396439792088, guid: 34e7cd950456c3a4688e7411e1f2d4bd, type: 3}
+  m_PrefabInstance: {fileID: 1780640655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780640657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780640656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Enemy/Scarface (cockroach)/Enemy_Scarface_Move_Fly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 70
 --- !u!1 &1790526260
 GameObject:
   m_ObjectHideFlags: 0
@@ -11385,6 +11824,8 @@ MonoBehaviour:
   timeBetweenCharacters: 0.025
   dialogueText: {fileID: 583648720}
   dialogueTextDuplicate: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  dialogueBoxDuplicate: {fileID: 0}
   lifeTime: 5
 --- !u!65 &1801299780
 BoxCollider:
