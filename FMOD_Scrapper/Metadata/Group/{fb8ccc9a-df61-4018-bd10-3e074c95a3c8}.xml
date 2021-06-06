@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{fb8ccc9a-df61-4018-bd10-3e074c95a3c8}">
+		<property name="name">
+			<value>Cockroach</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{2f4a0a4c-d8cc-4919-81dd-b95a70460c79}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{a71314cd-a80f-4f34-9d23-79d98e55cb49}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{939f58f1-6d20-4f87-a1aa-73e218989a78}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{2f4a0a4c-d8cc-4919-81dd-b95a70460c79}">
+		<relationship name="effects">
+			<destination>{ef725498-857b-4385-8daa-2b58224723e7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{a71314cd-a80f-4f34-9d23-79d98e55cb49}" />
+	<object class="MixerBusFader" id="{ef725498-857b-4385-8daa-2b58224723e7}" />
+</objects>

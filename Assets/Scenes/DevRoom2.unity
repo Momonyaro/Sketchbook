@@ -386,6 +386,9 @@ MonoBehaviour:
   playerBounceDistance: 170
   canBeStunned: 1
   enemyDuplicate: {fileID: 0}
+  meshAnimator: {fileID: 0}
+  defaultAnimationName: 
+  stunnedAnimationName: 
   stunned: 0
 --- !u!114 &84791928
 MonoBehaviour:
@@ -1053,6 +1056,7 @@ MonoBehaviour:
   hurtSpeedMultiplier: 1
   horiWindForce: 0
   vertWindForce: 0
+  pushing: 0
   pushOffForce: 88.87
   jumpSpeed: 1.3
   fallSpeed: 1.4
@@ -1329,6 +1333,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: 0
   windObject: {fileID: 846146793}
+  particleEffect: {fileID: 0}
+  meshAnimator: {fileID: 0}
 --- !u!65 &803625192
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2400,7 +2406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1050362012
 Transform:
   m_ObjectHideFlags: 0
@@ -2452,6 +2458,9 @@ MonoBehaviour:
   playerBounceDistance: 170
   canBeStunned: 0
   enemyDuplicate: {fileID: 0}
+  meshAnimator: {fileID: 0}
+  defaultAnimationName: 
+  stunnedAnimationName: 
   stunned: 0
 --- !u!135 &1050362015
 SphereCollider:
@@ -3880,6 +3889,8 @@ MonoBehaviour:
   timeBetweenCharacters: 0.05
   dialogueText: {fileID: 1251208749}
   dialogueTextDuplicate: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  dialogueBoxDuplicate: {fileID: 0}
   lifeTime: 0
 --- !u!65 &1489726921
 BoxCollider:
@@ -4232,6 +4243,9 @@ MonoBehaviour:
   playerBounceDistance: 170
   canBeStunned: 1
   enemyDuplicate: {fileID: 0}
+  meshAnimator: {fileID: 0}
+  defaultAnimationName: 
+  stunnedAnimationName: 
   stunned: 0
 --- !u!135 &1785481180
 SphereCollider:
@@ -4363,7 +4377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1834178438
 Transform:
   m_ObjectHideFlags: 0
@@ -4401,6 +4415,9 @@ MonoBehaviour:
   playerBounceDistance: 170
   canBeStunned: 0
   enemyDuplicate: {fileID: 0}
+  meshAnimator: {fileID: 0}
+  defaultAnimationName: 
+  stunnedAnimationName: 
   stunned: 0
 --- !u!135 &1834178440
 SphereCollider:
@@ -4525,6 +4542,7 @@ MonoBehaviour:
   wallCheck2: {fileID: 267963349}
   movementSpeed: 6
   stopTime: 5
+  meshAnimator: {fileID: 0}
   riseSpeed: 1.3
   fallSpeed: 1.3
 --- !u!1001 &1847345314
@@ -5085,6 +5103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBounceDistance: 170
+  emitsAudio: 0
+  bounceEmitter: {fileID: 0}
 --- !u!65 &2017383454
 BoxCollider:
   m_ObjectHideFlags: 0

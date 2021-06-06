@@ -4,6 +4,7 @@ using UnityEngine;
 using Config;
 using PathCreation;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 namespace Movement
 {
@@ -14,6 +15,8 @@ namespace Movement
         public int maximumHP = 12;
         [Tooltip("The canvas with the transition object that gets spawned when a scene transition is triggered (i.e. the white fade-in)")]
         public GameObject deathScreenCanvas;
+        public StudioEventEmitter hurtEmitter;
+        public StudioEventEmitter deathEmitter;
         [HideInInspector]
         static public int currentHP = 12; //endast static public int just nu för att det blir en enkel lösning tills speltestningen
 
@@ -86,6 +89,8 @@ namespace Movement
                 currentHP -= damage;
                 StartCoroutine(HurtKnockback());
                 hpUI.UpdateUI(currentHP, maximumHP, true);
+
+                hurtEmitter.Play();
             }
         }
 
@@ -109,8 +114,10 @@ namespace Movement
             if (deathScreenCanvas != null)
                 Instantiate(deathScreenCanvas, transform.position, transform.rotation);
 
+            deathEmitter.Play();
+           
             playerController.hurtSpeedMultiplier = 0.0f;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1.0f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }

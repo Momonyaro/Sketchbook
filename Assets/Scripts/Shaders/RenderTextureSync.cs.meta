@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6dbe7eb6db16491396d4215445d5a540
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mainCam: {instanceID: 0}
+  - secondCamRenderTex: {fileID: 8400000, guid: df64683495103b14293be453f527515f, type: 2}
+  - depthCamRenderTex: {fileID: 8400000, guid: bdc873d768b8b4d4a84193f24aa64464, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

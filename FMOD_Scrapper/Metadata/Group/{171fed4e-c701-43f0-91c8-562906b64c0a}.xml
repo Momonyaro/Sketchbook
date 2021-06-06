@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="MixerGroup" id="{171fed4e-c701-43f0-91c8-562906b64c0a}">
+		<property name="color">
+			<value>Purple</value>
+		</property>
 		<property name="volume">
-			<value>-6</value>
+			<value>-6.5</value>
 		</property>
 		<property name="name">
 			<value>Music</value>
