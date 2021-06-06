@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{ef1f5bc4-4033-4c71-bd51-6912f6c6f271}">
+		<property name="name">
+			<value>DogClose</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ad145f72-511a-4bd7-9591-9b4740d45e8d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{b84549fc-2837-4537-80bd-0f14da9777be}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{b84549fc-2837-4537-80bd-0f14da9777be}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1.8999999761581421</value>
+		</property>
+	</object>
+</objects>

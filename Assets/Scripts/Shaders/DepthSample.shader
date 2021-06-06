@@ -5,6 +5,9 @@
         _MainTex      ("Texture", 2D) = "white" {}
         _SecondCamTex ("Color World Texture", 2D) = "white" {}
         _MaskTex      ("Depth Texture", 2D) = "black" {}
+        _OverlayTex   ("Overlay", 2D) = "black" {}
+        
+        _OverlayOpacity ("Overlay Opacity", Range(0.0, 1.0)) = 0.4
         _GaussAmountX ("Blur Amount X", Range(0.0, 0.1)) = 0.05
         _GaussAmountY ("Blur Amount Y", Range(0.0, 0.1)) = 0.05
     }
@@ -46,7 +49,9 @@
             sampler2D _MainTex;
             sampler2D _SecondCamTex;
             sampler2D _MaskTex;
+            sampler2D _OverlayTex;
 
+            float _OverlayOpacity;
             float _GaussAmountX;
             float _GaussAmountY;
             
@@ -97,8 +102,10 @@
 
                 fixed4 sampleMain = tex2D(_MainTex, i.uv);
                 fixed4 sampleSecond = tex2D(_SecondCamTex, i.uv);
+                fixed4 sampleOverlay = tex2D(_OverlayTex, i.uv);
 
                 col = lerp(sampleMain, sampleSecond, mask.r);
+                col = lerp(col, col * sampleOverlay, _OverlayOpacity);
                 
                 return col;
             }

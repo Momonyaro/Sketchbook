@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e71def8a-c1a6-43ce-9efa-d263f66f5956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sketchbook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SCREEN_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SCREEN_MAT.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevRoom.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthCam.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthCam.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthSample.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthSample.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthSample.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthSample.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/RenderTextureSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/RenderTextureSync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/SecondCam.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/SecondCam.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RenderShaderToScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimLeech.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueReader.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -54,10 +55,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RenderShaderToScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/MannequinEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraMan.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/DepthSample.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimDataScriptable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/MeshAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/FmodAudioTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RenderTextureSync.cs" />
       </list>
     </option>
   </component>
@@ -116,6 +119,12 @@
       <workItem from="1619684936085" duration="5005000" />
       <workItem from="1621847932675" duration="311000" />
       <workItem from="1622316827528" duration="6563000" />
+      <workItem from="1622449697850" duration="1768000" />
+      <workItem from="1622798069368" duration="460000" />
+      <workItem from="1622799386267" duration="963000" />
+      <workItem from="1622809702784" duration="443000" />
+      <workItem from="1622919413358" duration="469000" />
+      <workItem from="1622920094904" duration="392000" />
     </task>
     <servers />
   </component>
