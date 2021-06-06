@@ -22491,8 +22491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/SFX/Enemy/Doggo (Dog)/Enemy_Doggo_Move
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -35571,7 +35571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshFilter: {fileID: 5629833698468993593}
   debugAnimName: _dogRun
-  WalkEmitter: {fileID: 1253066086}
+  WalkEmitter: {fileID: 0}
   JumpEmitter: {fileID: 0}
   animationBranches:
   - {fileID: 11400000, guid: 0f429a6d3557a1045b3268fb05dda977, type: 2}
