@@ -115,7 +115,7 @@ MonoBehaviour:
         dialogueBoxes:
         - speakerReference: _newSpeaker1
           text: "Graphics 2D & 3D: Sofia Johansson 2D, Paru Kattova 3D\nAnimation:
-            Eva \xC5hfedlt, Josefin Rempling"
+            Eva \xC5hfedlt Karlsson, Josefin Rempling"
           buildTime: 0.03
     00000008:
       type: {class: DestroyComponent, ns: Dialogue, asm: Assembly-CSharp}
