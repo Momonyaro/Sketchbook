@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{074e4742-6f00-4243-bba3-aa8f8e8b588d}">
+		<property name="name">
+			<value>Postmord</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{af11c215-010b-4679-acfe-eb40e4e3058e}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{82908483-0c7c-46a7-9d36-0b5268afe3e8}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{939f58f1-6d20-4f87-a1aa-73e218989a78}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{af11c215-010b-4679-acfe-eb40e4e3058e}">
+		<relationship name="effects">
+			<destination>{e0e46cfb-43a4-414a-8241-90785f7c5991}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{82908483-0c7c-46a7-9d36-0b5268afe3e8}" />
+	<object class="MixerBusFader" id="{e0e46cfb-43a4-414a-8241-90785f7c5991}" />
+</objects>
