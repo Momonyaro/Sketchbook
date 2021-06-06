@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshFilter: {fileID: 2018694769}
   debugAnimName: _horseWalk
-  WalkEmitter: {fileID: 503292717512993677}
+  WalkEmitter: {fileID: 0}
   JumpEmitter: {fileID: 0}
   animationBranches:
   - {fileID: 11400000, guid: a3bdfffab4c94f74ebe751bd6ecc40c0, type: 2}
@@ -540,7 +540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4606378124214089000}
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -99.35, y: 2.09, z: 56.28}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 875961253943643940}
@@ -560,8 +560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/SFX/Enemy/Steve(Horse)/Enemy_Steve_Move
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
