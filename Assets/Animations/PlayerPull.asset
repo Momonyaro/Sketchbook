@@ -22,7 +22,7 @@ MonoBehaviour:
     audioAction: 0
   - frameMesh: {fileID: 8791711051057927954, guid: 8ee91b360bfbe5345a67d5d14e3436a8, type: 3}
     frameDuration: 0.4
-    audioAction: 6
+    audioAction: 0
   - frameMesh: {fileID: 8205929618856818583, guid: 8ee91b360bfbe5345a67d5d14e3436a8, type: 3}
     frameDuration: 0.4
     audioAction: 0

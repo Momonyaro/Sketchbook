@@ -1576,6 +1576,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287532709}
   m_Mesh: {fileID: -462981019419857548, guid: 12d9a5b5ca0dcd44ca591065ccd516e0, type: 3}
+--- !u!1 &294984545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 294984546}
+  - component: {fileID: 294984547}
+  m_Layer: 0
+  m_Name: FanSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &294984546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294984545}
+  m_LocalRotation: {x: -0.47768492, y: -0.5213609, z: -0.15300749, w: 0.6903541}
+  m_LocalPosition: {x: 1.99, y: -0.5252, z: -0}
+  m_LocalScale: {x: 22.434248, y: 343.13947, z: 15.138816}
+  m_Children: []
+  m_Father: {fileID: 2034104099}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &294984547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294984545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_fan
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &305974774
 GameObject:
   m_ObjectHideFlags: 0
@@ -7519,6 +7573,7 @@ GameObject:
   - component: {fileID: 517304742}
   - component: {fileID: 517304741}
   - component: {fileID: 517304740}
+  - component: {fileID: 517304743}
   m_Layer: 0
   m_Name: --MAP SETTINGS--
   m_TagString: Untagged
@@ -7565,6 +7620,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &517304743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517304739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbe7eb6db16491396d4215445d5a540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 639203376}
+  secondCamRenderTex: {fileID: 8400000, guid: df64683495103b14293be453f527515f, type: 2}
+  depthCamRenderTex: {fileID: 8400000, guid: bdc873d768b8b4d4a84193f24aa64464, type: 2}
+  depthCamRenderScale: 0.5
 --- !u!1 &519885541
 GameObject:
   m_ObjectHideFlags: 0
@@ -8070,11 +8141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 931780825272867365, guid: e198ad732e661d347887f394dc56fa62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.4
+      value: 64.81
       objectReference: {fileID: 0}
     - target: {fileID: 931780825272867365, guid: e198ad732e661d347887f394dc56fa62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.8
+      value: 22.19
       objectReference: {fileID: 0}
     - target: {fileID: 931780825272867365, guid: e198ad732e661d347887f394dc56fa62, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20407,7 +20478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1078504341
 Transform:
   m_ObjectHideFlags: 0
@@ -20722,7 +20793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136605238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.156483, y: 20.639711, z: -7.873625}
+  m_LocalPosition: {x: -118.143524, y: 7.6397123, z: -7.873625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21287,7 +21358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253066084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 25.4, z: -0}
+  m_LocalPosition: {x: 0, y: 15.5, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 3028445882216203944}
@@ -21307,8 +21378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/SFX/Enemy/Doggo (Dog)/Enemy_Doggo_Move
-  PlayEvent: 1
-  StopEvent: 2
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -27074,7 +27145,8 @@ Transform:
   m_LocalRotation: {x: 0.6532815, y: 0.27059817, z: -0.2705981, w: 0.65328145}
   m_LocalPosition: {x: 0.1219, y: -0.004, z: 0.1659}
   m_LocalScale: {x: 0.013731282, y: 0.36851418, z: 0.03811298}
-  m_Children: []
+  m_Children:
+  - {fileID: 1457129890}
   m_Father: {fileID: 358185482}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -45}
@@ -27505,6 +27577,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 875961253943643940, guid: 6de7789163cac6c49b80d84cd2f4e96c, type: 3}
   m_PrefabInstance: {fileID: 994507073}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1457129889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1457129890}
+  - component: {fileID: 1457129891}
+  m_Layer: 0
+  m_Name: FanSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1457129890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457129889}
+  m_LocalRotation: {x: -0.43045908, y: -0.56098586, z: -0.09229615, w: 0.7010574}
+  m_LocalPosition: {x: 2.2, y: -0.5394, z: 0}
+  m_LocalScale: {x: 17.981062, y: 241.06303, z: 19.941643}
+  m_Children: []
+  m_Father: {fileID: 1396936864}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1457129891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457129889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_fan
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1459616913
 GameObject:
   m_ObjectHideFlags: 0
@@ -30987,7 +31113,8 @@ Transform:
   m_LocalRotation: {x: 0.6532815, y: 0.27059817, z: -0.2705981, w: 0.65328145}
   m_LocalPosition: {x: 0.1219, y: -0.004, z: 0.1659}
   m_LocalScale: {x: 0.013731282, y: 0.36851418, z: 0.03811298}
-  m_Children: []
+  m_Children:
+  - {fileID: 2032734004}
   m_Father: {fileID: 1059838203}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -45}
@@ -31077,7 +31204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942242677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38, y: -0.5234, z: 0}
+  m_LocalPosition: {x: -0.187, y: -0.5339, z: -0.108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986301344}
@@ -31680,6 +31807,60 @@ Transform:
   m_Father: {fileID: 2005372203}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2032734003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032734004}
+  - component: {fileID: 2032734005}
+  m_Layer: 0
+  m_Name: FanSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2032734004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032734003}
+  m_LocalRotation: {x: -0.43045908, y: -0.56098586, z: -0.09229615, w: 0.7010574}
+  m_LocalPosition: {x: 2.21, y: -0.5533, z: -0.154}
+  m_LocalScale: {x: 17.981062, y: 241.06303, z: 19.941643}
+  m_Children: []
+  m_Father: {fileID: 1929619280}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032734005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032734003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Ojeckt/SFX_Objeckt_fan
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &2033685722
 GameObject:
   m_ObjectHideFlags: 0
@@ -32018,7 +32199,8 @@ Transform:
   m_LocalRotation: {x: 0.6743678, y: 0.212669, z: -0.21266894, w: 0.67436785}
   m_LocalPosition: {x: 0.092, y: -0.004, z: 0.178}
   m_LocalScale: {x: 0.013731282, y: 0.36851418, z: 0.03811298}
-  m_Children: []
+  m_Children:
+  - {fileID: 294984546}
   m_Father: {fileID: 2033685728}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -35.006}
@@ -33492,7 +33674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshFilter: {fileID: 5629833698468993593}
   debugAnimName: _dogRun
-  WalkEmitter: {fileID: 0}
+  WalkEmitter: {fileID: 1253066086}
   JumpEmitter: {fileID: 0}
   animationBranches:
   - {fileID: 11400000, guid: 0f429a6d3557a1045b3268fb05dda977, type: 2}
