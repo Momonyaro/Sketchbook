@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{512f1a46-f2fd-4e8a-aa48-0c807161e1bc}">
 		<property name="assetPath">
-			<value>Doggo_Snooze.WAV</value>
+			<value>SFX/Enemy/Dogg/Doggo_Snooze.WAV</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
