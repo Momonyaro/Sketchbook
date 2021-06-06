@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{3c5d938b-4066-436b-b418-374036a64848}">
 		<property name="assetPath">
-			<value>Doggo_Walk_High1-006.wav</value>
+			<value>SFX/Enemy/Dogg/Doggo_Walk_High1-006.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

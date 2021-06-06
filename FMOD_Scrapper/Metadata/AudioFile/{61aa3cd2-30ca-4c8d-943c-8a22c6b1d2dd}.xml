@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{61aa3cd2-30ca-4c8d-943c-8a22c6b1d2dd}">
 		<property name="assetPath">
-			<value>Doggo_Snooze-003.wav</value>
+			<value>SFX/Enemy/Dogg/Doggo_Snooze-003.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
